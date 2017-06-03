@@ -1,0 +1,38 @@
+cdn_provider: ''
+_core:
+  default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: themes/custom/malp/favicon.ico
+  url: 'http://d8.local1/themes/custom/malp/favicon.ico'
+  use_default: false
+schemas:
+  bootstrap: 8000
+  malp: 8000
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: themes/custom/malp/logo.png
+  url: ''
+  use_default: false
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  header_image: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: well
+  subfooter_1: ''
+  subfooter_2: ''
+  subfooter_3: ''
+  subfooter_4: ''
+  footer: ''
+fluid_container: 1
+table_responsive: '-1'
+table: ''

@@ -1,0 +1,22 @@
+uuid: 776bf7cc-161d-4e42-92aa-dcb040ed4294
+langcode: fr
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - malp
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: malp_help
+theme: malp
+region: header
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Aide
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 16a2cc9d-596c-4807-b25d-6f81bc65cf76
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - malp
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: malp_local_tasks
+theme: malp
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Onglets
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

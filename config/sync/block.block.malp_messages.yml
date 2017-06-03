@@ -1,0 +1,22 @@
+uuid: f5d4cdb8-8faa-4e29-ae78-c801128c09f0
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - malp
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: malp_messages
+theme: malp
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Messages de statut'
+  provider: system
+  label_display: '0'
+visibility: {  }
