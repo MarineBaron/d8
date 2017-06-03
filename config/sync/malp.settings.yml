@@ -36,3 +36,4 @@ region_wells:
 fluid_container: 1
 table_responsive: '-1'
 table: ''
+langcode: fr
