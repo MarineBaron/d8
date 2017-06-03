@@ -1,0 +1,20 @@
+uuid: e78bfa51-5794-45c4-bbf7-d904da4bd5f2
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - malp
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: malp_page_title
+theme: malp
+region: header
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Titre de page'
+  provider: core
+  label_display: '0'
+visibility: {  }

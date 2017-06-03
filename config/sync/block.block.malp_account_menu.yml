@@ -1,0 +1,26 @@
+uuid: 5d9644cf-381d-46f4-919f-1f353bfaa99e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - malp
+_core:
+  default_config_hash: DweBpscQZdG0-fHkSpUzdYucrNH45G_KF7Z82V-oyQM
+id: malp_account_menu
+theme: malp
+region: navigation_collapsible
+weight: -5
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'Menu du compte de l''utilisateur'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

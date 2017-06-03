@@ -1,0 +1,25 @@
+uuid: 169061a9-c9e0-4b79-8f99-0f699035cdb8
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - malp
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: malp_branding
+theme: malp
+region: navigation
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marque du site'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }
