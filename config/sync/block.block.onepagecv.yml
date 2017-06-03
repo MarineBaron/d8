@@ -1,0 +1,29 @@
+uuid: 33e5a5eb-1220-40cd-af5c-f63bd104cea6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.one-page-cv
+  module:
+    - system
+  theme:
+    - malp
+id: onepagecv
+theme: malp
+region: navigation_collapsible
+weight: -6
+provider: null
+plugin: 'system_menu_block:one-page-cv'
+settings:
+  id: 'system_menu_block:one-page-cv'
+  label: 'One Page - CV'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: /cv
+    negate: false
+    context_mapping: {  }
