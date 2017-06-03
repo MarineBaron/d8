@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the MALP theme.
+
+malp.settings:
+  type: theme_settings
+  label: 'MALP Theme settings'
