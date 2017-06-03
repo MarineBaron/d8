@@ -6,3 +6,17 @@
 
 // Base-theme overrides.
 @import 'overrides';
+
+.region-content {
+  background-color: red;
+  min-height: 1000px;
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+}
+
+.affix + .container-fluid {
+    padding-top: 70px;
+}

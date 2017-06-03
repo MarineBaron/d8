@@ -1,13 +1,21 @@
+jquery.easing:
+  js:
+    /libraries/jquery.easing/jquery.easing.js: {}
+  dependencies:
+    - core/jquery
+
 global-styling:
   css:
     theme:
       css/styles.css: {}
   js:
+    js/scripts.js: {}
+
   dependencies:
     - core/jquery
     - core/jquery.once
     - core/drupalSettings
-    - libraries/jquery.easing
+    - malp/jquery.easing
 
 bootstrap-scripts:
   js:
