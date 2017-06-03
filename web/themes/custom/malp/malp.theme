@@ -1,7 +1,17 @@
 <?php
+
 /**
  * @file
- * Bootstrap sub-theme.
+ * MALP Bootstrap sub-theme.
  *
  * Place your custom PHP code in this file.
  */
+
+ /**
+  * Implements hook_theme_suggestions_menu_alter().
+  */
+function malp_theme_suggestions_menu_alter(&$suggestions, array $variables) {
+  if (isset($variables['menu_name']) && in_array($variables['menu_name'], ['one-page-home', 'one-page-cv'])) {
+    $suggestions[] = 'menu__main';
+  };
+}
