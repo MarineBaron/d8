@@ -9600,19 +9600,31 @@ p:last-child,
   margin-top: 0;
 }
 
-/* line 10, ../scss/styles.scss */
+/* line 11, ../scss/styles.scss */
 .region-content {
   background-color: red;
   min-height: 1000px;
 }
 
-/* line 15, ../scss/styles.scss */
-.affix {
+/* line 17, ../scss/styles.scss */
+#navbar,
+#footer,
+#subfooter {
+  background-color: #333333;
+  color: #eeeeee;
+}
+
+/* line 25, ../scss/styles.scss */
+#navbar.affix,
+#navbar.affix-top {
+  position: fixed;
   top: 0;
+  z-index: 999;
   width: 100%;
 }
 
-/* line 20, ../scss/styles.scss */
-.affix + .container-fluid {
-  padding-top: 70px;
+/* line 33, ../scss/styles.scss */
+#navbar.affix-top {
+  background-color: transparent;
+  color: #333333;
 }

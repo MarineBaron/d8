@@ -7,16 +7,30 @@
 // Base-theme overrides.
 @import 'overrides';
 
+// Tests
 .region-content {
   background-color: red;
   min-height: 1000px;
 }
 
-.affix {
-    top: 0;
-    width: 100%;
+// Header & Footer - colors
+#navbar,
+#footer,
+#subfooter {
+  background-color: $gray-dark;
+  color: $gray-lighter;
 }
 
-.affix + .container-fluid {
-    padding-top: 70px;
+// Header - Affix (only when header-image is present)
+#navbar.affix,
+#navbar.affix-top {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+#navbar.affix-top {
+  background-color: transparent;
+  color: $gray-dark;
 }
