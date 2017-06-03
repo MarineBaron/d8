@@ -1,0 +1,29 @@
+uuid: 2bac7ea8-cca9-4e6c-9b5a-176be4781c7e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.one-page-home
+  module:
+    - system
+  theme:
+    - malp
+id: onepagehome
+theme: malp
+region: navigation_collapsible
+weight: -7
+provider: null
+plugin: 'system_menu_block:one-page-home'
+settings:
+  id: 'system_menu_block:one-page-home'
+  label: 'One Page - Home'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
