@@ -1,0 +1,8 @@
+uuid: e9cb36c9-8838-4bc5-8722-61971c44ec9f
+langcode: fr
+status: true
+dependencies: {  }
+id: one-page-cv
+label: 'One Page - CV'
+description: 'Liens vers les blocks sur la page du CV'
+locked: false

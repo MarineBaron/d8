@@ -1,0 +1,8 @@
+uuid: 46d398a8-c95d-4f9f-8fdb-219ecdf0f638
+langcode: fr
+status: true
+dependencies: {  }
+id: one-page-home
+label: 'One Page - Home'
+description: 'Liens vers les blocks sur la page d''accueil'
+locked: false
