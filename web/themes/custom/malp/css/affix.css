@@ -9,9 +9,17 @@
  * You can copy existing variables directly from the following file:
  * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
  */
+/* line 5, ../scss/affix.scss */
+#navbar.affix,
+#navbar.affix-top {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
 
-// Set the proper directory for the Bootstrap Glyphicon font.
-$icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
-
-$gray-base:              #000;
-$gray-dark:              lighten($gray-base, 20%);
+/* line 13, ../scss/affix.scss */
+#navbar.affix-top {
+  background-color: transparent;
+  color: #333333;
+}

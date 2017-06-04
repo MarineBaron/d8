@@ -9613,18 +9613,3 @@ p:last-child,
   background-color: #333333;
   color: #eeeeee;
 }
-
-/* line 25, ../scss/styles.scss */
-#navbar.affix,
-#navbar.affix-top {
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  width: 100%;
-}
-
-/* line 33, ../scss/styles.scss */
-#navbar.affix-top {
-  background-color: transparent;
-  color: #333333;
-}

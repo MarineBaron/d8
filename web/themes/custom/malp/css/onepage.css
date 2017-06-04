@@ -9,9 +9,8 @@
  * You can copy existing variables directly from the following file:
  * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
  */
-
-// Set the proper directory for the Bootstrap Glyphicon font.
-$icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
-
-$gray-base:              #000;
-$gray-dark:              lighten($gray-base, 20%);
+/* line 6, ../scss/onepage.scss */
+.block-mlap {
+  background-color: blue;
+  min-height: 600px;
+}

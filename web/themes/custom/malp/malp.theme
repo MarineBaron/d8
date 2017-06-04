@@ -8,8 +8,39 @@
  */
 
  /**
-  * Implements hook_theme_suggestions_menu_alter().
+  * Implements hook_theme_suggestions_page_alter().
   */
+function malp_theme_suggestions_page_alter(&$suggestions, array $variables) {
+
+  $current_uri = \Drupal::request()->getRequestUri();
+
+  if (in_array($current_uri, ['/', '/cv'])) {
+    $suggestions[] = 'page__onepage';
+  };
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function malp_page_attachments_alter(&$page) {
+
+  $variables['page']['#cache']['contexts'][] = 'route';
+
+  $current_uri = \Drupal::request()->getRequestUri();
+
+  if (in_array($current_uri, ['/', '/cv'])) {
+    $page['#attached']['library'][] = 'malp/onepage';
+    $page['#attached']['library'][] = 'malp/affix';
+    $page['#attached']['drupalSettings']['malp'] = [
+      'onepage' => TRUE,
+      'navbar' => $current_uri == '/' ? '#block-onepagehome' : '#block-onepagecv',
+    ];
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_menu_alter().
+ */
 function malp_theme_suggestions_menu_alter(&$suggestions, array $variables) {
   if (isset($variables['menu_name']) && in_array($variables['menu_name'], ['one-page-home', 'one-page-cv'])) {
     $suggestions[] = 'menu__main';
