@@ -20,17 +20,3 @@
   background-color: $gray-dark;
   color: $gray-lighter;
 }
-
-// Header - Affix (only when header-image is present)
-#navbar.affix,
-#navbar.affix-top {
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  width: 100%;
-}
-
-#navbar.affix-top {
-  background-color: transparent;
-  color: $gray-dark;
-}

@@ -1,17 +1,19 @@
 /**
  * @file
- * Contains JavaScript enabling fullpage.
+ * Contains JavaScript enabling for MALP Theme.
  */
 
 (function ($, Drupal, drupalSettings) {
 
   'use strict';
 
-  Drupal.behaviors.mba_fullpage = {
+  Drupal.behaviors.malp = {
     attach: function (context, settings) {
 
       $('body').once('malp').each(function () {
-        console.log('coucou');
+
+        //Drupal.behaviors.malp_scrollspy(".region-navigation-collapsible");
+
       });
   }
 };

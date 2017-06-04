@@ -17,6 +17,23 @@ global-styling:
     - core/drupalSettings
     - malp/jquery.easing
 
+affix:
+  css:
+    theme:
+      css/affix.css: {}
+
+onepage:
+  css:
+    theme:
+      css/onepage.css: {}
+  js:
+    js/onepage.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+    - malp/jquery.easing
+
 bootstrap-scripts:
   js:
     bootstrap/assets/javascripts/bootstrap/affix.js: {}
