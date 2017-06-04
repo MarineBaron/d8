@@ -22,4 +22,4 @@
 /.idea/
 
 # Ignore sass-cache
-/web/sites/themes/*/.sass-cache*
+/web/themes/*/.sass-cache*
