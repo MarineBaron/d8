@@ -1,0 +1,23 @@
+uuid: e1265718-24ea-47e8-9eba-224718b49e5f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.bloc_home_cv
+    - field.field.block_content.bloc_home_cv.body
+  module:
+    - text
+id: block_content.bloc_home_cv.default
+targetEntityType: block_content
+bundle: bloc_home_cv
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,22 @@
+uuid: bceaf924-73fc-4e8e-8b57-8187a01a75d0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.bloc_home_cv
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.bloc_home_cv.body
+field_name: body
+entity_type: block_content
+bundle: bloc_home_cv
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

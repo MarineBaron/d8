@@ -1,0 +1,8 @@
+uuid: fc933477-1e25-4efc-a262-023fde2d6213
+langcode: fr
+status: true
+dependencies: {  }
+id: bloc_home_cv
+label: 'Bloc Home CV'
+revision: 0
+description: 'Ces blocs contiennent les blocs de la page d''accueil : section CV'
