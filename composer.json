@@ -24,6 +24,7 @@
         "drupal/console": "~1.0",
         "drupal/core": "~8.0",
         "drupal/devel": "^1.0@RC",
+        "drupal/empty_page": "^1.0",
         "drupal/svg_formatter": "^1.5",
         "drupal/views_bootstrap": "3.x-dev",
         "drush/drush": "~8.0",
