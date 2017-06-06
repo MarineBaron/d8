@@ -7,16 +7,8 @@
 // Base-theme overrides.
 @import 'overrides';
 
-// Tests
-.region-content {
-  background-color: red;
-  min-height: 1000px;
-}
-
-// Header & Footer - colors
-#navbar,
-#footer,
-#subfooter {
-  background-color: $gray-dark;
-  color: $gray-lighter;
-}
+// Import SMACSS files
+@import 'base';
+@import 'layout';
+@import 'component';
+@import 'theme';

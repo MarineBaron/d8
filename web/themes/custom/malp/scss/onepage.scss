@@ -2,8 +2,67 @@
 // Default variables.
 @import "default-variables";
 
-// Test
-.block-mlap {
-  background-color: blue;
-  min-height: 600px;
+section {
+  padding-top: 50px;
+
+  > h2.block-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: $brand-primary;
+  }
+
+  div.blockblockone {
+    text-align: center;
+
+    .field--name-field-intitule {
+      font-family: $headings-font-family;
+      font-size: $font-size-h3;
+    }
+  }
+
+  div.blockblockone:nth-child(1) {
+    .field--name-field-icone-svg svg {
+      fill: $color1;
+    }
+
+    .field--name-field-intitule {
+      color: $color1;
+    }
+  }
+
+  div.blockblockone:nth-child(2) {
+    .field--name-field-icone-svg svg {
+      fill: $color2;
+    }
+
+    .field--name-field-intitule {
+      color: $color2;
+    }
+  }
+
+  div.blockblockone:nth-child(3) {
+    .field--name-field-icone-svg svg {
+      fill: $color3;
+    }
+
+    .field--name-field-intitule {
+      color: $color3;
+    }
+  }
+
+  div.blockblockone:nth-child(4) {
+    .field--name-field-icone-svg svg {
+      fill: $color4;
+    }
+
+    .field--name-field-intitule {
+      color: $color4;
+    }
+  }
+
+  .view-footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
 }

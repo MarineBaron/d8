@@ -26,11 +26,11 @@ content:
     weight: 0
     label: hidden
     settings:
+      inline: true
       apply_dimensions: true
       width: 64
       height: 64
       enable_alt: true
-      inline: false
       enable_title: false
     third_party_settings: {  }
     type: svg_formatter

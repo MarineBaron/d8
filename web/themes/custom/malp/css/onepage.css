@@ -9,8 +9,61 @@
  * You can copy existing variables directly from the following file:
  * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
  */
-/* line 6, ../scss/onepage.scss */
-.block-mlap {
-  background-color: blue;
-  min-height: 600px;
+@import url(http://fonts.googleapis.com/css?family=amily=Montserrat:100,400,700|Roboto+Slab:100,300,400,700:100,400,700);
+/* line 5, ../scss/onepage.scss */
+section {
+  padding-top: 50px;
+}
+/* line 8, ../scss/onepage.scss */
+section > h2.block-title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #546e7a;
+}
+/* line 14, ../scss/onepage.scss */
+section div.blockblockone {
+  text-align: center;
+}
+/* line 17, ../scss/onepage.scss */
+section div.blockblockone .field--name-field-intitule {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-size: 24px;
+}
+/* line 24, ../scss/onepage.scss */
+section div.blockblockone:nth-child(1) .field--name-field-icone-svg svg {
+  fill: #9ccc65;
+}
+/* line 28, ../scss/onepage.scss */
+section div.blockblockone:nth-child(1) .field--name-field-intitule {
+  color: #9ccc65;
+}
+/* line 34, ../scss/onepage.scss */
+section div.blockblockone:nth-child(2) .field--name-field-icone-svg svg {
+  fill: #26a69a;
+}
+/* line 38, ../scss/onepage.scss */
+section div.blockblockone:nth-child(2) .field--name-field-intitule {
+  color: #26a69a;
+}
+/* line 44, ../scss/onepage.scss */
+section div.blockblockone:nth-child(3) .field--name-field-icone-svg svg {
+  fill: #29b6f6;
+}
+/* line 48, ../scss/onepage.scss */
+section div.blockblockone:nth-child(3) .field--name-field-intitule {
+  color: #29b6f6;
+}
+/* line 54, ../scss/onepage.scss */
+section div.blockblockone:nth-child(4) .field--name-field-icone-svg svg {
+  fill: #5c6bc0;
+}
+/* line 58, ../scss/onepage.scss */
+section div.blockblockone:nth-child(4) .field--name-field-intitule {
+  color: #5c6bc0;
+}
+/* line 63, ../scss/onepage.scss */
+section .view-footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
 }

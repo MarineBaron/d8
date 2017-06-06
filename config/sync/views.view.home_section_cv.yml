@@ -6,6 +6,7 @@ dependencies:
     - block_content.type.bloc_home_cv
   module:
     - block_content
+    - user
     - views_bootstrap
 id: home_section_cv
 label: 'Home - Section CV'
@@ -23,8 +24,9 @@ display:
     position: 0
     display_options:
       access:
-        type: none
-        options: {  }
+        type: perm
+        options:
+          perm: 'access content'
       cache:
         type: tag
         options: {  }
@@ -54,8 +56,8 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: ''
-          default_row_class: true
+          row_class: blockblockone
+          default_row_class: false
           uses_fields: false
           alignment: horizontal
           columns: '4'
@@ -143,7 +145,18 @@ display:
       sorts: {  }
       title: CV
       header: {  }
-      footer: {  }
+      footer:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: "<a href=\"/cv\" class=\"button btn btn-primary\">Voir mon CV <span class=\"glyphicon glyphicon glyphicon-menu-right\" aria-hidden=\"true\"></span></a>\n"
+          plugin_id: text_custom
       empty: {  }
       relationships: {  }
       arguments: {  }
@@ -153,6 +166,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - user.permissions
       tags: {  }
   block_1:
     display_plugin: block
@@ -167,4 +181,5 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - user.permissions
       tags: {  }
