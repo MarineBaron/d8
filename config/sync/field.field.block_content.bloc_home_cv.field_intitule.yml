@@ -1,0 +1,19 @@
+uuid: 6dca62ee-0e65-499a-8274-baa961806dc6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.bloc_home_cv
+    - field.storage.block_content.field_intitule
+id: block_content.bloc_home_cv.field_intitule
+field_name: field_intitule
+entity_type: block_content
+bundle: bloc_home_cv
+label: Intitulé
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

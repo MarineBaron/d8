@@ -1,0 +1,30 @@
+uuid: ddf4822b-5736-41b6-bd0c-82461251813f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.home_section_cv
+  module:
+    - system
+    - views
+  theme:
+    - malp
+id: homecv
+theme: malp
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:home_section_cv-block_1'
+settings:
+  id: 'views_block:home_section_cv-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
