@@ -9,6 +9,7 @@
  * You can copy existing variables directly from the following file:
  * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
  */
+@import url(http://fonts.googleapis.com/css?family=amily=Montserrat:100,400,700|Roboto+Slab:100,300,400,700:100,400,700);
 /* line 5, ../scss/affix.scss */
 #navbar.affix,
 #navbar.affix-top {

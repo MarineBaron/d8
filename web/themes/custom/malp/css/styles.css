@@ -10,6 +10,7 @@
  * You can copy existing variables directly from the following file:
  * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
  */
+@import url(http://fonts.googleapis.com/css?family=amily=Montserrat:100,400,700|Roboto+Slab:100,300,400,700:100,400,700);
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -1728,7 +1729,7 @@ html {
 
 /* line 27, ../bootstrap/assets/stylesheets/bootstrap/_scaffolding.scss */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -1747,13 +1748,13 @@ textarea {
 
 /* line 48, ../bootstrap/assets/stylesheets/bootstrap/_scaffolding.scss */
 a {
-  color: #337ab7;
+  color: #546e7a;
   text-decoration: none;
 }
 /* line 52, ../bootstrap/assets/stylesheets/bootstrap/_scaffolding.scss */
 a:hover, a:focus {
-  color: #23527c;
-  text-decoration: underline;
+  color: #35454d;
+  text-decoration: none;
 }
 /* line 58, ../bootstrap/assets/stylesheets/bootstrap/_scaffolding.scss */
 a:focus {
@@ -1841,7 +1842,7 @@ hr {
 /* line 9, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: inherit;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -2015,13 +2016,13 @@ mark,
 
 /* line 5, ../bootstrap/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 .text-primary {
-  color: #337ab7;
+  color: #546e7a;
 }
 
 /* line 8, ../bootstrap/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #286090;
+  color: #3f535c;
 }
 
 /* line 5, ../bootstrap/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
@@ -2075,13 +2076,13 @@ a.text-danger:focus {
 
 /* line 5, ../bootstrap/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 .bg-primary {
-  background-color: #337ab7;
+  background-color: #546e7a;
 }
 
 /* line 8, ../bootstrap/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 a.bg-primary:hover,
 a.bg-primary:focus {
-  background-color: #286090;
+  background-color: #3f535c;
 }
 
 /* line 5, ../bootstrap/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
@@ -4524,32 +4525,32 @@ a.btn.disabled, fieldset[disabled] a.btn {
 /* line 71, ../bootstrap/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #546e7a;
+  border-color: #4a606b;
 }
 /* line 11, ../bootstrap/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #286090;
-  border-color: #122b40;
+  background-color: #3f535c;
+  border-color: #161c1f;
 }
 /* line 17, ../bootstrap/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:hover {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #3f535c;
+  border-color: #314047;
 }
 /* line 22, ../bootstrap/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #3f535c;
+  border-color: #314047;
 }
 /* line 29, ../bootstrap/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus {
   color: #fff;
-  background-color: #204d74;
-  border-color: #122b40;
+  background-color: #314047;
+  border-color: #161c1f;
 }
 /* line 37, ../bootstrap/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
@@ -4557,12 +4558,12 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 /* line 45, ../bootstrap/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus {
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #546e7a;
+  border-color: #4a606b;
 }
 /* line 53, ../bootstrap/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary .badge {
-  color: #337ab7;
+  color: #546e7a;
   background-color: #fff;
 }
 
@@ -4748,7 +4749,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 /* line 96, ../bootstrap/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-link {
-  color: #337ab7;
+  color: #546e7a;
   font-weight: normal;
   border-radius: 0;
 }
@@ -4764,8 +4765,8 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 /* line 115, ../bootstrap/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-link:hover, .btn-link:focus {
-  color: #23527c;
-  text-decoration: underline;
+  color: #35454d;
+  text-decoration: none;
   background-color: transparent;
 }
 /* line 123, ../bootstrap/assets/stylesheets/bootstrap/_buttons.scss */
@@ -4941,7 +4942,7 @@ tbody.collapse.in {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  background-color: #337ab7;
+  background-color: #546e7a;
 }
 
 /* line 103, ../bootstrap/assets/stylesheets/bootstrap/_dropdowns.scss */
@@ -5468,7 +5469,7 @@ tbody.collapse.in {
 /* line 46, ../bootstrap/assets/stylesheets/bootstrap/_navs.scss */
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #337ab7;
+  border-color: #546e7a;
 }
 /* line 59, ../bootstrap/assets/stylesheets/bootstrap/_navs.scss */
 .nav .nav-divider {
@@ -5526,7 +5527,7 @@ tbody.collapse.in {
 /* line 131, ../bootstrap/assets/stylesheets/bootstrap/_navs.scss */
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #337ab7;
+  background-color: #546e7a;
 }
 
 /* line 144, ../bootstrap/assets/stylesheets/bootstrap/_navs.scss */
@@ -6298,7 +6299,7 @@ tbody.collapse.in {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #337ab7;
+  color: #546e7a;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -6321,7 +6322,7 @@ tbody.collapse.in {
 .pagination > li > span:hover,
 .pagination > li > span:focus {
   z-index: 2;
-  color: #23527c;
+  color: #35454d;
   background-color: #eeeeee;
   border-color: #ddd;
 }
@@ -6332,8 +6333,8 @@ tbody.collapse.in {
 .pagination > .active > span:focus {
   z-index: 3;
   color: #fff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #546e7a;
+  border-color: #546e7a;
   cursor: default;
 }
 /* line 64, ../bootstrap/assets/stylesheets/bootstrap/_pagination.scss */
@@ -6485,11 +6486,11 @@ a.label:hover, a.label:focus {
 
 /* line 48, ../bootstrap/assets/stylesheets/bootstrap/_labels.scss */
 .label-primary {
-  background-color: #337ab7;
+  background-color: #546e7a;
 }
 /* line 7, ../bootstrap/assets/stylesheets/bootstrap/mixins/_labels.scss */
 .label-primary[href]:hover, .label-primary[href]:focus {
-  background-color: #286090;
+  background-color: #3f535c;
 }
 
 /* line 52, ../bootstrap/assets/stylesheets/bootstrap/_labels.scss */
@@ -6559,7 +6560,7 @@ a.label:hover, a.label:focus {
 }
 /* line 41, ../bootstrap/assets/stylesheets/bootstrap/_badges.scss */
 .list-group-item.active > .badge, .nav-pills > .active > a > .badge {
-  color: #337ab7;
+  color: #546e7a;
   background-color: #fff;
 }
 /* line 47, ../bootstrap/assets/stylesheets/bootstrap/_badges.scss */
@@ -6665,7 +6666,7 @@ a.badge:hover, a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #337ab7;
+  border-color: #546e7a;
 }
 
 /* line 9, ../bootstrap/assets/stylesheets/bootstrap/_alerts.scss */
@@ -6804,7 +6805,7 @@ a.thumbnail.active {
   line-height: 20px;
   color: #fff;
   text-align: center;
-  background-color: #337ab7;
+  background-color: #546e7a;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width 0.6s ease;
@@ -7015,8 +7016,8 @@ button.list-group-item {
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
   z-index: 2;
   color: #fff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #546e7a;
+  border-color: #546e7a;
 }
 /* line 96, ../bootstrap/assets/stylesheets/bootstrap/_list-group.scss */
 .list-group-item.active .list-group-item-heading,
@@ -7030,7 +7031,7 @@ button.list-group-item {
 }
 /* line 101, ../bootstrap/assets/stylesheets/bootstrap/_list-group.scss */
 .list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text {
-  color: #c7ddef;
+  color: #c4d0d6;
 }
 
 /* line 4, ../bootstrap/assets/stylesheets/bootstrap/mixins/_list-group.scss */
@@ -7496,26 +7497,26 @@ button.list-group-item-danger.active:focus {
 
 /* line 257, ../bootstrap/assets/stylesheets/bootstrap/_panels.scss */
 .panel-primary {
-  border-color: #337ab7;
+  border-color: #546e7a;
 }
 /* line 6, ../bootstrap/assets/stylesheets/bootstrap/mixins/_panels.scss */
 .panel-primary > .panel-heading {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #546e7a;
+  border-color: #546e7a;
 }
 /* line 11, ../bootstrap/assets/stylesheets/bootstrap/mixins/_panels.scss */
 .panel-primary > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #337ab7;
+  border-top-color: #546e7a;
 }
 /* line 14, ../bootstrap/assets/stylesheets/bootstrap/mixins/_panels.scss */
 .panel-primary > .panel-heading .badge {
-  color: #337ab7;
+  color: #546e7a;
   background-color: #fff;
 }
 /* line 20, ../bootstrap/assets/stylesheets/bootstrap/mixins/_panels.scss */
 .panel-primary > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #337ab7;
+  border-bottom-color: #546e7a;
 }
 
 /* line 260, ../bootstrap/assets/stylesheets/bootstrap/_panels.scss */
@@ -7888,7 +7889,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8026,7 +8027,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8868,7 +8869,7 @@ html.js .form-item .input-group-addon .glyphicon {
 }
 /* line 30, ../scss/component/_ajax.scss */
 html.js .form-item .input-group-addon .glyphicon.glyphicon-spin {
-  color: #337ab7;
+  color: #546e7a;
   opacity: 1;
 }
 /* line 35, ../scss/component/_ajax.scss */
@@ -8929,7 +8930,7 @@ html.js .ajax-new-content:empty {
 /* line 10, ../scss/component/_file.scss */
 .file > span {
   background: #fff;
-  color: #337ab7;
+  color: #546e7a;
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
 }
@@ -9065,7 +9066,7 @@ table .checkbox.form-no-label, table .radio.form-no-label {
 }
 /* line 45, ../scss/component/_form.scss */
 .select-wrapper:after {
-  color: #337ab7;
+  color: #546e7a;
   content: '▼';
   font-style: normal;
   font-weight: 400;
@@ -9299,7 +9300,7 @@ body.navbar-is-fixed-bottom {
 }
 /* line 20, ../scss/component/_table-drag.scss */
 .tabledrag-handle:hover, .tabledrag-handle:focus {
-  color: #337ab7;
+  color: #546e7a;
 }
 
 /* line 24, ../scss/component/_table-drag.scss */
@@ -9513,7 +9514,7 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tra
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   color: inherit;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif;
   font-size: 14px;
   list-style: none;
   min-width: 160px;
@@ -9544,7 +9545,7 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tra
 }
 /* line 44, ../scss/jquery-ui/_autocomplete.scss */
 .ui-autocomplete .ui-menu-item.ui-state-active, .ui-autocomplete .ui-menu-item.ui-state-focus {
-  background: #337ab7;
+  background: #546e7a;
   color: #fff;
 }
 
@@ -9600,13 +9601,14 @@ p:last-child,
   margin-top: 0;
 }
 
-/* line 11, ../scss/styles.scss */
-.region-content {
-  background-color: red;
-  min-height: 1000px;
+/* line 1, ../scss/_component.scss */
+.btn {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  border-radius: 0;
 }
 
-/* line 17, ../scss/styles.scss */
+/* line 2, ../scss/_theme.scss */
 #navbar,
 #footer,
 #subfooter {
