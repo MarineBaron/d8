@@ -6,8 +6,9 @@ dependencies:
     - block_content.type.bloc_home_cv
     - field.field.block_content.bloc_home_cv.body
     - field.field.block_content.bloc_home_cv.field_icone_svg
+    - field.field.block_content.bloc_home_cv.field_intitule
   module:
-    - file
+    - svg_formatter
     - text
 id: block_content.bloc_home_cv.default
 targetEntityType: block_content
@@ -17,16 +18,30 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 0
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
   field_icone_svg:
-    weight: 1
-    label: above
-    settings: {  }
+    weight: 0
+    label: hidden
+    settings:
+      apply_dimensions: true
+      width: 64
+      height: 64
+      enable_alt: true
+      inline: false
+      enable_title: false
     third_party_settings: {  }
-    type: file_default
+    type: svg_formatter
+    region: content
+  field_intitule:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
 hidden:
   langcode: true
