@@ -9,7 +9,7 @@
     Drupal.behaviors.malp_onepage = {
       attach : function (context, settings) {
 
-        // scroll
+        // Scroll.
         if (drupalSettings.malp.onepage) {
           $('body').scrollspy({target: drupalSettings.malp.navbar, offset: 50});
           $(drupalSettings.malp.navbar).on('click', 'a', function (event) {
@@ -24,14 +24,14 @@
             }
           });
 
-          // fullscreen carousel
-          var $item = $('.carousel-inner .item');
+          // Fullscreen carousel.
+          var $item = $('.carousel-inner .carousel-item');
           var $wHeight = $(window).height();
 
           $item.height($wHeight);
           $item.addClass('full-screen');
 
-          $item.each( function() {
+          $item.each(function () {
             var $img = $(this).find('img').eq(0);
             var $src = $img.attr('src');
             $(this).css({
@@ -40,9 +40,17 @@
             $img.remove();
           });
 
-          $(window).on('resize', function (){
+          $(window).on('resize', function () {
             $wHeight = $(window).height();
             $item.height($wHeight);
+          });
+
+          // Button next.
+          $('.btn-next-block').on('click', function () {
+            var $elt = $('.region-content section.block').eq(0);
+            $('html, body').animate({
+              scrollTop: $elt.offset().top
+            }, 800);
           });
         }
       }

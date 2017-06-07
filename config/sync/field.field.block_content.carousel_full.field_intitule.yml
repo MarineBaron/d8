@@ -1,14 +1,14 @@
-uuid: 1519e74f-682c-493f-b9b2-fcc453529191
+uuid: 9f3e5424-2451-4628-8727-90aa713d5b9b
 langcode: fr
 status: true
 dependencies:
   config:
-    - block_content.type.carousel
+    - block_content.type.carousel_full
     - field.storage.block_content.field_intitule
-id: block_content.carousel.field_intitule
+id: block_content.carousel_full.field_intitule
 field_name: field_intitule
 entity_type: block_content
-bundle: carousel
+bundle: carousel_full
 label: Intitulé
 description: ''
 required: true

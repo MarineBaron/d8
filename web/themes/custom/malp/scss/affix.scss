@@ -15,16 +15,19 @@
 
 #navbar.affix-top {
   background-color: transparent;
-  border-bottom: 1px solid $gray-light;
+  border-bottom: 1px solid $gray-lighter;
+  color: $gray-lighter;
 
   a.navbar-brand {
     font-size: ceil(($font-size-base * 2));
     font-weight: normal;
+    color: $gray-lighter;
   }
 
   .region-navigation-collapsible li > a {
     font-size: $font-size-large;
     font-weight: normal;
+    color: $gray-lighter;
   }
 
   .region-navigation-collapsible li > a:hover,

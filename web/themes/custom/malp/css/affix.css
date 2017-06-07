@@ -17,14 +17,6 @@
   top: 0;
   z-index: 1000;
   width: 100%;
-<<<<<<< HEAD
-}
-
-/* line 13, ../scss/affix.scss */
-#navbar.affix-top {
-  background-color: transparent;
-  color: #333333;
-=======
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -33,21 +25,23 @@
 /* line 16, ../scss/affix.scss */
 #navbar.affix-top {
   background-color: transparent;
-  border-bottom: 1px solid #777777;
+  border-bottom: 1px solid #eeeeee;
+  color: #eeeeee;
 }
-/* line 20, ../scss/affix.scss */
+/* line 21, ../scss/affix.scss */
 #navbar.affix-top a.navbar-brand {
   font-size: 28px;
   font-weight: normal;
+  color: #eeeeee;
 }
-/* line 25, ../scss/affix.scss */
+/* line 27, ../scss/affix.scss */
 #navbar.affix-top .region-navigation-collapsible li > a {
   font-size: 18px;
   font-weight: normal;
+  color: #eeeeee;
 }
-/* line 30, ../scss/affix.scss */
+/* line 33, ../scss/affix.scss */
 #navbar.affix-top .region-navigation-collapsible li > a:hover,
 #navbar.affix-top .region-navigation-collapsible li > a:focus:hover {
   color: #7895a2;
->>>>>>> cf32815b77ede02b21e7eb9f7353f2c4515cd9f6
 }

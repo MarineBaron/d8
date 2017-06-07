@@ -1,16 +1,16 @@
-uuid: bd22e338-b02d-4272-a548-17b8353deaee
+uuid: f96089fb-dd17-4059-9ff1-3b92cfab85cd
 langcode: fr
 status: true
 dependencies:
   config:
-    - block_content.type.carousel
+    - block_content.type.carousel_full
     - field.storage.block_content.body
   module:
     - text
-id: block_content.carousel.body
+id: block_content.carousel_full.body
 field_name: body
 entity_type: block_content
-bundle: carousel
+bundle: carousel_full
 label: Body
 description: ''
 required: false

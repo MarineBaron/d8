@@ -8,36 +8,72 @@ body.path-frontpage {
 
 #header-image {
   // Carousel
-  .full-screen {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+  .carousel-full {
+    .header-image-text {
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      z-index: 100;
+      color: $gray-lighter;
 
-  .carousel-inner .item {
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-  }
+      .field--name-field-intitule {
+        font-size: $font-size-h1;
+        text-transform: uppercase;
+      }
 
-  .carousel-inner .item,
-  .carousel-inner .active.left,
-  .carousel-inner .active.right {
-    opacity: 0;
-  }
+      .field--name-body {
+        padding-top: 30px;
+        font-family: $headings-font-family;
+        font-size: $font-size-h4;
+      }
+    }
 
-  .carousel-inner .active,
-  .carousel-inner .next.left,
-  .carousel-inner .prev.right {
-    opacity: 1;
-  }
+    .header-image-next {
+      .btn-default {
+        background-color: transparent;
+        color: $gray-lighter;
+      }
+    }
 
-  .carousel-inner .next,
-  .carousel-inner .prev,
-  .carousel-inner .active.left,
-  .carousel-inner .active.right {
-    left: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    .header-image-next {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      z-index: 100;
+      transform: translateX(-50%);
+    }
+
+    .carousel-inner {
+      .item.full-screen {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .item {
+        transition-property: opacity;
+      }
+
+      .item,
+      .item.active.left,
+      .item.active.right {
+        opacity: 0;
+      }
+
+      .item.active,
+      .item.next.left,
+      .item.prev.right {
+        opacity: 1;
+      }
+
+      .item.next,
+      .item.prev,
+      .item.active.left,
+      .item.active.right {
+        left: 0;
+        transform: translate3d(0, 0, 0);
+      }
+    }
   }
 }
 
@@ -100,8 +136,8 @@ body.path-frontpage {
   }
 
   .view-footer {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
   }
 }
