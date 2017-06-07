@@ -17,6 +17,14 @@
   top: 0;
   z-index: 1000;
   width: 100%;
+<<<<<<< HEAD
+}
+
+/* line 13, ../scss/affix.scss */
+#navbar.affix-top {
+  background-color: transparent;
+  color: #333333;
+=======
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -41,4 +49,5 @@
 #navbar.affix-top .region-navigation-collapsible li > a:hover,
 #navbar.affix-top .region-navigation-collapsible li > a:focus:hover {
   color: #7895a2;
+>>>>>>> cf32815b77ede02b21e7eb9f7353f2c4515cd9f6
 }
