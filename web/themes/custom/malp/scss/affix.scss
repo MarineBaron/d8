@@ -8,9 +8,27 @@
   top: 0;
   z-index: 1000;
   width: 100%;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
 }
 
 #navbar.affix-top {
   background-color: transparent;
-  color: $gray-dark;
+  border-bottom: 1px solid $gray-light;
+
+  a.navbar-brand {
+    font-size: ceil(($font-size-base * 2));
+    font-weight: normal;
+  }
+
+  .region-navigation-collapsible li > a {
+    font-size: $font-size-large;
+    font-weight: normal;
+  }
+
+  .region-navigation-collapsible li > a:hover,
+  .region-navigation-collapsible li > a:focus:hover {
+    color: $link-hover-color;
+  }
 }
