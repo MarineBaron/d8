@@ -1,0 +1,31 @@
+uuid: 5b94463b-ac7c-4177-8a07-a0238bd40fb2
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:carousel:2867e70e-6871-43f5-a48a-f8f3347a1173'
+  module:
+    - block_content
+    - system
+  theme:
+    - malp
+id: carouselhome
+theme: malp
+region: header_image
+weight: 0
+provider: null
+plugin: 'block_content:2867e70e-6871-43f5-a48a-f8f3347a1173'
+settings:
+  id: 'block_content:2867e70e-6871-43f5-a48a-f8f3347a1173'
+  label: 'Carousel - Home'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

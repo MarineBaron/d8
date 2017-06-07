@@ -1,0 +1,23 @@
+uuid: 87f0e170-e796-46ce-a553-971d76f74f3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_width
+    - paragraphs.paragraphs_type.tabs
+  module:
+    - options
+_core:
+  default_config_hash: TV2w-80KjDa94vX8K4gEmyU-31symA9xxPT_etRC9r0
+id: paragraph.tabs.field_width
+field_name: field_width
+entity_type: paragraph
+bundle: tabs
+label: Width
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

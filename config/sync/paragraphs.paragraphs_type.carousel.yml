@@ -1,0 +1,9 @@
+uuid: 03815a23-33df-40ea-8da6-356e4e452d1c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rx4Pzvt95v5IgfrtvOBCd8SLVj_-BAQRlMZlByBqod8
+id: carousel
+label: Carousel
+behavior_plugins: {  }

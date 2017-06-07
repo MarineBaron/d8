@@ -1,0 +1,9 @@
+uuid: e2d4b741-adc3-4cf3-9864-87da8796a65d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xfRHA8ACjUNfg73WgxkERrUukWHjEuznB6TFLJ3FoTY
+id: modal
+label: Modal
+behavior_plugins: {  }

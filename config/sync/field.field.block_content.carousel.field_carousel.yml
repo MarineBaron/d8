@@ -1,0 +1,72 @@
+uuid: e0ac1ff6-0671-4ade-aa78-13590f14c8bd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.carousel
+    - field.storage.block_content.field_carousel
+    - paragraphs.paragraphs_type.carousel
+  module:
+    - entity_reference_revisions
+id: block_content.carousel.field_carousel
+field_name: field_carousel
+entity_type: block_content
+bundle: carousel
+label: Carousel
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      carousel: carousel
+    target_bundles_drag_drop:
+      accordion:
+        weight: 16
+        enabled: false
+      accordion_section:
+        weight: 17
+        enabled: false
+      blank:
+        weight: 18
+        enabled: false
+      block:
+        weight: 19
+        enabled: false
+      carousel:
+        enabled: true
+        weight: 20
+      columns:
+        weight: 21
+        enabled: false
+      columns_three_uneven:
+        weight: 22
+        enabled: false
+      columns_two_uneven:
+        weight: 23
+        enabled: false
+      contact:
+        weight: 24
+        enabled: false
+      image:
+        weight: 25
+        enabled: false
+      modal:
+        weight: 26
+        enabled: false
+      simple:
+        weight: 27
+        enabled: false
+      tab_section:
+        weight: 28
+        enabled: false
+      tabs:
+        weight: 29
+        enabled: false
+      view:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

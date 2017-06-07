@@ -1,0 +1,21 @@
+uuid: 6cc0221f-e0a2-4c9a-9884-ce922bc2609c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tab_section_title
+    - paragraphs.paragraphs_type.tab_section
+_core:
+  default_config_hash: MeeZ7R0xWDq5czxRrTgdEk1vv8hjjUwnDheMy2Qsysw
+id: paragraph.tab_section.field_tab_section_title
+field_name: field_tab_section_title
+entity_type: paragraph
+bundle: tab_section
+label: 'Tab Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
