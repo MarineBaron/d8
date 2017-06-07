@@ -46,3 +46,15 @@ function malp_theme_suggestions_menu_alter(&$suggestions, array $variables) {
     $suggestions[] = 'menu__main';
   };
 }
+
+/**
+ * Implements hook_theme_suggestions_block_alter().
+ */
+function malp_theme_suggestions_block_alter(&$suggestions, array $variables) {
+  if (isset($variables['elements']['content']['#block_content'])) {
+    $bundle = $variables['elements']['content']['#block_content']->bundle();
+    if (in_array($bundle, ['carousel_full'])) {
+      $suggestions[] = 'block__carousel_full';
+    };
+  }
+}

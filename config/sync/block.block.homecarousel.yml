@@ -1,23 +1,23 @@
-uuid: 5b94463b-ac7c-4177-8a07-a0238bd40fb2
+uuid: 48f688c3-9266-448d-adc8-9e722cf810c5
 langcode: fr
 status: true
 dependencies:
   content:
-    - 'block_content:carousel:2867e70e-6871-43f5-a48a-f8f3347a1173'
+    - 'block_content:carousel_full:f53a32f4-df5e-4d9d-a234-e60b72cd3523'
   module:
     - block_content
     - system
   theme:
     - malp
-id: carouselhome
+id: homecarousel
 theme: malp
 region: header_image
 weight: 0
 provider: null
-plugin: 'block_content:2867e70e-6871-43f5-a48a-f8f3347a1173'
+plugin: 'block_content:f53a32f4-df5e-4d9d-a234-e60b72cd3523'
 settings:
-  id: 'block_content:2867e70e-6871-43f5-a48a-f8f3347a1173'
-  label: 'Carousel - Home'
+  id: 'block_content:f53a32f4-df5e-4d9d-a234-e60b72cd3523'
+  label: 'Home - Carousel'
   provider: block_content
   label_display: '0'
   status: true

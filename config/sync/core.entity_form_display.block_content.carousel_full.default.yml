@@ -1,18 +1,19 @@
-uuid: 6fd4bc1b-fcc7-47e2-a8da-398886df8271
+uuid: 4e019350-8f0d-43aa-a05e-51a59a95d19d
 langcode: fr
 status: true
 dependencies:
   config:
-    - block_content.type.carousel
-    - field.field.block_content.carousel.body
-    - field.field.block_content.carousel.field_carousel
-    - field.field.block_content.carousel.field_intitule
+    - block_content.type.carousel_full
+    - field.field.block_content.carousel_full.body
+    - field.field.block_content.carousel_full.field_image_full
+    - field.field.block_content.carousel_full.field_intitule
+    - image.style.thumbnail
   module:
-    - paragraphs
+    - image
     - text
-id: block_content.carousel.default
+id: block_content.carousel_full.default
 targetEntityType: block_content
-bundle: carousel
+bundle: carousel_full
 mode: default
 content:
   body:
@@ -24,17 +25,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
-  field_carousel:
-    type: entity_reference_paragraphs
+  field_image_full:
     weight: 3
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
+    type: image_image
     region: content
   field_intitule:
     weight: 1
@@ -52,10 +49,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 4
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true

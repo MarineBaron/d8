@@ -1,0 +1,38 @@
+uuid: f04469c0-e7c2-4d9a-9084-dc1a0bcfed5c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.carousel_full
+    - field.storage.block_content.field_image_full
+  module:
+    - image
+id: block_content.carousel_full.field_image_full
+field_name: field_image_full
+entity_type: block_content
+bundle: carousel_full
+label: 'Image Full'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: images/full
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

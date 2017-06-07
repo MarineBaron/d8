@@ -1,0 +1,8 @@
+uuid: c07899f8-e72b-4e24-9382-ed8f254e9337
+langcode: fr
+status: true
+dependencies: {  }
+id: carousel_full
+label: 'Carousel Full'
+revision: 0
+description: 'Bloc qui affiche un carousel en Full Screen.'

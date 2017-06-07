@@ -9627,29 +9627,60 @@ header.navbar {
   border-radius: 0;
 }
 
-/* line 10, ../scss/_component.scss */
+/* line 8, ../scss/_component.scss */
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
+/* line 17, ../scss/_component.scss */
+.btn-circle.btn-lg, .btn-group-lg > .btn-circle.btn {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+
+/* line 25, ../scss/_component.scss */
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+/* line 36, ../scss/_component.scss */
 #navbar .region-navigation-collapsible {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 15, ../scss/_component.scss */
+/* line 41, ../scss/_component.scss */
 #navbar .region-navigation-collapsible li > a,
 #navbar .region-navigation-collapsible li > a:focus {
   color: #777777;
 }
-/* line 20, ../scss/_component.scss */
+/* line 46, ../scss/_component.scss */
 #navbar .region-navigation-collapsible li > a:hover,
 #navbar .region-navigation-collapsible li > a:focus:hover {
   color: #7895a2;
 }
-/* line 25, ../scss/_component.scss */
+/* line 51, ../scss/_component.scss */
 #navbar .region-navigation-collapsible li.active > a,
 #navbar .region-navigation-collapsible li.active > a:focus {
   color: #7895a2 !important;
   background-color: transparent;
 }
-/* line 31, ../scss/_component.scss */
+/* line 57, ../scss/_component.scss */
 #navbar .region-navigation-collapsible li.active > a:hover,
 #navbar .region-navigation-collapsible li.active > a:focus:hover {
   background-color: transparent;

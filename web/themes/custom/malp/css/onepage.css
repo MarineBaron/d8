@@ -11,151 +11,127 @@
  */
 @import url(http://fonts.googleapis.com/css?family=amily=Montserrat:100,400,700|Roboto+Slab:100,300,400,700:100,400,700);
 /* line 5, ../scss/onepage.scss */
-<<<<<<< HEAD
-section {
-  padding-top: 50px;
-}
-/* line 8, ../scss/onepage.scss */
-section > h2.block-title {
-=======
 body.path-frontpage {
   margin-top: 0;
 }
 
-/* line 11, ../scss/onepage.scss */
-#header-image .full-screen {
+/* line 12, ../scss/onepage.scss */
+#header-image .carousel-full .header-image-text {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  z-index: 100;
+  color: #eeeeee;
+}
+/* line 19, ../scss/onepage.scss */
+#header-image .carousel-full .header-image-text .field--name-field-intitule {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+/* line 24, ../scss/onepage.scss */
+#header-image .carousel-full .header-image-text .field--name-body {
+  padding-top: 30px;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+/* line 32, ../scss/onepage.scss */
+#header-image .carousel-full .header-image-next .btn-default {
+  background-color: transparent;
+  color: #eeeeee;
+}
+/* line 38, ../scss/onepage.scss */
+#header-image .carousel-full .header-image-next {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  z-index: 100;
+  transform: translateX(-50%);
+}
+/* line 47, ../scss/onepage.scss */
+#header-image .carousel-full .carousel-inner .item.full-screen {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 17, ../scss/onepage.scss */
-#header-image .carousel-inner .item {
-  -webkit-transition-property: opacity;
+/* line 53, ../scss/onepage.scss */
+#header-image .carousel-full .carousel-inner .item {
   transition-property: opacity;
 }
-/* line 22, ../scss/onepage.scss */
-#header-image .carousel-inner .item,
-#header-image .carousel-inner .active.left,
-#header-image .carousel-inner .active.right {
+/* line 57, ../scss/onepage.scss */
+#header-image .carousel-full .carousel-inner .item,
+#header-image .carousel-full .carousel-inner .item.active.left,
+#header-image .carousel-full .carousel-inner .item.active.right {
   opacity: 0;
 }
-/* line 28, ../scss/onepage.scss */
-#header-image .carousel-inner .active,
-#header-image .carousel-inner .next.left,
-#header-image .carousel-inner .prev.right {
+/* line 63, ../scss/onepage.scss */
+#header-image .carousel-full .carousel-inner .item.active,
+#header-image .carousel-full .carousel-inner .item.next.left,
+#header-image .carousel-full .carousel-inner .item.prev.right {
   opacity: 1;
 }
-/* line 34, ../scss/onepage.scss */
-#header-image .carousel-inner .next,
-#header-image .carousel-inner .prev,
-#header-image .carousel-inner .active.left,
-#header-image .carousel-inner .active.right {
+/* line 69, ../scss/onepage.scss */
+#header-image .carousel-full .carousel-inner .item.next,
+#header-image .carousel-full .carousel-inner .item.prev,
+#header-image .carousel-full .carousel-inner .item.active.left,
+#header-image .carousel-full .carousel-inner .item.active.right {
   left: 0;
-  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-/* line 44, ../scss/onepage.scss */
+/* line 80, ../scss/onepage.scss */
 #block-homecv {
   padding-top: 50px;
 }
-/* line 47, ../scss/onepage.scss */
+/* line 83, ../scss/onepage.scss */
 #block-homecv > h2.block-title {
->>>>>>> cf32815b77ede02b21e7eb9f7353f2c4515cd9f6
   text-align: center;
   margin-bottom: 50px;
   color: #546e7a;
 }
-<<<<<<< HEAD
-/* line 14, ../scss/onepage.scss */
-section div.blockblockone {
-  text-align: center;
-}
-/* line 17, ../scss/onepage.scss */
-section div.blockblockone .field--name-field-intitule {
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  font-size: 24px;
-}
-/* line 24, ../scss/onepage.scss */
-section div.blockblockone:nth-child(1) .field--name-field-icone-svg svg {
-  fill: #9ccc65;
-}
-/* line 28, ../scss/onepage.scss */
-section div.blockblockone:nth-child(1) .field--name-field-intitule {
-  color: #9ccc65;
-}
-/* line 34, ../scss/onepage.scss */
-section div.blockblockone:nth-child(2) .field--name-field-icone-svg svg {
-  fill: #26a69a;
-}
-/* line 38, ../scss/onepage.scss */
-section div.blockblockone:nth-child(2) .field--name-field-intitule {
-  color: #26a69a;
-}
-/* line 44, ../scss/onepage.scss */
-section div.blockblockone:nth-child(3) .field--name-field-icone-svg svg {
-  fill: #29b6f6;
-}
-/* line 48, ../scss/onepage.scss */
-section div.blockblockone:nth-child(3) .field--name-field-intitule {
-  color: #29b6f6;
-}
-/* line 54, ../scss/onepage.scss */
-section div.blockblockone:nth-child(4) .field--name-field-icone-svg svg {
-  fill: #5c6bc0;
-}
-/* line 58, ../scss/onepage.scss */
-section div.blockblockone:nth-child(4) .field--name-field-intitule {
-  color: #5c6bc0;
-}
-/* line 63, ../scss/onepage.scss */
-section .view-footer {
-=======
-/* line 53, ../scss/onepage.scss */
+/* line 89, ../scss/onepage.scss */
 #block-homecv div.blockblockone {
   text-align: center;
 }
-/* line 56, ../scss/onepage.scss */
+/* line 92, ../scss/onepage.scss */
 #block-homecv div.blockblockone .field--name-field-intitule {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-size: 24px;
 }
-/* line 63, ../scss/onepage.scss */
+/* line 99, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(1) .field--name-field-icone-svg svg {
   fill: #9ccc65;
 }
-/* line 67, ../scss/onepage.scss */
+/* line 103, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(1) .field--name-field-intitule {
   color: #9ccc65;
 }
-/* line 73, ../scss/onepage.scss */
+/* line 109, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(2) .field--name-field-icone-svg svg {
   fill: #26a69a;
 }
-/* line 77, ../scss/onepage.scss */
+/* line 113, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(2) .field--name-field-intitule {
   color: #26a69a;
 }
-/* line 83, ../scss/onepage.scss */
+/* line 119, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(3) .field--name-field-icone-svg svg {
   fill: #29b6f6;
 }
-/* line 87, ../scss/onepage.scss */
+/* line 123, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(3) .field--name-field-intitule {
   color: #29b6f6;
 }
-/* line 93, ../scss/onepage.scss */
+/* line 129, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(4) .field--name-field-icone-svg svg {
   fill: #5c6bc0;
 }
-/* line 97, ../scss/onepage.scss */
+/* line 133, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(4) .field--name-field-intitule {
   color: #5c6bc0;
 }
-/* line 102, ../scss/onepage.scss */
+/* line 138, ../scss/onepage.scss */
 #block-homecv .view-footer {
->>>>>>> cf32815b77ede02b21e7eb9f7353f2c4515cd9f6
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
 }
