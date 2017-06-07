@@ -2,7 +2,46 @@
 // Default variables.
 @import "default-variables";
 
-section {
+body.path-frontpage {
+  margin-top: 0;
+}
+
+#header-image {
+  // Carousel
+  .full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+  }
+
+  .carousel-inner .item,
+  .carousel-inner .active.left,
+  .carousel-inner .active.right {
+    opacity: 0;
+  }
+
+  .carousel-inner .active,
+  .carousel-inner .next.left,
+  .carousel-inner .prev.right {
+    opacity: 1;
+  }
+
+  .carousel-inner .next,
+  .carousel-inner .prev,
+  .carousel-inner .active.left,
+  .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+#block-homecv {
   padding-top: 50px;
 
   > h2.block-title {

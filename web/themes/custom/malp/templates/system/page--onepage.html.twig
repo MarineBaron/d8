@@ -70,7 +70,7 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
-    <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner" data-spy="affix" data-offset-top="200">
+    <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner" data-spy="affix" data-offset-top="300">
       {% if not navbar_attributes.hasClass(container) %}
         <div class="{{ container }}">
       {% endif %}
@@ -103,7 +103,7 @@
 {# Header Image #}
 {% block header_image %}
   {% if page.header_image %}
-  <div id="header-image" class="container" role="complementary">
+  <div id="header-image" class="container-fluid" role="complementary">
     {{ page.header_image }}
   </div>
   {% endif %}

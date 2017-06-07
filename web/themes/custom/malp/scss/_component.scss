@@ -1,5 +1,36 @@
+// Buttons
 .btn {
   font-family: $headings-font-family;
   text-transform: uppercase;
   border-radius: 0;
+}
+
+// Top navbar
+#navbar {
+  .region-navigation-collapsible {
+    font-family: $headings-font-family;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    li > a,
+    li > a:focus {
+      color: $gray-light;
+    }
+
+    li > a:hover,
+    li > a:focus:hover {
+      color: $link-hover-color;
+    }
+
+    li.active > a,
+    li.active > a:focus {
+      color: $link-hover-color !important;
+      background-color: transparent;
+    }
+
+    li.active > a:hover,
+    li.active > a:focus:hover {
+      background-color: transparent;
+    }
+  }
 }
