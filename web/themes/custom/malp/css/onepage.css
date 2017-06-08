@@ -16,30 +16,6 @@ body.path-frontpage {
 }
 
 /* line 12, ../scss/onepage.scss */
-#header-image .carousel-full .header-image-text {
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  z-index: 100;
-  color: #eeeeee;
-}
-/* line 19, ../scss/onepage.scss */
-#header-image .carousel-full .header-image-text .field--name-field-intitule {
-  font-size: 36px;
-  text-transform: uppercase;
-}
-/* line 24, ../scss/onepage.scss */
-#header-image .carousel-full .header-image-text .field--name-body {
-  padding-top: 30px;
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  font-size: 18px;
-}
-/* line 32, ../scss/onepage.scss */
-#header-image .carousel-full .header-image-next .btn-default {
-  background-color: transparent;
-  color: #eeeeee;
-}
-/* line 38, ../scss/onepage.scss */
 #header-image .carousel-full .header-image-next {
   position: absolute;
   bottom: 50px;
@@ -47,29 +23,33 @@ body.path-frontpage {
   z-index: 100;
   transform: translateX(-50%);
 }
-/* line 47, ../scss/onepage.scss */
-#header-image .carousel-full .carousel-inner .item.full-screen {
+/* line 20, ../scss/onepage.scss */
+#header-image .carousel-full .carousel-inner {
+  padding: 0;
+}
+/* line 23, ../scss/onepage.scss */
+#header-image .carousel-full .carousel-inner .item.fullscreen {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 53, ../scss/onepage.scss */
+/* line 29, ../scss/onepage.scss */
 #header-image .carousel-full .carousel-inner .item {
   transition-property: opacity;
 }
-/* line 57, ../scss/onepage.scss */
+/* line 33, ../scss/onepage.scss */
 #header-image .carousel-full .carousel-inner .item,
 #header-image .carousel-full .carousel-inner .item.active.left,
 #header-image .carousel-full .carousel-inner .item.active.right {
   opacity: 0;
 }
-/* line 63, ../scss/onepage.scss */
+/* line 39, ../scss/onepage.scss */
 #header-image .carousel-full .carousel-inner .item.active,
 #header-image .carousel-full .carousel-inner .item.next.left,
 #header-image .carousel-full .carousel-inner .item.prev.right {
   opacity: 1;
 }
-/* line 69, ../scss/onepage.scss */
+/* line 45, ../scss/onepage.scss */
 #header-image .carousel-full .carousel-inner .item.next,
 #header-image .carousel-full .carousel-inner .item.prev,
 #header-image .carousel-full .carousel-inner .item.active.left,
@@ -78,60 +58,87 @@ body.path-frontpage {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 80, ../scss/onepage.scss */
-#block-homecv {
+/* line 56, ../scss/onepage.scss */
+#block-homecv,
+#block-homeblog {
   padding-top: 50px;
 }
-/* line 83, ../scss/onepage.scss */
-#block-homecv > h2.block-title {
+/* line 60, ../scss/onepage.scss */
+#block-homecv > h2.block-title,
+#block-homeblog > h2.block-title {
   text-align: center;
   margin-bottom: 50px;
   color: #546e7a;
 }
-/* line 89, ../scss/onepage.scss */
-#block-homecv div.blockblockone {
+/* line 66, ../scss/onepage.scss */
+#block-homecv div.blockblockone,
+#block-homeblog div.blockblockone {
   text-align: center;
 }
-/* line 92, ../scss/onepage.scss */
-#block-homecv div.blockblockone .field--name-field-intitule {
+/* line 69, ../scss/onepage.scss */
+#block-homecv div.blockblockone > div,
+#block-homeblog div.blockblockone > div {
+  max-width: 300px;
+}
+/* line 73, ../scss/onepage.scss */
+#block-homecv div.blockblockone .field--name-field-intitule,
+#block-homeblog div.blockblockone .field--name-field-intitule {
+  min-height: 70px;
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-size: 24px;
 }
-/* line 99, ../scss/onepage.scss */
-#block-homecv div.blockblockone:nth-child(1) .field--name-field-icone-svg svg {
+/* line 81, ../scss/onepage.scss */
+#block-homecv div.blockblockone:nth-child(1) .field--name-field-icone-svg svg,
+#block-homeblog div.blockblockone:nth-child(1) .field--name-field-icone-svg svg {
   fill: #9ccc65;
 }
-/* line 103, ../scss/onepage.scss */
-#block-homecv div.blockblockone:nth-child(1) .field--name-field-intitule {
+/* line 85, ../scss/onepage.scss */
+#block-homecv div.blockblockone:nth-child(1) .field--name-field-intitule,
+#block-homeblog div.blockblockone:nth-child(1) .field--name-field-intitule {
   color: #9ccc65;
 }
-/* line 109, ../scss/onepage.scss */
-#block-homecv div.blockblockone:nth-child(2) .field--name-field-icone-svg svg {
+/* line 91, ../scss/onepage.scss */
+#block-homecv div.blockblockone:nth-child(2) .field--name-field-icone-svg svg,
+#block-homeblog div.blockblockone:nth-child(2) .field--name-field-icone-svg svg {
   fill: #26a69a;
 }
-/* line 113, ../scss/onepage.scss */
-#block-homecv div.blockblockone:nth-child(2) .field--name-field-intitule {
+/* line 95, ../scss/onepage.scss */
+#block-homecv div.blockblockone:nth-child(2) .field--name-field-intitule,
+#block-homeblog div.blockblockone:nth-child(2) .field--name-field-intitule {
   color: #26a69a;
 }
-/* line 119, ../scss/onepage.scss */
-#block-homecv div.blockblockone:nth-child(3) .field--name-field-icone-svg svg {
+/* line 101, ../scss/onepage.scss */
+#block-homecv div.blockblockone:nth-child(3) .field--name-field-icone-svg svg,
+#block-homeblog div.blockblockone:nth-child(3) .field--name-field-icone-svg svg {
   fill: #29b6f6;
 }
-/* line 123, ../scss/onepage.scss */
-#block-homecv div.blockblockone:nth-child(3) .field--name-field-intitule {
+/* line 105, ../scss/onepage.scss */
+#block-homecv div.blockblockone:nth-child(3) .field--name-field-intitule,
+#block-homeblog div.blockblockone:nth-child(3) .field--name-field-intitule {
   color: #29b6f6;
 }
-/* line 129, ../scss/onepage.scss */
-#block-homecv div.blockblockone:nth-child(4) .field--name-field-icone-svg svg {
+/* line 111, ../scss/onepage.scss */
+#block-homecv div.blockblockone:nth-child(4) .field--name-field-icone-svg svg,
+#block-homeblog div.blockblockone:nth-child(4) .field--name-field-icone-svg svg {
   fill: #5c6bc0;
 }
-/* line 133, ../scss/onepage.scss */
-#block-homecv div.blockblockone:nth-child(4) .field--name-field-intitule {
+/* line 115, ../scss/onepage.scss */
+#block-homecv div.blockblockone:nth-child(4) .field--name-field-intitule,
+#block-homeblog div.blockblockone:nth-child(4) .field--name-field-intitule {
   color: #5c6bc0;
 }
-/* line 138, ../scss/onepage.scss */
-#block-homecv .view-footer {
+/* line 120, ../scss/onepage.scss */
+#block-homecv .view-footer,
+#block-homeblog .view-footer {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
+}
+
+/* line 127, ../scss/onepage.scss */
+#block-homecv {
+  background-color: #e2e8eb;
+  margin-right: -45px;
+  margin-left: -45px;
+  padding: 0 45px;
 }

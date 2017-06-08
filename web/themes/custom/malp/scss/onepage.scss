@@ -9,32 +9,6 @@ body.path-frontpage {
 #header-image {
   // Carousel
   .carousel-full {
-    .header-image-text {
-      position: absolute;
-      top: 20%;
-      left: 20%;
-      z-index: 100;
-      color: $gray-lighter;
-
-      .field--name-field-intitule {
-        font-size: $font-size-h1;
-        text-transform: uppercase;
-      }
-
-      .field--name-body {
-        padding-top: 30px;
-        font-family: $headings-font-family;
-        font-size: $font-size-h4;
-      }
-    }
-
-    .header-image-next {
-      .btn-default {
-        background-color: transparent;
-        color: $gray-lighter;
-      }
-    }
-
     .header-image-next {
       position: absolute;
       bottom: 50px;
@@ -44,7 +18,9 @@ body.path-frontpage {
     }
 
     .carousel-inner {
-      .item.full-screen {
+      padding: 0;
+
+      .item.fullscreen {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -77,7 +53,8 @@ body.path-frontpage {
   }
 }
 
-#block-homecv {
+#block-homecv,
+#block-homeblog {
   padding-top: 50px;
 
   > h2.block-title {
@@ -89,7 +66,12 @@ body.path-frontpage {
   div.blockblockone {
     text-align: center;
 
+    > div {
+      max-width: 300px;
+    }
+
     .field--name-field-intitule {
+      min-height: 70px;
       font-family: $headings-font-family;
       font-size: $font-size-h3;
     }
@@ -140,4 +122,11 @@ body.path-frontpage {
     padding-bottom: 50px;
     text-align: center;
   }
+}
+
+#block-homecv {
+  background-color: lighten($brand-primary, 50%);
+  margin-right: -45px;
+  margin-left: -45px;
+  padding: 0 45px;
 }

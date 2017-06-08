@@ -1,16 +1,8 @@
-header.navbar {
-  border: 0;
-  border-radius: 0;
-}
-
 #header-image {
   padding: 0;
+}
 
-  .carousel-inner {
-    padding: 0;
-
-    .paragraph--width--full > section {
-      padding: 0;
-    }
-  }
+#header-image.article-image {
+  margin: 0;
+  height: 100%;
 }

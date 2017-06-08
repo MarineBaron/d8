@@ -6417,7 +6417,7 @@ tbody.collapse.in {
   padding: 5px 14px;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 15px;
+  border-radius: 0;
 }
 /* line 23, ../bootstrap/assets/stylesheets/bootstrap/_pager.scss */
 .pager li > a:hover,
@@ -9602,22 +9602,14 @@ p:last-child,
 }
 
 /* line 1, ../scss/_layout.scss */
-header.navbar {
-  border: 0;
-  border-radius: 0;
-}
-
-/* line 6, ../scss/_layout.scss */
 #header-image {
   padding: 0;
 }
-/* line 9, ../scss/_layout.scss */
-#header-image .carousel-inner {
-  padding: 0;
-}
-/* line 12, ../scss/_layout.scss */
-#header-image .carousel-inner .paragraph--width--full > section {
-  padding: 0;
+
+/* line 5, ../scss/_layout.scss */
+#header-image.article-image {
+  margin: 0;
+  height: 100%;
 }
 
 /* line 2, ../scss/_component.scss */
@@ -9638,7 +9630,7 @@ header.navbar {
   border-radius: 15px;
 }
 
-/* line 17, ../scss/_component.scss */
+/* line 18, ../scss/_component.scss */
 .btn-circle.btn-lg, .btn-group-lg > .btn-circle.btn {
   width: 50px;
   height: 50px;
@@ -9648,7 +9640,7 @@ header.navbar {
   border-radius: 25px;
 }
 
-/* line 25, ../scss/_component.scss */
+/* line 27, ../scss/_component.scss */
 .btn-circle.btn-xl {
   width: 70px;
   height: 70px;
@@ -9658,47 +9650,47 @@ header.navbar {
   border-radius: 35px;
 }
 
-/* line 36, ../scss/_component.scss */
+/* line 37, ../scss/_component.scss */
+#navbar {
+  border: 0;
+  border-radius: 0;
+}
+/* line 41, ../scss/_component.scss */
 #navbar .region-navigation-collapsible {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 41, ../scss/_component.scss */
+/* line 46, ../scss/_component.scss */
 #navbar .region-navigation-collapsible li > a,
 #navbar .region-navigation-collapsible li > a:focus {
   color: #777777;
 }
-/* line 46, ../scss/_component.scss */
+/* line 51, ../scss/_component.scss */
 #navbar .region-navigation-collapsible li > a:hover,
 #navbar .region-navigation-collapsible li > a:focus:hover {
   color: #7895a2;
 }
-/* line 51, ../scss/_component.scss */
+/* line 56, ../scss/_component.scss */
 #navbar .region-navigation-collapsible li.active > a,
 #navbar .region-navigation-collapsible li.active > a:focus {
   color: #7895a2 !important;
   background-color: transparent;
 }
-/* line 57, ../scss/_component.scss */
+/* line 62, ../scss/_component.scss */
 #navbar .region-navigation-collapsible li.active > a:hover,
 #navbar .region-navigation-collapsible li.active > a:focus:hover {
   background-color: transparent;
 }
 
-/* line 64, ../scss/_component.scss */
-#header-image {
-  height: 100%;
-  margin: 0;
-}
-/* line 68, ../scss/_component.scss */
+/* line 71, ../scss/_component.scss */
 #header-image .fullscreen {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
 }
-/* line 75, ../scss/_component.scss */
+/* line 78, ../scss/_component.scss */
 #header-image .header-image-text {
   position: absolute;
   top: 50%;
@@ -9707,30 +9699,69 @@ header.navbar {
   z-index: 100;
   color: #eeeeee;
 }
-/* line 83, ../scss/_component.scss */
+/* line 86, ../scss/_component.scss */
 #header-image .header-image-text .field--name-field-intitule,
 #header-image .header-image-text .field--name-field-title {
   font-size: 36px;
   text-transform: uppercase;
 }
-/* line 89, ../scss/_component.scss */
+/* line 92, ../scss/_component.scss */
 #header-image .header-image-text .field--name-body {
   padding-top: 30px;
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-size: 18px;
 }
-/* line 97, ../scss/_component.scss */
+/* line 100, ../scss/_component.scss */
 #header-image .header-image-next .btn-default {
   background-color: transparent;
   color: #eeeeee;
 }
-/* line 103, ../scss/_component.scss */
+/* line 106, ../scss/_component.scss */
 #header-image .header-image-next {
   position: absolute;
   bottom: 50px;
   left: 50%;
   z-index: 100;
   transform: translateX(-50%);
+}
+
+/* line 117, ../scss/_component.scss */
+.view-articles article {
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #f7f7f7;
+  display: flex;
+}
+/* line 123, ../scss/_component.scss */
+.view-articles article > div {
+  padding: 0 10px;
+}
+/* line 127, ../scss/_component.scss */
+.view-articles article h2 {
+  margin: 0;
+}
+/* line 131, ../scss/_component.scss */
+.view-articles article .author {
+  font-style: italic;
+  padding-bottom: 10px;
+}
+/* line 140, ../scss/_component.scss */
+.view-articles .pager li > a,
+.view-articles .pager li > span {
+  background-color: #546e7a;
+}
+/* line 145, ../scss/_component.scss */
+.view-articles .pager li > a:hover,
+.view-articles .pager li > a:focus {
+  background-color: #7895a2;
+}
+
+/* line 154, ../scss/_component.scss */
+.view .more-link {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: auto;
+  text-align: center;
 }
 
 /* line 2, ../scss/_theme.scss */

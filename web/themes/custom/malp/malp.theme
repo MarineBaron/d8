@@ -63,3 +63,12 @@ function malp_theme_suggestions_block_alter(&$suggestions, array $variables) {
     };
   }
 }
+
+/**
+ * Implements hook_preprocess_image().
+ */
+function malp_preprocess_image(&$variables) {
+  if (isset($variables['style_name']) && in_array($variables['style_name'], ['vignette_ronde_100'])) {
+    $variables['attributes']['class'][] = "img-circle";
+  }
+}

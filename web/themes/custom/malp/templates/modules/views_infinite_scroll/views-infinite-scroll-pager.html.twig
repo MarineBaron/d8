@@ -1,0 +1,14 @@
+{#
+/**
+ * @file
+ * The views infinite scroll pager template.
+ */
+#}
+
+{% if items.next %}
+<ul{{ attributes }}>
+  <li>
+    <a class="btn btn-primary" href="{{ items.next.href }}" rel="next">{{ options.button_text }} <span class="glyphicon glyphicon-menu-right"></span></a>
+  </li>
+</ul>
+{% endif %}

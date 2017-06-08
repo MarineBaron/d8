@@ -1,0 +1,21 @@
+uuid: 06ed2152-d4fe-4d55-b7da-62fc21e64259
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accroche
+    - node.type.article
+  module:
+    - text
+id: node.article.field_accroche
+field_name: field_accroche
+entity_type: node
+bundle: article
+label: Accroche
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

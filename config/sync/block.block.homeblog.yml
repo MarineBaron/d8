@@ -1,0 +1,30 @@
+uuid: bc10e4ef-97e5-4954-8f31-80a50001fa85
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.articles
+  module:
+    - system
+    - views
+  theme:
+    - malp
+id: homeblog
+theme: malp
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:articles-block_1'
+settings:
+  id: 'views_block:articles-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

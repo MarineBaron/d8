@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_accroche
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
     - image.style.vignette_ronde_100
@@ -35,11 +36,12 @@ content:
     region: content
     settings:
       image_style: vignette_ronde_100
-      image_link: content
+      image_link: ''
     third_party_settings: {  }
     label: hidden
 hidden:
   comment: true
+  field_accroche: true
   field_tags: true
   langcode: true
   links: true

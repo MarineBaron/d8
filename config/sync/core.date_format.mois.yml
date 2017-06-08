@@ -1,0 +1,8 @@
+uuid: 8d5a6a47-3e02-407c-a4a9-43451e854087
+langcode: fr
+status: true
+dependencies: {  }
+id: mois
+label: Mois
+locked: false
+pattern: 'F Y'
