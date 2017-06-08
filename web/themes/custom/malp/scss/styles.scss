@@ -12,3 +12,9 @@
 @import 'layout';
 @import 'component';
 @import 'theme';
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}

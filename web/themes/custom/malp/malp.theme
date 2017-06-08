@@ -13,10 +13,12 @@
 function malp_theme_suggestions_page_alter(&$suggestions, array $variables) {
 
   $current_uri = \Drupal::request()->getRequestUri();
-
   if (in_array($current_uri, ['/', '/cv'])) {
     $suggestions[] = 'page__onepage';
-  };
+  }
+  elseif ($node = \Drupal::request()->attributes->get('node')) {
+    array_splice($suggestions, 1, 0, 'page__node__' . $node->getType());
+  }
 }
 
 /**
@@ -35,6 +37,9 @@ function malp_page_attachments_alter(&$page) {
       'onepage' => TRUE,
       'navbar' => $current_uri == '/' ? '#block-onepagehome' : '#block-onepagecv',
     ];
+  }
+  elseif ($node = \Drupal::request()->attributes->get('node')) {
+    $page['#attached']['library'][] = 'malp/affix';
   }
 }
 

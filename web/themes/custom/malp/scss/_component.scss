@@ -60,3 +60,51 @@
     }
   }
 }
+
+#header-image {
+  height: 100%;
+  margin: 0;
+
+  .fullscreen {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+
+  .header-image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    color: $gray-lighter;
+
+    .field--name-field-intitule,
+    .field--name-field-title {
+      font-size: $font-size-h1;
+      text-transform: uppercase;
+    }
+
+    .field--name-body {
+      padding-top: 30px;
+      font-family: $headings-font-family;
+      font-size: $font-size-h4;
+    }
+  }
+
+  .header-image-next {
+    .btn-default {
+      background-color: transparent;
+      color: $gray-lighter;
+    }
+  }
+
+  .header-image-next {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    z-index: 100;
+    transform: translateX(-50%);
+  }
+}

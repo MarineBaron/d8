@@ -2,6 +2,8 @@ uuid: e78bfa51-5794-45c4-bbf7-d904da4bd5f2
 langcode: fr
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - malp
 _core:
@@ -17,4 +19,9 @@ settings:
   label: 'Titre de page'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/node/*'
+    negate: true
+    context_mapping: {  }

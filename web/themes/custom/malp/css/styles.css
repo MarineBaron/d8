@@ -9686,10 +9686,64 @@ header.navbar {
   background-color: transparent;
 }
 
+/* line 64, ../scss/_component.scss */
+#header-image {
+  height: 100%;
+  margin: 0;
+}
+/* line 68, ../scss/_component.scss */
+#header-image .fullscreen {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+/* line 75, ../scss/_component.scss */
+#header-image .header-image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  color: #eeeeee;
+}
+/* line 83, ../scss/_component.scss */
+#header-image .header-image-text .field--name-field-intitule,
+#header-image .header-image-text .field--name-field-title {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+/* line 89, ../scss/_component.scss */
+#header-image .header-image-text .field--name-body {
+  padding-top: 30px;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+/* line 97, ../scss/_component.scss */
+#header-image .header-image-next .btn-default {
+  background-color: transparent;
+  color: #eeeeee;
+}
+/* line 103, ../scss/_component.scss */
+#header-image .header-image-next {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  z-index: 100;
+  transform: translateX(-50%);
+}
+
 /* line 2, ../scss/_theme.scss */
 #navbar,
 #footer,
 #subfooter {
   background-color: #333333;
   color: #eeeeee;
+}
+
+/* line 16, ../scss/styles.scss */
+body,
+html {
+  height: 100%;
+  margin: 0;
 }
