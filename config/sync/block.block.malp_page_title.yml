@@ -22,6 +22,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '/node/*'
+    pages: "/node/*\r\n/cv"
     negate: true
     context_mapping: {  }

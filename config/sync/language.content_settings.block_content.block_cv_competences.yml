@@ -1,0 +1,11 @@
+uuid: f7c49ae4-dfe7-4825-8a64-8adba6d07962
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.block_cv_competences
+id: block_content.block_cv_competences
+target_entity_type_id: block_content
+target_bundle: block_cv_competences
+default_langcode: site_default
+language_alterable: false

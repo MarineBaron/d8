@@ -1,0 +1,30 @@
+uuid: a8bdcaea-b986-45a9-a79f-af4a7c47d516
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.competences_one
+  module:
+    - system
+    - views
+  theme:
+    - malp
+id: cv_competences
+theme: malp
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:competences_one-block_1'
+settings:
+  id: 'views_block:competences_one-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /cv
+    negate: false
+    context_mapping: {  }

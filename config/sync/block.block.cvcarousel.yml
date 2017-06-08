@@ -1,0 +1,31 @@
+uuid: ea103553-f74b-47e3-830d-af24b8a6c7d0
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:carousel_full:df98c993-0ab7-47ca-ba45-849b6bad8053'
+  module:
+    - block_content
+    - system
+  theme:
+    - malp
+id: cvcarousel
+theme: malp
+region: header_image
+weight: 0
+provider: null
+plugin: 'block_content:df98c993-0ab7-47ca-ba45-849b6bad8053'
+settings:
+  id: 'block_content:df98c993-0ab7-47ca-ba45-849b6bad8053'
+  label: 'CV - Carousel'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /cv
+    negate: false
+    context_mapping: {  }

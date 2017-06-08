@@ -55,7 +55,8 @@ body.path-cv {
 }
 
 #block-homecv,
-#block-homeblog {
+#block-homeblog,
+#block-cv-competences {
   padding-top: 50px;
 
   > h2.block-title {
@@ -122,6 +123,38 @@ body.path-cv {
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
+  }
+}
+
+#block-cv-competences {
+  div.blockblockone:nth-child(1) {
+    .field--name-field-icone-svg svg {
+      fill: $colordrupal;
+    }
+
+    .field--name-field-intitule {
+      color: $colordrupal;
+    }
+  }
+
+  div.blockblockone:nth-child(2) {
+    .field--name-field-icone-svg svg {
+      fill: $color1;
+    }
+
+    .field--name-field-intitule {
+      color: $color1;
+    }
+  }
+
+  div.blockblockone:nth-child(3) {
+    .field--name-field-icone-svg svg {
+      fill: $color4;
+    }
+
+    .field--name-field-intitule {
+      color: $color4;
+    }
   }
 }
 

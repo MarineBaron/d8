@@ -1,0 +1,8 @@
+uuid: 1d965974-1f2e-4efc-9245-eebe4c17250a
+langcode: fr
+status: true
+dependencies: {  }
+id: block_cv_competences
+label: 'Block CV Compétences'
+revision: 0
+description: 'Ces blocs contiennent l''affichage des blocs Compétences de la page CV'

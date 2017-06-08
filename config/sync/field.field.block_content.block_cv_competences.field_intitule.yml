@@ -1,0 +1,19 @@
+uuid: dd5759b7-4d79-46c7-b186-4bd64bf03148
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.block_cv_competences
+    - field.storage.block_content.field_intitule
+id: block_content.block_cv_competences.field_intitule
+field_name: field_intitule
+entity_type: block_content
+bundle: block_cv_competences
+label: Intitulé
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

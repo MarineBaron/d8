@@ -1,0 +1,27 @@
+uuid: aedbdf03-536a-4521-9cc9-43be8fea1286
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.block_cv_competences
+    - field.storage.block_content.field_icone_svg
+  module:
+    - file
+id: block_content.block_cv_competences.field_icone_svg
+field_name: field_icone_svg
+entity_type: block_content
+bundle: block_cv_competences
+label: 'Icône SVG'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: images/icone_svg
+  file_extensions: svg
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

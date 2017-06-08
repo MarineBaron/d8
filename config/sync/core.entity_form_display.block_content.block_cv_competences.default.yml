@@ -1,0 +1,56 @@
+uuid: ba720993-912d-4686-a133-c779a9351285
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.block_cv_competences
+    - field.field.block_content.block_cv_competences.body
+    - field.field.block_content.block_cv_competences.field_icone_svg
+    - field.field.block_content.block_cv_competences.field_intitule
+  module:
+    - file
+    - text
+id: block_content.block_cv_competences.default
+targetEntityType: block_content
+bundle: block_cv_competences
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_icone_svg:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_intitule:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
