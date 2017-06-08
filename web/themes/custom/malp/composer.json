@@ -12,9 +12,23 @@
                     "reference" : "origin/master"
                 }
             }
-        }
+        },
+        {
+              "type"    : "package",
+              "package" : {
+                  "name"    : "jquery/jquery.matchHeight",
+                  "version" : "dev-master",
+                  "type"    : "drupal-library",
+                  "source"  : {
+                      "url"       : "https://github.com/liabru/jquery-match-height.git",
+                      "type"      : "git",
+                      "reference" : "origin/master"
+                  }
+              }
+          }
     ],
     "require": {
-        "jquery/jquery.easing": "~1.3"
+        "jquery/jquery.easing": "~1.3",
+        "jquery/jquery.matchHeight": "dev-master"
     }
 }

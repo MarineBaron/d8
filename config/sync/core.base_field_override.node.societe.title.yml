@@ -1,0 +1,18 @@
+uuid: 22662f3a-d8f7-4028-b02c-d1bfaeef168b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.societe
+id: node.societe.title
+field_name: title
+entity_type: node
+bundle: societe
+label: Nom
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

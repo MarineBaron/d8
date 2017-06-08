@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a7346146f0f31757e3368aa669bac89e",
+    "content-hash": "d53ecac6dd2a066b1f048682069608b7",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1987,6 +1987,68 @@
             }
         },
         {
+            "name": "drupal/inline_entity_form",
+            "version": "1.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/inline_entity_form",
+                "reference": "8.x-1.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-beta1.zip",
+                "reference": "8.x-1.0-beta1",
+                "shasum": "185ffc28a7b68d19cce057855d1c111f1741a3ea"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "require-dev": {
+                "drupal/entity_reference_revisions": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1477868343"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                },
+                {
+                    "name": "webflo",
+                    "homepage": "https://www.drupal.org/user/254778"
+                }
+            ],
+            "description": "Provides a widget for inline management (creation, modification, removal) of referenced entities.",
+            "homepage": "https://www.drupal.org/project/inline_entity_form",
+            "support": {
+                "source": "http://cgit.drupalcode.org/inline_entity_form"
+            }
+        },
+        {
             "name": "drupal/paragraphs",
             "version": "1.1.0",
             "source": {
@@ -2215,7 +2277,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/views_infinite_scroll-8.x-1.3.zip",
-                "reference": null,
+                "reference": "8.x-1.3",
                 "shasum": "98a85593fbd6fe3ae6c03583bb693a38864f3ff7"
             },
             "require": {
@@ -2874,6 +2936,17 @@
                 "reference": "origin/master"
             },
             "type": "drupal-library"
+        },
+        {
+            "name": "jquery/jquery.matchHeight",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liabru/jquery-match-height.git",
+                "reference": "origin/master"
+            },
+            "type": "drupal-library",
+            "time": "2017-02-19 18:25:16"
         },
         {
             "name": "masterminds/html5",
@@ -6751,9 +6824,11 @@
     "stability-flags": {
         "drupal/bootstrap_paragraphs": 10,
         "drupal/devel": 5,
+        "drupal/inline_entity_form": 10,
         "drupal/security_review": 20,
         "drupal/views_bootstrap": 20,
-        "drupal/viewsreference": 15
+        "drupal/viewsreference": 15,
+        "jquery/jquery.matchheight": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

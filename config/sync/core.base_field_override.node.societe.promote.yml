@@ -1,0 +1,22 @@
+uuid: 25b5deba-e4f2-48d6-b6e3-48c668103b67
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.societe
+id: node.societe.promote
+field_name: promote
+entity_type: node
+bundle: societe
+label: 'Promu en page d''accueil'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

@@ -1,0 +1,33 @@
+uuid: 860501d8-4d9d-449c-9761-3b76d960e3d7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.diplome.field_date
+    - field.field.paragraph.diplome.field_titre
+    - paragraphs.paragraphs_type.diplome
+  module:
+    - datetime
+id: paragraph.diplome.default
+targetEntityType: paragraph
+bundle: diplome
+mode: default
+content:
+  field_date:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_titre:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

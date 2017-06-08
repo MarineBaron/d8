@@ -1,0 +1,41 @@
+uuid: 88d5ad78-2a1a-4a52-ad90-1b92c5d92ba9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.formation.body
+    - field.field.node.formation.field_dates
+    - field.field.node.formation.field_diplomes
+    - field.field.node.formation.field_societe
+    - node.type.formation
+  module:
+    - text
+    - user
+id: node.formation.teaser
+targetEntityType: node
+bundle: formation
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_societe:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+hidden:
+  field_dates: true
+  field_diplomes: true
+  langcode: true
+  links: true

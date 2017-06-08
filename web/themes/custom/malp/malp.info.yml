@@ -28,3 +28,4 @@ libraries:
   - 'malp/global-styling'
   - 'malp/bootstrap-scripts'
   - 'malp/jquery.easing'
+  - 'malp/jquery.matchHeight'

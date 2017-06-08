@@ -1,0 +1,33 @@
+uuid: d0cc1e30-ce89-4b24-9d2b-cd983294fc2e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.societe.body
+    - field.field.node.societe.field_logo
+    - field.field.node.societe.field_site_web
+    - image.style.thumbnail
+    - node.type.societe
+  module:
+    - image
+    - user
+id: node.societe.teaser
+targetEntityType: node
+bundle: societe
+mode: teaser
+content:
+  field_logo:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_site_web: true
+  langcode: true
+  links: true

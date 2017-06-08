@@ -1,0 +1,21 @@
+uuid: a058e10e-8e45-4f30-830d-7b3243d11025
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dates
+    - node.type.formation
+  module:
+    - datetime_range
+id: node.formation.field_dates
+field_name: field_dates
+entity_type: node
+bundle: formation
+label: Dates
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

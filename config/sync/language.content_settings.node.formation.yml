@@ -1,0 +1,11 @@
+uuid: 3bf6bcad-a743-4365-8453-9194e972949a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.formation
+id: node.formation
+target_entity_type_id: node
+target_bundle: formation
+default_langcode: site_default
+language_alterable: false

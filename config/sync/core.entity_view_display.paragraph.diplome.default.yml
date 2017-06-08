@@ -1,0 +1,33 @@
+uuid: 1d68b563-ccf7-4df0-9c57-52a32e222f07
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.diplome.field_date
+    - field.field.paragraph.diplome.field_titre
+    - paragraphs.paragraphs_type.diplome
+  module:
+    - datetime
+id: paragraph.diplome.default
+targetEntityType: paragraph
+bundle: diplome
+mode: default
+content:
+  field_date:
+    weight: 1
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: mois
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_titre:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

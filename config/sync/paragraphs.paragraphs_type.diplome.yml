@@ -1,0 +1,7 @@
+uuid: 8cc1eaa4-7664-49be-99fa-faf885321d37
+langcode: fr
+status: true
+dependencies: {  }
+id: diplome
+label: Diplôme
+behavior_plugins: {  }

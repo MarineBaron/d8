@@ -1,0 +1,19 @@
+uuid: 6145619c-5472-4b3f-8d84-aaf629576025
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titre
+    - paragraphs.paragraphs_type.diplome
+id: paragraph.diplome.field_titre
+field_name: field_titre
+entity_type: paragraph
+bundle: diplome
+label: Titre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

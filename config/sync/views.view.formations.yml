@@ -1,20 +1,21 @@
-uuid: 5aefedd9-7d2d-4693-a4d1-9a8dfe252d25
+uuid: 666cf03b-1e47-4ea2-80a0-eee4ef3671ce
 langcode: fr
 status: true
 dependencies:
   config:
-    - block_content.type.block_cv_competences
+    - core.entity_view_mode.node.teaser
+    - node.type.formation
   module:
-    - block_content
+    - node
     - user
     - views_bootstrap
-id: competences_one
-label: 'Compétences - One'
+id: formations
+label: Formations
 module: views
 description: ''
 tag: ''
-base_table: block_content_field_data
-base_field: id
+base_table: node_field_data
+base_field: nid
 core: 8.x
 display:
   default:
@@ -60,53 +61,41 @@ display:
           default_row_class: true
           uses_fields: false
           alignment: horizontal
-          columns: '3'
-          col_xs: col-xs-12
-          col_sm: col-sm-12
-          col_md: col-md-4
-          col_lg: col-lg-4
+          columns: '4'
+          col_xs: col-xs-6
+          col_sm: col-sm-3
+          col_md: col-md-3
+          col_lg: col-lg-3
       row:
-        type: 'entity:block_content'
+        type: 'entity:node'
+        options:
+          view_mode: teaser
       fields:
-        info:
-          table: block_content_field_data
-          field: info
-          id: info
-          entity_type: null
-          entity_field: info
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          entity_type: node
+          entity_field: title
+          label: ''
+          alter:
+            alter_text: false
+            make_link: false
+            absolute: false
+            trim: false
+            word_boundary: false
+            ellipsis: false
+            strip_tags: false
+            html: false
+          hide_empty: false
+          empty_zero: false
+          settings:
+            link_to_entity: true
           plugin_id: field
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
           exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
@@ -116,12 +105,9 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
-          empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
           type: string
-          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -133,20 +119,69 @@ display:
           separator: ', '
           field_api_classes: false
       filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
         type:
           id: type
-          table: block_content_field_data
+          table: node_field_data
           field: type
           value:
-            block_cv_competences: block_cv_competences
-          entity_type: block_content
+            formation: formation
+          entity_type: node
           entity_field: type
           plugin_id: bundle
+        sticky:
+          id: sticky
+          table: node_field_data
+          field: sticky
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: sticky
+          plugin_id: boolean
       sorts:
-        revision_created:
-          id: revision_created
-          table: block_content_field_data
-          field: revision_created
+        field_dates_value:
+          id: field_dates_value
+          table: node__field_dates
+          field: field_dates_value
           relationship: none
           group_type: group
           admin_label: ''
@@ -154,11 +189,8 @@ display:
           exposed: false
           expose:
             label: ''
-          granularity: second
-          entity_type: block_content
-          entity_field: revision_created
-          plugin_id: date
-      title: Compétences
+          plugin_id: standard
+      title: Formations
       header: {  }
       footer:
         area_text_custom:
@@ -170,7 +202,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: false
-          content: '<a href="/cv/competences" class="btn btn-primary">Voir toutes les compétences <span class="glyphicon glyphicon-menu-right"></span></a>'
+          content: '<a href="/cv/formation" class="btn btn-primary">Toute mes formations <span class="glyphicon glyphicon-menu-right"></span></a>'
           plugin_id: text_custom
       empty: {  }
       relationships: {  }
@@ -181,6 +213,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - 'user.node_grants:view'
         - user.permissions
       tags: {  }
   block_1:
@@ -190,11 +223,12 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: Compétences
+      block_description: Formation
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - 'user.node_grants:view'
         - user.permissions
       tags: {  }

@@ -1,0 +1,22 @@
+uuid: dd43535c-6584-4a21-b36d-e24638807f5d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.formation
+id: node.formation.promote
+field_name: promote
+entity_type: node
+bundle: formation
+label: 'Promu en page d''accueil'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

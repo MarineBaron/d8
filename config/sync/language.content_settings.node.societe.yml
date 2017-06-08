@@ -1,0 +1,11 @@
+uuid: 2c66dd72-ca94-4ada-9e9a-ddb0f82a3609
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.societe
+id: node.societe
+target_entity_type_id: node
+target_bundle: societe
+default_langcode: site_default
+language_alterable: false

@@ -10,6 +10,7 @@
       attach : function (context, settings) {
 
         $('body').once('malp_onepage').each(function () {
+
           // Scroll.
           if (drupalSettings.malp.onepage) {
             $('body').scrollspy({target: drupalSettings.malp.navbar, offset: 50});
@@ -52,6 +53,15 @@
               $('html, body').animate({
                 scrollTop: $elt.offset().top
               }, 800);
+            });
+
+            // Egal height
+            console.log($('#block-cv-formation .blockblockone > article'));
+            $('#block-cv-formation .blockblockone > article').matchHeight({
+              byRow: true,
+              property: 'height',
+              target: null,
+              remove: false
             });
           }
         });
