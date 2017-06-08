@@ -11,11 +11,12 @@
  */
 @import url(http://fonts.googleapis.com/css?family=amily=Montserrat:100,400,700|Roboto+Slab:100,300,400,700:100,400,700);
 /* line 5, ../scss/onepage.scss */
-body.path-frontpage {
+body.path-frontpage,
+body.path-cv {
   margin-top: 0;
 }
 
-/* line 12, ../scss/onepage.scss */
+/* line 13, ../scss/onepage.scss */
 #header-image .carousel-full .header-image-next {
   position: absolute;
   bottom: 50px;
@@ -23,33 +24,33 @@ body.path-frontpage {
   z-index: 100;
   transform: translateX(-50%);
 }
-/* line 20, ../scss/onepage.scss */
+/* line 21, ../scss/onepage.scss */
 #header-image .carousel-full .carousel-inner {
   padding: 0;
 }
-/* line 23, ../scss/onepage.scss */
+/* line 24, ../scss/onepage.scss */
 #header-image .carousel-full .carousel-inner .item.fullscreen {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 29, ../scss/onepage.scss */
+/* line 30, ../scss/onepage.scss */
 #header-image .carousel-full .carousel-inner .item {
   transition-property: opacity;
 }
-/* line 33, ../scss/onepage.scss */
+/* line 34, ../scss/onepage.scss */
 #header-image .carousel-full .carousel-inner .item,
 #header-image .carousel-full .carousel-inner .item.active.left,
 #header-image .carousel-full .carousel-inner .item.active.right {
   opacity: 0;
 }
-/* line 39, ../scss/onepage.scss */
+/* line 40, ../scss/onepage.scss */
 #header-image .carousel-full .carousel-inner .item.active,
 #header-image .carousel-full .carousel-inner .item.next.left,
 #header-image .carousel-full .carousel-inner .item.prev.right {
   opacity: 1;
 }
-/* line 45, ../scss/onepage.scss */
+/* line 46, ../scss/onepage.scss */
 #header-image .carousel-full .carousel-inner .item.next,
 #header-image .carousel-full .carousel-inner .item.prev,
 #header-image .carousel-full .carousel-inner .item.active.left,
@@ -58,76 +59,76 @@ body.path-frontpage {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 56, ../scss/onepage.scss */
+/* line 57, ../scss/onepage.scss */
 #block-homecv,
 #block-homeblog {
   padding-top: 50px;
 }
-/* line 60, ../scss/onepage.scss */
+/* line 61, ../scss/onepage.scss */
 #block-homecv > h2.block-title,
 #block-homeblog > h2.block-title {
   text-align: center;
   margin-bottom: 50px;
   color: #546e7a;
 }
-/* line 66, ../scss/onepage.scss */
+/* line 67, ../scss/onepage.scss */
 #block-homecv div.blockblockone,
 #block-homeblog div.blockblockone {
   text-align: center;
 }
-/* line 69, ../scss/onepage.scss */
+/* line 70, ../scss/onepage.scss */
 #block-homecv div.blockblockone > div,
 #block-homeblog div.blockblockone > div {
   max-width: 300px;
 }
-/* line 73, ../scss/onepage.scss */
+/* line 74, ../scss/onepage.scss */
 #block-homecv div.blockblockone .field--name-field-intitule,
 #block-homeblog div.blockblockone .field--name-field-intitule {
   min-height: 70px;
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-size: 24px;
 }
-/* line 81, ../scss/onepage.scss */
+/* line 82, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(1) .field--name-field-icone-svg svg,
 #block-homeblog div.blockblockone:nth-child(1) .field--name-field-icone-svg svg {
   fill: #9ccc65;
 }
-/* line 85, ../scss/onepage.scss */
+/* line 86, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(1) .field--name-field-intitule,
 #block-homeblog div.blockblockone:nth-child(1) .field--name-field-intitule {
   color: #9ccc65;
 }
-/* line 91, ../scss/onepage.scss */
+/* line 92, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(2) .field--name-field-icone-svg svg,
 #block-homeblog div.blockblockone:nth-child(2) .field--name-field-icone-svg svg {
   fill: #26a69a;
 }
-/* line 95, ../scss/onepage.scss */
+/* line 96, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(2) .field--name-field-intitule,
 #block-homeblog div.blockblockone:nth-child(2) .field--name-field-intitule {
   color: #26a69a;
 }
-/* line 101, ../scss/onepage.scss */
+/* line 102, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(3) .field--name-field-icone-svg svg,
 #block-homeblog div.blockblockone:nth-child(3) .field--name-field-icone-svg svg {
   fill: #29b6f6;
 }
-/* line 105, ../scss/onepage.scss */
+/* line 106, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(3) .field--name-field-intitule,
 #block-homeblog div.blockblockone:nth-child(3) .field--name-field-intitule {
   color: #29b6f6;
 }
-/* line 111, ../scss/onepage.scss */
+/* line 112, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(4) .field--name-field-icone-svg svg,
 #block-homeblog div.blockblockone:nth-child(4) .field--name-field-icone-svg svg {
   fill: #5c6bc0;
 }
-/* line 115, ../scss/onepage.scss */
+/* line 116, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(4) .field--name-field-intitule,
 #block-homeblog div.blockblockone:nth-child(4) .field--name-field-intitule {
   color: #5c6bc0;
 }
-/* line 120, ../scss/onepage.scss */
+/* line 121, ../scss/onepage.scss */
 #block-homecv .view-footer,
 #block-homeblog .view-footer {
   padding-top: 50px;
@@ -135,7 +136,7 @@ body.path-frontpage {
   text-align: center;
 }
 
-/* line 127, ../scss/onepage.scss */
+/* line 128, ../scss/onepage.scss */
 #block-homecv {
   background-color: #e2e8eb;
   margin-right: -45px;
