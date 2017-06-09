@@ -1,0 +1,9 @@
+uuid: 943e1c6e-489e-441f-804b-886338070eca
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Tx54VzzCAn8dLv59wjsdRKDuJmYhZCNkjpiJDOlpQuU
+id: bp_image
+label: Image
+behavior_plugins: {  }

@@ -1,0 +1,9 @@
+uuid: 9c564f0d-1aae-4486-be8f-f74c8bf09600
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ebY9FIEWDnNqNvi4kdQlrGmvopIhfJKzC7jLBChmz24
+id: bp_carousel
+label: Carousel
+behavior_plugins: {  }

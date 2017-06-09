@@ -1,0 +1,9 @@
+uuid: a170a893-4f99-43c2-a98c-5493a4486910
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: k0udKrM5XUBI_G5XgJlR1SbgvcS4yvgtjSxcdXgS0Mo
+id: bp_tab_section
+label: 'Tab Section'
+behavior_plugins: {  }

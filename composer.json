@@ -21,7 +21,7 @@
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/admin_toolbar": "^1.19",
         "drupal/bootstrap": "^3.5",
-        "drupal/bootstrap_paragraphs": "^1.0@beta",
+        "drupal/bootstrap_paragraphs": "^2.0@alpha",
         "drupal/console": "~1.0",
         "drupal/contact_formatter": "^1.0",
         "drupal/core": "~8.0",
