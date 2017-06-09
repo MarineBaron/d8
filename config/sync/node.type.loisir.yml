@@ -1,0 +1,18 @@
+uuid: 06223be3-e0a8-4407-8a77-672f306072b5
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Loisir
+type: loisir
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,11 @@
+uuid: 0d98c06b-2397-4795-97a1-f3caca0e74d5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.loisirs
+id: taxonomy_term.loisirs
+target_entity_type_id: taxonomy_term
+target_bundle: loisirs
+default_langcode: site_default
+language_alterable: false

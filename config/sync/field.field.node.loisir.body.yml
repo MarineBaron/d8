@@ -1,0 +1,22 @@
+uuid: 7bf22626-b537-4af0-99d8-2c88485bff2e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.loisir
+  module:
+    - text
+id: node.loisir.body
+field_name: body
+entity_type: node
+bundle: loisir
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

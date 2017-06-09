@@ -1,0 +1,20 @@
+uuid: ed4d60ab-f5ff-4944-adf9-7a136e7b1c1b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_taxo_loisir
+field_name: field_taxo_loisir
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

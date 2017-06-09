@@ -217,3 +217,72 @@ body.path-cv {
   padding-right: 3px;
   background-color: #eeeeee;
 }
+
+/* line 193, ../scss/onepage.scss */
+#block-cv-loisirs div.blockblockone .views-field-rendered-entity {
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  border-radius: 3px;
+  padding-top: 10px;
+}
+/* line 200, ../scss/onepage.scss */
+#block-cv-loisirs div.blockblockone .views-field-rendered-entity h3 {
+  color: #eeeeee;
+}
+/* line 204, ../scss/onepage.scss */
+#block-cv-loisirs div.blockblockone .views-field-rendered-entity svg {
+  fill: #eeeeee;
+}
+/* line 209, ../scss/onepage.scss */
+#block-cv-loisirs div.blockblockone .views-field-view {
+  margin-top: 10px;
+}
+/* line 212, ../scss/onepage.scss */
+#block-cv-loisirs div.blockblockone .views-field-view .view-content {
+  display: flex;
+  justify-content: center;
+}
+/* line 216, ../scss/onepage.scss */
+#block-cv-loisirs div.blockblockone .views-field-view .view-content > div {
+  margin: 3px;
+  padding: 3px;
+  border: 1px solid;
+  border-radius: 3px;
+}
+/* line 227, ../scss/onepage.scss */
+#block-cv-loisirs div.blockblockone:nth-child(1) .views-field-rendered-entity {
+  background-color: #9ccc65;
+}
+/* line 231, ../scss/onepage.scss */
+#block-cv-loisirs div.blockblockone:nth-child(1) .views-field-view .view-content > div {
+  color: #9ccc65;
+  border-color: #9ccc65;
+}
+/* line 238, ../scss/onepage.scss */
+#block-cv-loisirs div.blockblockone:nth-child(2) .views-field-rendered-entity {
+  background-color: #26a69a;
+}
+/* line 242, ../scss/onepage.scss */
+#block-cv-loisirs div.blockblockone:nth-child(2) .views-field-view .view-content > div {
+  color: #26a69a;
+  border-color: #26a69a;
+}
+/* line 249, ../scss/onepage.scss */
+#block-cv-loisirs div.blockblockone:nth-child(3) .views-field-rendered-entity {
+  background-color: #29b6f6;
+}
+/* line 253, ../scss/onepage.scss */
+#block-cv-loisirs div.blockblockone:nth-child(3) .views-field-view .view-content > div {
+  color: #29b6f6;
+  border-color: #29b6f6;
+}
+/* line 260, ../scss/onepage.scss */
+#block-cv-loisirs div.blockblockone:nth-child(4) .views-field-rendered-entity {
+  background-color: #5c6bc0;
+}
+/* line 264, ../scss/onepage.scss */
+#block-cv-loisirs div.blockblockone:nth-child(4) .views-field-view .view-content > div {
+  color: #5c6bc0;
+  border-color: #5c6bc0;
+}

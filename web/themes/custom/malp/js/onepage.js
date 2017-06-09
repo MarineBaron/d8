@@ -56,7 +56,6 @@
             });
 
             // Egal height
-            console.log($('#block-cv-formation .blockblockone > article'));
             $('#block-cv-formation .blockblockone > article').matchHeight({
               byRow: true,
               property: 'height',

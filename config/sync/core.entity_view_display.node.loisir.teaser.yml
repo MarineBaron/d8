@@ -1,0 +1,23 @@
+uuid: aa0de7d7-a651-4cf2-adc7-7cf1b92330a7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.loisir.body
+    - field.field.node.loisir.field_image
+    - field.field.node.loisir.field_taxo_loisir
+    - node.type.loisir
+  module:
+    - user
+id: node.loisir.teaser
+targetEntityType: node
+bundle: loisir
+mode: teaser
+content: {  }
+hidden:
+  body: true
+  field_image: true
+  field_taxo_loisir: true
+  langcode: true
+  links: true

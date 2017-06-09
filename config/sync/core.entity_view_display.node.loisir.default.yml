@@ -1,0 +1,39 @@
+uuid: f2598a66-7dd6-4a89-9fb6-2ee0a689ac1b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.loisir.body
+    - field.field.node.loisir.field_image
+    - field.field.node.loisir.field_taxo_loisir
+    - image.style.medium
+    - node.type.loisir
+  module:
+    - image
+    - text
+    - user
+id: node.loisir.default
+targetEntityType: node
+bundle: loisir
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  field_taxo_loisir: true
+  langcode: true
+  links: true

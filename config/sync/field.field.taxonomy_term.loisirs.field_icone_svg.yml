@@ -1,0 +1,27 @@
+uuid: 6b7e60cf-805b-4fb2-a373-4e4cc37e004c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_icone_svg
+    - taxonomy.vocabulary.loisirs
+  module:
+    - file
+id: taxonomy_term.loisirs.field_icone_svg
+field_name: field_icone_svg
+entity_type: taxonomy_term
+bundle: loisirs
+label: 'Icone SVG'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: images/icone_svg
+  file_extensions: svg
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

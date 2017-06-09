@@ -1,0 +1,28 @@
+uuid: b1fb4e6f-52b4-466e-8ef0-0c5a3cf33b71
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_taxo_loisir
+    - node.type.loisir
+    - taxonomy.vocabulary.loisirs
+id: node.loisir.field_taxo_loisir
+field_name: field_taxo_loisir
+entity_type: node
+bundle: loisir
+label: 'Type de loisir'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      loisirs: loisirs
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

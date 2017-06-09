@@ -1,0 +1,9 @@
+uuid: 2014a863-6aac-424e-a41c-a977591efda7
+langcode: fr
+status: true
+dependencies: {  }
+name: Loisirs
+vid: loisirs
+description: ''
+hierarchy: 0
+weight: 0

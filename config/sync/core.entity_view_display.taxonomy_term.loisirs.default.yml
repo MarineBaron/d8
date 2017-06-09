@@ -1,0 +1,30 @@
+uuid: 02fbefdb-65df-4b81-9c80-2158e3f56e6b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.loisirs.field_icone_svg
+    - taxonomy.vocabulary.loisirs
+  module:
+    - svg_formatter
+id: taxonomy_term.loisirs.default
+targetEntityType: taxonomy_term
+bundle: loisirs
+mode: default
+content:
+  field_icone_svg:
+    weight: 0
+    label: hidden
+    settings:
+      inline: true
+      apply_dimensions: true
+      width: 64
+      height: 64
+      enable_alt: true
+      enable_title: false
+    third_party_settings: {  }
+    type: svg_formatter
+    region: content
+hidden:
+  description: true
+  langcode: true

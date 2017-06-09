@@ -187,3 +187,83 @@ body.path-cv {
     background-color: $gray-lighter;
   }
 }
+
+#block-cv-loisirs {
+  div.blockblockone {
+    .views-field-rendered-entity {
+      width: 180px;
+      height: 180px;
+      margin: auto;
+      border-radius: $border-radius-small;
+      padding-top: 10px;
+
+      h3 {
+        color: $gray-lighter;
+      }
+
+      svg {
+        fill: $gray-lighter;
+      }
+    }
+
+    .views-field-view {
+      margin-top: 10px;
+
+      .view-content {
+        display: flex;
+        justify-content: center;
+
+        > div {
+          margin: 3px;
+          padding: 3px;
+          border: 1px solid;
+          border-radius: $border-radius-small;
+        }
+      }
+    }
+  }
+
+  div.blockblockone:nth-child(1) {
+    .views-field-rendered-entity {
+      background-color: $color1;
+    }
+
+    .views-field-view .view-content > div {
+      color: $color1;
+      border-color: $color1;
+    }
+  }
+
+  div.blockblockone:nth-child(2) {
+    .views-field-rendered-entity {
+      background-color: $color2;
+    }
+
+    .views-field-view .view-content > div {
+      color: $color2;
+      border-color: $color2;
+    }
+  }
+
+  div.blockblockone:nth-child(3) {
+    .views-field-rendered-entity {
+      background-color: $color3;
+    }
+
+    .views-field-view .view-content > div {
+      color: $color3;
+      border-color: $color3;
+    }
+  }
+
+  div.blockblockone:nth-child(4) {
+    .views-field-rendered-entity {
+      background-color: $color4;
+    }
+
+    .views-field-view .view-content > div {
+      color: $color4;
+      border-color: $color4;
+    }
+  }
+}

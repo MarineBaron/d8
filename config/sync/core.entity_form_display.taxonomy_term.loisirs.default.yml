@@ -1,0 +1,52 @@
+uuid: 8573569c-c987-4403-af84-7435eb074751
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.loisirs.field_icone_svg
+    - taxonomy.vocabulary.loisirs
+  module:
+    - file
+    - path
+    - text
+id: taxonomy_term.loisirs.default
+targetEntityType: taxonomy_term
+bundle: loisirs
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_icone_svg:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
