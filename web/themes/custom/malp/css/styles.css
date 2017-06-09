@@ -9764,6 +9764,30 @@ p:last-child,
   text-align: center;
 }
 
+/* line 162, ../scss/_component.scss */
+#views-bootstrap-competences-taxo-page-1 > div > div {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+/* line 166, ../scss/_component.scss */
+#views-bootstrap-competences-taxo-page-1 > div > div .view-competences .view-content > div {
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 171, ../scss/_component.scss */
+#views-bootstrap-competences-taxo-page-1 > div > div h3 {
+  color: #777777;
+  font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif;
+  text-transform: uppercase;
+}
+/* line 177, ../scss/_component.scss */
+#views-bootstrap-competences-taxo-page-1 > div > div h4 {
+  color: #546e7a;
+  text-transform: uppercase;
+  width: 100%;
+  border-bottom: 1px solid #546e7a;
+}
+
 /* line 2, ../scss/_theme.scss */
 #navbar,
 #footer,

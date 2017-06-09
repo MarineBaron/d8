@@ -1,0 +1,38 @@
+uuid: 5b21cf07-84e6-498e-887a-7fbaf3ecc460
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icone
+    - node.type.competence
+  module:
+    - image
+id: node.competence.field_icone
+field_name: field_icone
+entity_type: node
+bundle: competence
+label: Icône
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: images/competence
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,11 @@
+uuid: c60bdc49-a165-4cb1-b267-b0e421d8ad41
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.competence
+id: node.competence
+target_entity_type_id: node
+target_bundle: competence
+default_langcode: site_default
+language_alterable: false

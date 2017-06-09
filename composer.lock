@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "eee62d06fc9e9a84d34cbf2da043c921",
+    "content-hash": "526c1bf374dab61c44e1a7b20abe4683",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1945,6 +1945,57 @@
             }
         },
         {
+            "name": "drupal/entityqueue",
+            "version": "1.0.0-alpha6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/entityqueue",
+                "reference": "8.x-1.0-alpha6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entityqueue-8.x-1.0-alpha6.zip",
+                "reference": null,
+                "shasum": "2f7c639020a4c688b419ca90e35ffe0d08b34639"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha6",
+                    "datestamp": "1481985783"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "amateescu",
+                    "homepage": "https://www.drupal.org/user/729614"
+                },
+                {
+                    "name": "jojonaloha",
+                    "homepage": "https://www.drupal.org/user/1579186"
+                },
+                {
+                    "name": "tim.plunkett",
+                    "homepage": "https://www.drupal.org/user/241634"
+                }
+            ],
+            "description": "Allows users to collect entities in arbitrarily ordered lists.",
+            "homepage": "https://www.drupal.org/project/entityqueue",
+            "support": {
+                "source": "http://cgit.drupalcode.org/entityqueue"
+            }
+        },
+        {
             "name": "drupal/file_permissions",
             "version": "1.0.0",
             "source": {
@@ -2277,7 +2328,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/views_field_view-8.x-1.0-beta2.zip",
-                "reference": null,
+                "reference": "8.x-1.0-beta2",
                 "shasum": "2f9c841f5e1ac8a9f8410b6d62c715edb9987519"
             },
             "require": {
@@ -2417,6 +2468,69 @@
             "homepage": "https://www.drupal.org/project/viewsreference",
             "support": {
                 "source": "http://cgit.drupalcode.org/viewsreference"
+            }
+        },
+        {
+            "name": "drupal/weight",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/weight",
+                "reference": "8.x-3.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/weight-8.x-3.0.zip",
+                "reference": "8.x-3.0",
+                "shasum": "cffa9ef43748f7c8bfea5d70682292d7680c68bf"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.0",
+                    "datestamp": "1448735639"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Harry Slaughter",
+                    "homepage": "https://www.drupal.org/user/28233"
+                },
+                {
+                    "name": "NancyDru",
+                    "homepage": "https://www.drupal.org/user/101412"
+                },
+                {
+                    "name": "Shreya Shetty",
+                    "homepage": "https://www.drupal.org/user/2943029"
+                },
+                {
+                    "name": "davisben",
+                    "homepage": "https://www.drupal.org/user/1204214"
+                },
+                {
+                    "name": "deviantintegral",
+                    "homepage": "https://www.drupal.org/user/71291"
+                },
+                {
+                    "name": "jjeff",
+                    "homepage": "https://www.drupal.org/user/17190"
+                }
+            ],
+            "description": "Allows arbitrary ordering of entities.",
+            "homepage": "https://www.drupal.org/project/weight",
+            "support": {
+                "source": "http://cgit.drupalcode.org/weight"
             }
         },
         {
@@ -6883,6 +6997,7 @@
     "stability-flags": {
         "drupal/bootstrap_paragraphs": 10,
         "drupal/devel": 5,
+        "drupal/entityqueue": 15,
         "drupal/inline_entity_form": 10,
         "drupal/security_review": 20,
         "drupal/views_bootstrap": 20,

@@ -1,0 +1,32 @@
+uuid: a576a9f8-010b-48ad-8705-54b1e4417987
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.competence.body
+    - field.field.node.competence.field_icone
+    - field.field.node.competence.field_niveau
+    - field.field.node.competence.field_taxo_competence
+    - node.type.competence
+  module:
+    - options
+    - user
+id: node.competence.teaser
+targetEntityType: node
+bundle: competence
+mode: teaser
+content:
+  field_niveau:
+    type: list_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_icone: true
+  field_taxo_competence: true
+  langcode: true
+  links: true

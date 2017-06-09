@@ -1,0 +1,41 @@
+uuid: 47bda48f-b85f-4013-841a-0c8fbd498590
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.competence.body
+    - field.field.node.competence.field_icone
+    - field.field.node.competence.field_niveau
+    - field.field.node.competence.field_taxo_competence
+    - image.style.icone_32
+    - node.type.competence
+  module:
+    - image
+    - options
+    - user
+id: node.competence.default
+targetEntityType: node
+bundle: competence
+mode: default
+content:
+  field_icone:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: icone_32
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_niveau:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  body: true
+  field_taxo_competence: true
+  langcode: true
+  links: true

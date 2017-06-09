@@ -1,0 +1,25 @@
+uuid: 3ae3d60c-2232-4ade-8c44-c4a15b12cdd0
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: competences
+label: Compétences
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      competence: competence
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse_in_admin: false

@@ -1,0 +1,21 @@
+uuid: 7b8bcf8d-6fe1-442b-a0af-b24cd07f7ab6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_niveau
+    - node.type.competence
+  module:
+    - options
+id: node.competence.field_niveau
+field_name: field_niveau
+entity_type: node
+bundle: competence
+label: Niveau
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer
