@@ -55,7 +55,10 @@ function malp_page_attachments_alter(&$page) {
 function malp_theme_suggestions_menu_alter(&$suggestions, array $variables) {
   if (isset($variables['menu_name']) && in_array($variables['menu_name'], ['one-page-home', 'one-page-cv'])) {
     $suggestions[] = 'menu__main';
-  };
+  }
+  elseif (isset($variables['menu_name']) && in_array($variables['menu_name'], ['cv', 'a-propos'])) {
+    $suggestions[] = 'menu__footer';
+  }
 }
 
 /**
@@ -66,7 +69,7 @@ function malp_theme_suggestions_block_alter(&$suggestions, array $variables) {
     $bundle = $variables['elements']['content']['#block_content']->bundle();
     if (in_array($bundle, ['carousel_full'])) {
       $suggestions[] = 'block__carousel_full';
-    };
+    }
   }
 }
 

@@ -1,0 +1,37 @@
+uuid: ee66cbf3-70ac-47ba-9302-5110b7864375
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.bloc_footer
+    - field.field.block_content.bloc_footer.body
+    - field.field.block_content.bloc_footer.field_image
+    - field.field.block_content.bloc_footer.field_intitule
+    - image.style.medium
+  module:
+    - image
+    - text
+id: block_content.bloc_footer.default
+targetEntityType: block_content
+bundle: bloc_footer
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  field_intitule: true
+  langcode: true

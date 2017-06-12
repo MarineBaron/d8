@@ -1,0 +1,25 @@
+uuid: 3b391f16-ead6-4628-ae6d-95d343d2d7f2
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:bloc_footer:d9c8e0be-400c-41e3-bace-5a368c98d0fd'
+  module:
+    - block_content
+  theme:
+    - malp
+id: blocmarinedufooter
+theme: malp
+region: subfooter_4
+weight: 0
+provider: null
+plugin: 'block_content:d9c8e0be-400c-41e3-bace-5a368c98d0fd'
+settings:
+  id: 'block_content:d9c8e0be-400c-41e3-bace-5a368c98d0fd'
+  label: 'Bloc Marine du Footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

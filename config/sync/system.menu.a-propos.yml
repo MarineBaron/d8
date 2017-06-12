@@ -1,0 +1,8 @@
+uuid: e195dd1d-22c7-40d8-a532-3c58195c4461
+langcode: fr
+status: true
+dependencies: {  }
+id: a-propos
+label: 'A propos'
+description: ''
+locked: false

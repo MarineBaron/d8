@@ -1,0 +1,24 @@
+uuid: 89ebe64d-7fd9-4025-9695-1bf64ac35eda
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.articles
+  module:
+    - views
+  theme:
+    - malp
+id: footer_articles
+theme: malp
+region: subfooter_1
+weight: 0
+provider: null
+plugin: 'views_block:articles-block_2'
+settings:
+  id: 'views_block:articles-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

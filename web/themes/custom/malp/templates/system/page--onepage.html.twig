@@ -196,24 +196,37 @@
 {% for i in 1..4 %}
   {% set subfooter_name = 'subfooter_' ~ i %}
   {% if attribute(page,subfooter_name) %}
-    {% set subfooter_name = subfooter_counter + 1 %}
+    {% set subfooter_counter = subfooter_counter + 1 %}
   {% endif %}
 {% endfor %}
 
 {% if subfooter_counter > 0 %}
   {%
-    set subfooter_classes = [
-      'col-xs-12',
-      subfooter_counter < 2 ? 'col-sm-12' : 'col-sm-6',
-      subfooter_counter < 2 ? 'col-md-12' : (subfooter_counter < 3 ? 'col-md-6' : (subfooter_counter < 4 ? 'col-md-4' : 'col-md-3'))
-    ]
+    set subfooter_classes = {
+    0: {
+        0: 'col-xs-12',
+        1: subfooter_counter < 2 ? 'col-sm-12' : 'col-sm-6',
+        2: subfooter_counter < 2 ? 'col-md-12' : (subfooter_counter < 3 ? 'col-md-6' : (subfooter_counter < 4 ? 'col-md-4' : 'col-md-3'))
+      }
+    }
   %}
+  {% if subfooter_counter != 4 %}
+    {% for i in 1..4 %}
+      {% set subfooter_classes = subfooter_classes|merge({ i : subfooter_classes[0]}) %}
+    {% endfor %}
+  {% else %}
+    {% set subfooter_classes = {0:subfooter_classes[0]|slice(0,2)} %}
+    {% set subfooter_classes = subfooter_classes|merge({1:subfooter_classes[0]|merge(['col-md-3'])})%}
+    {% set subfooter_classes = subfooter_classes|merge({2:subfooter_classes[0]|merge(['col-md-3'])})%}
+    {% set subfooter_classes = subfooter_classes|merge({3:subfooter_classes[0]|merge(['col-md-2'])})%}
+    {% set subfooter_classes = subfooter_classes|merge({4:subfooter_classes[0]|merge(['col-md-4'])})%}
+  {% endif %}
   <div class="subfooter {{ container }} "role="contentinfo">
     <div class="row">
       {% for i in 1..4 %}
         {% set subfooter_name = 'subfooter_' ~ i %}
         {% if attribute(page,subfooter_name) %}
-          <div{{ create_attribute({'class': subfooter_classes}).addClass(subfooter_name) }}  >
+          <div{{ create_attribute({'class': subfooter_classes[i]}).addClass(subfooter_name) }}  >
             {{ attribute(page,subfooter_name) }}
           </div>
         {% endif %}

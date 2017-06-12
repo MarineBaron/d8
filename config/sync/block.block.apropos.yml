@@ -1,0 +1,24 @@
+uuid: 24d7cf16-0480-45fc-817e-dc298a6bfe5f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.a-propos
+  module:
+    - system
+  theme:
+    - malp
+id: apropos
+theme: malp
+region: subfooter_3
+weight: 0
+provider: null
+plugin: 'system_menu_block:a-propos'
+settings:
+  id: 'system_menu_block:a-propos'
+  label: 'A propos'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: 85a52cf2-c1ab-4e73-a329-a801ede25b98
+langcode: fr
+status: true
+dependencies: {  }
+id: cv
+label: CV
+description: 'CV - Footer'
+locked: false

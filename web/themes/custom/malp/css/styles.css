@@ -10011,6 +10011,38 @@ article.formation.full .field--name-field-description {
   background-color: #26a69a;
 }
 
+/* line 411, ../scss/_component.scss */
+footer.footer,
+div.subfooter {
+  margin-top: 30px;
+  margin-bottom: 0;
+  background-color: #333333;
+  color: #777777;
+  padding: 15px;
+}
+/* line 419, ../scss/_component.scss */
+footer.footer h2,
+div.subfooter h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+/* line 425, ../scss/_component.scss */
+footer.footer section#block-blocmarinedufooter .field--name-field-image,
+div.subfooter section#block-blocmarinedufooter .field--name-field-image {
+  margin-left: 10px;
+}
+/* line 429, ../scss/_component.scss */
+footer.footer section#block-blocmarinedufooter .field--name-body,
+div.subfooter section#block-blocmarinedufooter .field--name-body {
+  color: #eeeeee;
+  text-align: right;
+}
+/* line 435, ../scss/_component.scss */
+footer.footer .view-footer,
+div.subfooter .view-footer {
+  margin-top: 20px;
+}
+
 /* line 2, ../scss/_theme.scss */
 #navbar,
 #footer,

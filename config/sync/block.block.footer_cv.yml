@@ -1,0 +1,24 @@
+uuid: f0358082-ca10-41ce-8cdc-c56e30397399
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.cv
+  module:
+    - system
+  theme:
+    - malp
+id: footer_cv
+theme: malp
+region: subfooter_2
+weight: -11
+provider: null
+plugin: 'system_menu_block:cv'
+settings:
+  id: 'system_menu_block:cv'
+  label: CV
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

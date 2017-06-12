@@ -1,0 +1,8 @@
+uuid: a9eb1e09-2f18-4ddd-8680-9c32b840a1a8
+langcode: fr
+status: true
+dependencies: {  }
+id: bloc_footer
+label: 'Bloc Footer'
+revision: 0
+description: 'Bloc du Footer : Image + titre'
