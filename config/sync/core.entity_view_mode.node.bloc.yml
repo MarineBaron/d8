@@ -1,0 +1,10 @@
+uuid: a2c90ce7-1338-4da1-b624-f25d207bafb8
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.bloc
+label: bloc
+targetEntityType: node
+cache: true

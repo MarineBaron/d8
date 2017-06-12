@@ -1,0 +1,21 @@
+uuid: 4730a176-1a29-4048-ba3c-dcda44d6af70
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dates
+    - node.type.experience_professionnelle
+  module:
+    - datetime_range
+id: node.experience_professionnelle.field_dates
+field_name: field_dates
+entity_type: node
+bundle: experience_professionnelle
+label: Dates
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

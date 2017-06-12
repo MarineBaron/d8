@@ -4,12 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.carousel.field_background
-    - field.field.paragraph.carousel.field_slide_content
     - field.field.paragraph.carousel.field_slide_interval
     - field.field.paragraph.carousel.field_width
     - paragraphs.paragraphs_type.carousel
   module:
-    - entity_reference_revisions
     - options
 _core:
   default_config_hash: 0r_kmZkaUJVnewnuCwhJ_Ktu1eRbT5FD65JWWRegbnU
@@ -24,15 +22,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_key
-    region: content
-  field_slide_content:
-    type: entity_reference_revisions_entity_view
-    weight: 3
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
     region: content
   field_slide_interval:
     weight: 2

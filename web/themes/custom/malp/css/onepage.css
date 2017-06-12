@@ -61,14 +61,20 @@ body.path-cv {
 
 /* line 57, ../scss/onepage.scss */
 #block-homecv,
-#block-cv-formation {
+#block-cv-formation,
+#block-cv-competences {
   background-color: #e2e8eb;
   margin-right: -45px;
   margin-left: -45px;
   padding: 0 45px;
 }
 
-/* line 65, ../scss/onepage.scss */
+/* line 66, ../scss/onepage.scss */
+#block-cv-competences {
+  background-color: #f7f7f7;
+}
+
+/* line 70, ../scss/onepage.scss */
 #block-homecv,
 #block-homeblog,
 #block-cv-competences,
@@ -77,7 +83,7 @@ body.path-cv {
 #block-cv-loisirs {
   padding-top: 50px;
 }
-/* line 73, ../scss/onepage.scss */
+/* line 78, ../scss/onepage.scss */
 #block-homecv > h2.block-title,
 #block-homeblog > h2.block-title,
 #block-cv-competences > h2.block-title,
@@ -88,7 +94,7 @@ body.path-cv {
   margin-bottom: 50px;
   color: #546e7a;
 }
-/* line 79, ../scss/onepage.scss */
+/* line 84, ../scss/onepage.scss */
 #block-homecv div.blockblockone,
 #block-homeblog div.blockblockone,
 #block-cv-competences div.blockblockone,
@@ -97,7 +103,7 @@ body.path-cv {
 #block-cv-loisirs div.blockblockone {
   text-align: center;
 }
-/* line 82, ../scss/onepage.scss */
+/* line 87, ../scss/onepage.scss */
 #block-homecv div.blockblockone > div,
 #block-homeblog div.blockblockone > div,
 #block-cv-competences div.blockblockone > div,
@@ -105,8 +111,9 @@ body.path-cv {
 #block-cv-formation div.blockblockone > div,
 #block-cv-loisirs div.blockblockone > div {
   max-width: 300px;
+  margin: auto;
 }
-/* line 86, ../scss/onepage.scss */
+/* line 92, ../scss/onepage.scss */
 #block-homecv div.blockblockone .field--name-field-intitule,
 #block-homecv div.blockblockone h3.block-title,
 #block-homeblog div.blockblockone .field--name-field-intitule,
@@ -123,7 +130,7 @@ body.path-cv {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-size: 24px;
 }
-/* line 93, ../scss/onepage.scss */
+/* line 99, ../scss/onepage.scss */
 #block-homecv div.blockblockone article.societe,
 #block-homeblog div.blockblockone article.societe,
 #block-cv-competences div.blockblockone article.societe,
@@ -132,7 +139,7 @@ body.path-cv {
 #block-cv-loisirs div.blockblockone article.societe {
   min-height: 100px;
 }
-/* line 96, ../scss/onepage.scss */
+/* line 102, ../scss/onepage.scss */
 #block-homecv div.blockblockone article.societe img,
 #block-homeblog div.blockblockone article.societe img,
 #block-cv-competences div.blockblockone article.societe img,
@@ -141,7 +148,7 @@ body.path-cv {
 #block-cv-loisirs div.blockblockone article.societe img {
   margin: auto;
 }
-/* line 102, ../scss/onepage.scss */
+/* line 108, ../scss/onepage.scss */
 #block-homecv .view-footer,
 #block-homeblog .view-footer,
 #block-cv-competences .view-footer,
@@ -153,72 +160,209 @@ body.path-cv {
   text-align: center;
 }
 
-/* line 111, ../scss/onepage.scss */
+/* line 117, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(1) .field--name-field-icone-svg svg {
   fill: #9ccc65;
 }
-/* line 115, ../scss/onepage.scss */
+/* line 121, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(1) .field--name-field-intitule {
   color: #9ccc65;
 }
-/* line 121, ../scss/onepage.scss */
+/* line 127, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(2) .field--name-field-icone-svg svg {
   fill: #26a69a;
 }
-/* line 125, ../scss/onepage.scss */
+/* line 131, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(2) .field--name-field-intitule {
   color: #26a69a;
 }
-/* line 131, ../scss/onepage.scss */
+/* line 137, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(3) .field--name-field-icone-svg svg {
   fill: #29b6f6;
 }
-/* line 135, ../scss/onepage.scss */
+/* line 141, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(3) .field--name-field-intitule {
   color: #29b6f6;
 }
-/* line 141, ../scss/onepage.scss */
+/* line 147, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(4) .field--name-field-icone-svg svg {
   fill: #5c6bc0;
 }
-/* line 145, ../scss/onepage.scss */
+/* line 151, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(4) .field--name-field-intitule {
   color: #5c6bc0;
 }
 
-/* line 153, ../scss/onepage.scss */
+/* line 159, ../scss/onepage.scss */
 #block-cv-competences div.blockblockone:nth-child(1) .field--name-field-icone-svg svg {
   fill: #0077c0;
 }
-/* line 157, ../scss/onepage.scss */
+/* line 163, ../scss/onepage.scss */
 #block-cv-competences div.blockblockone:nth-child(1) .field--name-field-intitule {
   color: #0077c0;
 }
-/* line 163, ../scss/onepage.scss */
+/* line 169, ../scss/onepage.scss */
 #block-cv-competences div.blockblockone:nth-child(2) .field--name-field-icone-svg svg {
   fill: #9ccc65;
 }
-/* line 167, ../scss/onepage.scss */
+/* line 173, ../scss/onepage.scss */
 #block-cv-competences div.blockblockone:nth-child(2) .field--name-field-intitule {
   color: #9ccc65;
 }
-/* line 173, ../scss/onepage.scss */
+/* line 179, ../scss/onepage.scss */
 #block-cv-competences div.blockblockone:nth-child(3) .field--name-field-icone-svg svg {
   fill: #5c6bc0;
 }
-/* line 177, ../scss/onepage.scss */
+/* line 183, ../scss/onepage.scss */
 #block-cv-competences div.blockblockone:nth-child(3) .field--name-field-intitule {
   color: #5c6bc0;
 }
 
-/* line 184, ../scss/onepage.scss */
+/* line 190, ../scss/onepage.scss */
+#block-cv-experience-professionnelle .view-content {
+  width: 450px;
+  margin: auto;
+  position: relative;
+}
+/* line 196, ../scss/onepage.scss */
+#block-cv-experience-professionnelle .timelife-line {
+  position: relative;
+  width: 450px;
+}
+/* line 200, ../scss/onepage.scss */
+#block-cv-experience-professionnelle .timelife-line ::before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  width: 0;
+  top: 100px;
+  bottom: 100px;
+  left: 50px;
+  border: 1px solid #546e7a;
+}
+/* line 212, ../scss/onepage.scss */
+#block-cv-experience-professionnelle div.timelife {
+  width: 450px;
+  margin: auto;
+}
+/* line 216, ../scss/onepage.scss */
+#block-cv-experience-professionnelle div.timelife > article {
+  width: 450px;
+  height: 200px;
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+}
+/* line 223, ../scss/onepage.scss */
+#block-cv-experience-professionnelle div.timelife > article .timelife-image {
+  width: 100px;
+  height: 100px;
+  background-color: #e2e8eb;
+  border: 1px solid #546e7a;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 234, ../scss/onepage.scss */
+#block-cv-experience-professionnelle div.timelife > article .timelife-image img {
+  margin: auto;
+  max-width: 80px;
+  max-height: 80px;
+}
+/* line 241, ../scss/onepage.scss */
+#block-cv-experience-professionnelle div.timelife > article .timelife-text {
+  width: 300px;
+  padding-left: 10px;
+  padding-right: 0;
+  color: #777777;
+}
+/* line 247, ../scss/onepage.scss */
+#block-cv-experience-professionnelle div.timelife > article .timelife-text h4 {
+  margin: 0;
+  color: #546e7a;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 254, ../scss/onepage.scss */
+#block-cv-experience-professionnelle div.timelife > article .timelife-text .timelife-date {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  color: #546e7a;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+/* line 264, ../scss/onepage.scss */
+#block-cv-experience-professionnelle div.timelife.timelife-right > article {
+  margin-left: 0;
+  flex-direction: row;
+}
+/* line 268, ../scss/onepage.scss */
+#block-cv-experience-professionnelle div.timelife.timelife-right > article .timelife-text {
+  padding-left: 10px;
+  padding-right: 0;
+}
+@media (min-width: 768px) {
+  /* line 275, ../scss/onepage.scss */
+  #block-cv-experience-professionnelle .view-content {
+    width: 750px;
+    margin: auto;
+    position: relative;
+  }
+  /* line 281, ../scss/onepage.scss */
+  #block-cv-experience-professionnelle .timelife-line {
+    margin: auto;
+    width: 750px;
+    position: relative;
+  }
+  /* line 286, ../scss/onepage.scss */
+  #block-cv-experience-professionnelle .timelife-line ::before {
+    left: 50%;
+  }
+  /* line 291, ../scss/onepage.scss */
+  #block-cv-experience-professionnelle div.timelife {
+    width: 750px;
+    margin: auto;
+  }
+  /* line 295, ../scss/onepage.scss */
+  #block-cv-experience-professionnelle div.timelife > article {
+    width: 450px;
+    margin-left: 300px;
+    display: flex;
+    align-items: center;
+  }
+  /* line 301, ../scss/onepage.scss */
+  #block-cv-experience-professionnelle div.timelife > article .timelife-image {
+    width: 150px;
+    height: 150px;
+  }
+  /* line 305, ../scss/onepage.scss */
+  #block-cv-experience-professionnelle div.timelife > article .timelife-image img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  /* line 313, ../scss/onepage.scss */
+  #block-cv-experience-professionnelle div.timelife.timelife-right > article {
+    margin-left: 0;
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  /* line 318, ../scss/onepage.scss */
+  #block-cv-experience-professionnelle div.timelife.timelife-right > article .timelife-text {
+    padding-left: 0;
+    padding-right: 10px;
+  }
+}
+
+/* line 327, ../scss/onepage.scss */
 #block-cv-formation div.blockblockone > article {
+  margin-top: 15px;
   padding-left: 3px;
   padding-right: 3px;
   background-color: #eeeeee;
 }
 
-/* line 193, ../scss/onepage.scss */
+/* line 337, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone .views-field-rendered-entity {
   width: 180px;
   height: 180px;
@@ -226,62 +370,62 @@ body.path-cv {
   border-radius: 3px;
   padding-top: 10px;
 }
-/* line 200, ../scss/onepage.scss */
+/* line 344, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone .views-field-rendered-entity h3 {
   color: #eeeeee;
 }
-/* line 204, ../scss/onepage.scss */
+/* line 348, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone .views-field-rendered-entity svg {
   fill: #eeeeee;
 }
-/* line 209, ../scss/onepage.scss */
+/* line 353, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone .views-field-view {
   margin-top: 10px;
 }
-/* line 212, ../scss/onepage.scss */
+/* line 356, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone .views-field-view .view-content {
   display: flex;
   justify-content: center;
 }
-/* line 216, ../scss/onepage.scss */
+/* line 360, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone .views-field-view .view-content > div {
   margin: 3px;
   padding: 3px;
   border: 1px solid;
   border-radius: 3px;
 }
-/* line 227, ../scss/onepage.scss */
+/* line 371, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone:nth-child(1) .views-field-rendered-entity {
   background-color: #9ccc65;
 }
-/* line 231, ../scss/onepage.scss */
+/* line 375, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone:nth-child(1) .views-field-view .view-content > div {
   color: #9ccc65;
   border-color: #9ccc65;
 }
-/* line 238, ../scss/onepage.scss */
+/* line 382, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone:nth-child(2) .views-field-rendered-entity {
   background-color: #26a69a;
 }
-/* line 242, ../scss/onepage.scss */
+/* line 386, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone:nth-child(2) .views-field-view .view-content > div {
   color: #26a69a;
   border-color: #26a69a;
 }
-/* line 249, ../scss/onepage.scss */
+/* line 393, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone:nth-child(3) .views-field-rendered-entity {
   background-color: #29b6f6;
 }
-/* line 253, ../scss/onepage.scss */
+/* line 397, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone:nth-child(3) .views-field-view .view-content > div {
   color: #29b6f6;
   border-color: #29b6f6;
 }
-/* line 260, ../scss/onepage.scss */
+/* line 404, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone:nth-child(4) .views-field-rendered-entity {
   background-color: #5c6bc0;
 }
-/* line 264, ../scss/onepage.scss */
+/* line 408, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone:nth-child(4) .views-field-view .view-content > div {
   color: #5c6bc0;
   border-color: #5c6bc0;

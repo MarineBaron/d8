@@ -1,0 +1,11 @@
+uuid: a561bbcb-9385-491c-a1f0-7337a0062baf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.experience_professionnelle
+id: node.experience_professionnelle
+target_entity_type_id: node
+target_bundle: experience_professionnelle
+default_langcode: site_default
+language_alterable: false

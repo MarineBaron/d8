@@ -1,0 +1,52 @@
+uuid: c79017ee-8b3e-4f7b-89a9-f7976f637466
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.experience_professionnelle.body
+    - field.field.node.experience_professionnelle.field_accroche
+    - field.field.node.experience_professionnelle.field_dates
+    - field.field.node.experience_professionnelle.field_missions
+    - field.field.node.experience_professionnelle.field_societe
+    - node.type.experience_professionnelle
+  module:
+    - datetime_range
+    - text
+    - user
+id: node.experience_professionnelle.teaser
+targetEntityType: node
+bundle: experience_professionnelle
+mode: teaser
+content:
+  field_accroche:
+    type: text_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_dates:
+    type: daterange_default
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: mois
+      separator: '-'
+    third_party_settings: {  }
+  field_societe:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_missions: true
+  langcode: true
+  links: true

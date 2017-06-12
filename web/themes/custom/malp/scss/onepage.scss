@@ -55,11 +55,16 @@ body.path-cv {
 }
 
 #block-homecv,
-#block-cv-formation {
-  background-color: lighten($brand-primary, 50%);
+#block-cv-formation,
+#block-cv-competences {
+  background-color: $brand-primary-lighter;
   margin-right: -45px;
   margin-left: -45px;
   padding: 0 45px;
+}
+
+#block-cv-competences {
+  background-color: $gray-lighter-plus;
 }
 
 #block-homecv,
@@ -81,6 +86,7 @@ body.path-cv {
 
     > div {
       max-width: 300px;
+      margin: auto;
     }
 
     .field--name-field-intitule,
@@ -180,8 +186,146 @@ body.path-cv {
   }
 }
 
+#block-cv-experience-professionnelle {
+  .view-content {
+    width: 450px;
+    margin: auto;
+    position: relative;
+  }
+
+  .timelife-line {
+    position: relative;
+    width: 450px;
+
+    ::before {
+      position: absolute;
+      z-index: -1;
+      content: '';
+      width: 0;
+      top: 100px;
+      bottom: 100px;
+      left: 50px; // change in media
+      border: 1px solid $brand-primary;
+    }
+  }
+
+  div.timelife {
+    width: 450px; // change in media
+    margin: auto;
+
+    > article {
+      width: 450px;
+      height: 200px;
+      margin-left: 0; // change in media
+      display: flex;
+      align-items: center;
+
+      .timelife-image {
+        width: 100px; // change in media
+        height: 100px; // change in media
+        background-color: $brand-primary-lighter;
+        border: 1px solid $brand-primary;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          margin: auto;
+          max-width: 80px;
+          max-height: 80px;
+        }
+      }
+
+      .timelife-text {
+        width: 300px;
+        padding-left: 10px;
+        padding-right: 0;
+        color: $gray_light;
+
+        h4 {
+          margin: 0;
+          color: $brand-primary;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+
+        .timelife-date {
+          font-family: $headings-font-family;
+          color: $brand-primary;
+          text-transform: uppercase;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  div.timelife.timelife-right > article {
+    margin-left: 0;
+    flex-direction: row;
+
+    .timelife-text {
+      padding-left: 10px;
+      padding-right: 0;
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    .view-content {
+      width: 750px;
+      margin: auto;
+      position: relative;
+    }
+
+    .timelife-line {
+      margin: auto;
+      width: 750px;
+      position: relative;
+
+      ::before {
+        left: 50%; // change in media
+      }
+    }
+
+    div.timelife {
+      width: 750px;
+      margin: auto;
+
+      > article {
+        width: 450px;
+        margin-left: 300px;
+        display: flex;
+        align-items: center;
+
+        .timelife-image {
+          width: 150px;
+          height: 150px;
+
+          img {
+            max-width: 100px;
+            max-height: 100px;
+          }
+        }
+      }
+    }
+
+    div.timelife.timelife-right > article {
+      margin-left: 0;
+      flex-direction: row-reverse;
+      text-align: right;
+
+      .timelife-text {
+        padding-left: 0;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
 #block-cv-formation {
   div.blockblockone > article {
+    margin-top: 15px;
     padding-left: 3px;
     padding-right: 3px;
     background-color: $gray-lighter;

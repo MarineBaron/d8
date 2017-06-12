@@ -1,0 +1,22 @@
+uuid: 2f719550-8214-40ad-a817-2c177ed62426
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.experience_professionnelle
+  module:
+    - text
+id: node.experience_professionnelle.body
+field_name: body
+entity_type: node
+bundle: experience_professionnelle
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

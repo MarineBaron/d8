@@ -1,0 +1,7 @@
+name: MALP Views Bootstrap
+type: module
+description: Override some bootstrap views
+core: 8.x
+package: Custom
+dependencies:
+  - views_bootstrap

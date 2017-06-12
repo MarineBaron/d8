@@ -1,5 +1,8 @@
 <?php
 
+use Drupal\views_bootstrap\ViewsBootstrap;
+use Drupal\Core\Template\Attribute;
+
 /**
  * @file
  * MALP Bootstrap sub-theme.
@@ -38,6 +41,9 @@ function malp_page_attachments_alter(&$page) {
       'navbar' => $current_uri == '/' ? '#block-onepagehome' : '#block-onepagecv',
     ];
   }
+  elseif (in_array($current_uri, ['/cv/experience-professionnelle'])) {
+    $page['#attached']['library'][] = 'core/jquery.accordion';
+  }
   elseif ($node = \Drupal::request()->attributes->get('node')) {
     $page['#attached']['library'][] = 'malp/affix';
   }
@@ -71,4 +77,14 @@ function malp_preprocess_image(&$variables) {
   if (isset($variables['style_name']) && in_array($variables['style_name'], ['vignette_ronde_100'])) {
     $variables['attributes']['class'][] = "img-circle";
   }
+  elseif (isset($variables['style_name']) && in_array($variables['style_name'], ['vignette_ronde_max_100'])) {
+    $variables['attributes']['class'][] = "img-malp-circle";
+  }
+}
+
+/**
+ * Implements hook_preprocess_views_bootstrap_accordion().
+ */
+function malp_preprocess_views_bootstrap_accordion(array &$vars) {
+  //template_preprocess_views_bootstrap_accordion($vars);
 }

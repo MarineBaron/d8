@@ -5,8 +5,8 @@ dependencies: {  }
 name: vignette_ronde_100
 label: 'Vignette ronde - 100'
 effects:
-  7ac48169-e8f6-416d-8972-ca068d9c9ae0:
-    uuid: 7ac48169-e8f6-416d-8972-ca068d9c9ae0
+  3c584a9c-efd7-4663-8b6b-7cf457c7ca36:
+    uuid: 3c584a9c-efd7-4663-8b6b-7cf457c7ca36
     id: image_scale_and_crop
     weight: 1
     data:

@@ -1,0 +1,28 @@
+uuid: 7f8eeb2e-5ce2-4ff8-9afd-0bfff66fb0d3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_societe
+    - node.type.societe
+    - paragraphs.paragraphs_type.mission
+id: paragraph.mission.field_societe
+field_name: field_societe
+entity_type: paragraph
+bundle: mission
+label: Société
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      societe: societe
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

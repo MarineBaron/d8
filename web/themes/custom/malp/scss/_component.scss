@@ -33,6 +33,7 @@
   border-radius: 35px;
 }
 
+
 // Top navbar
 #navbar {
   border: 0;
@@ -181,6 +182,103 @@
       border-bottom: 1px solid $brand-primary;
     }
   }
+}
 
+// Accordion
+.panel-heading .panel-title {
+  margin: 0;
+  padding: 0;
 
+  .panel-title-left {
+    width: 100px; // change in media
+    height: 100px; // change in media
+    background-color: $brand-primary-lighter;
+    border: 1px solid $brand-primary;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin: auto;
+    }
+  }
+
+  .panel-title-right {
+    text-align: right;
+    text-transform: uppercase;
+    font-family: $headings-font-family;
+
+    .panel-title-title {
+      font-size: $font-size-h2;
+      color: $brand-primary;
+    }
+  }
+}
+
+// Expérience professionnelle
+article.experience-professionnelle.full {
+  article.societe.bloc {
+    background-color: $brand-primary-lighter;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+
+    img {
+      margin: auto;
+    }
+  }
+
+  .paragraph,
+  .paragraph > .paragraph__column {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    div.mission-top {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      font-family: $headings-font-family;
+      color: $brand-primary;
+      text-transform: uppercase;
+      border-bottom: 1px solid $brand-primary;
+
+      div.field--name-field-titre {
+        font-size: $font-size-h3;
+      }
+
+      div.field--name-field-dates {
+        font-size: $font-size-h4;
+        align-self: last baseline;
+      }
+    }
+
+    div.mission-corps {
+      background-color: $gray-lighter-plus;
+      padding: 30px 15px;
+
+      article.societe.bloc {
+        background-color: transparent;
+      }
+
+      .field--name-field-competences {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 300px;
+        padding: 10px;
+
+        .field--item {
+          color: $brand-primary;
+          margin: 3px;
+          padding: 3px;
+          border: 1px solid $brand-primary;
+          border-radius: $border-radius-base;
+        }
+      }
+    }
+  }
 }

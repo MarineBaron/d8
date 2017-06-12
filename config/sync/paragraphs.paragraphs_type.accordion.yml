@@ -1,9 +1,0 @@
-uuid: 602576ca-d239-4216-86ce-63d86be6cfd2
-langcode: fr
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: WPy1Qf8SD9etzHeZAqPjMR27UwULGPVCIuHy7hv5vNg
-id: accordion
-label: Accordion
-behavior_plugins: {  }

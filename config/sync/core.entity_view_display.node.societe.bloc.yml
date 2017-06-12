@@ -1,0 +1,45 @@
+uuid: 6269f04e-6a98-4d92-98a7-fb22b90cf05d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.bloc
+    - field.field.node.societe.body
+    - field.field.node.societe.field_logo
+    - field.field.node.societe.field_site_web
+    - image.style.thumbnail
+    - node.type.societe
+  module:
+    - image
+    - link
+    - user
+id: node.societe.bloc
+targetEntityType: node
+bundle: societe
+mode: bloc
+content:
+  field_logo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_site_web:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  body: true
+  langcode: true
+  links: true

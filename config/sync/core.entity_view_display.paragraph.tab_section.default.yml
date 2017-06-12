@@ -3,11 +3,8 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.paragraph.tab_section.field_tab_section_body
     - field.field.paragraph.tab_section.field_tab_section_title
     - paragraphs.paragraphs_type.tab_section
-  module:
-    - entity_reference_revisions
 _core:
   default_config_hash: cylHqnZENAYUMIY6giHRLRaDIJrTeYPvuvqXQJo94vw
 id: paragraph.tab_section.default
@@ -15,15 +12,6 @@ targetEntityType: paragraph
 bundle: tab_section
 mode: default
 content:
-  field_tab_section_body:
-    type: entity_reference_revisions_entity_view
-    weight: 1
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: content
   field_tab_section_title:
     weight: 0
     label: above

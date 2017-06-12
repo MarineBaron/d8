@@ -1,0 +1,69 @@
+uuid: 7968c905-78d3-4277-af28-84783e6f9b3b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mission.field_competences
+    - field.field.paragraph.mission.field_dates
+    - field.field.paragraph.mission.field_description
+    - field.field.paragraph.mission.field_societe
+    - field.field.paragraph.mission.field_titre
+    - paragraphs.paragraphs_type.mission
+  module:
+    - datetime_range
+    - entity_browser_entity_form
+    - inline_entity_form
+    - text
+id: paragraph.mission.default
+targetEntityType: paragraph
+bundle: mission
+mode: default
+content:
+  field_competences:
+    weight: 4
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      allow_new: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: competences
+    type: inline_entity_form_complex
+    region: content
+  field_dates:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_description:
+    weight: 3
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_societe:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_titre:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

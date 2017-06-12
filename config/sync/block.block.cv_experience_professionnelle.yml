@@ -1,0 +1,30 @@
+uuid: aac2da31-de19-4a13-8df8-6d6c669d135d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.experiences_professionnelles
+  module:
+    - system
+    - views
+  theme:
+    - malp
+id: cv_experience_professionnelle
+theme: malp
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:experiences_professionnelles-block_1'
+settings:
+  id: 'views_block:experiences_professionnelles-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /cv
+    negate: false
+    context_mapping: {  }

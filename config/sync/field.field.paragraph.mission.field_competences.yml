@@ -1,0 +1,28 @@
+uuid: 92c103d2-03bd-4533-ae83-ac2e30dfadb4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_competences
+    - node.type.competence
+    - paragraphs.paragraphs_type.mission
+id: paragraph.mission.field_competences
+field_name: field_competences
+entity_type: paragraph
+bundle: mission
+label: Compétences
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      competence: competence
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

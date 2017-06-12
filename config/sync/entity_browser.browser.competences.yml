@@ -1,0 +1,33 @@
+uuid: fb1354d2-ec01-48d0-acbc-de25672572e5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.competences
+  module:
+    - views
+name: competences
+label: Compétences
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Choisir des compétences'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration:
+  view: competences
+  view_display: entity_browser_1
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  49719516-8dae-42a9-a055-6a341c41f056:
+    settings:
+      view: competences
+      view_display: entity_browser_1
+      submit_text: 'Sélectionner des compétences'
+      auto_select: false
+    uuid: 49719516-8dae-42a9-a055-6a341c41f056
+    weight: 1
+    label: 'Liste des compétences'
+    id: view

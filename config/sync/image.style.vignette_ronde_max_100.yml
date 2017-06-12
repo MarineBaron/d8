@@ -1,0 +1,14 @@
+uuid: 7a2176f2-8400-4e4c-9a8b-36a483c3be82
+langcode: fr
+status: true
+dependencies: {  }
+name: vignette_ronde_max_100
+label: 'Vignette ronde - max - 100'
+effects:
+  42f13f2e-3ac7-453e-9ae9-5af3617972fa:
+    uuid: 42f13f2e-3ac7-453e-9ae9-5af3617972fa
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 100
+      height: 100

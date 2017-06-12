@@ -1,0 +1,7 @@
+uuid: d02378f0-3dbf-441e-89ec-d460e64445aa
+langcode: fr
+status: true
+dependencies: {  }
+id: mission
+label: Mission
+behavior_plugins: {  }

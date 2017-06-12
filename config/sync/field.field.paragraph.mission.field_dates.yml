@@ -1,0 +1,21 @@
+uuid: 19bfbd81-5fc6-400a-aa18-2ef827f41711
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_dates
+    - paragraphs.paragraphs_type.mission
+  module:
+    - datetime_range
+id: paragraph.mission.field_dates
+field_name: field_dates
+entity_type: paragraph
+bundle: mission
+label: Dates
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

@@ -5,5 +5,5 @@ dependencies: {  }
 name: Compétences
 vid: competences
 description: ''
-hierarchy: 1
+hierarchy: 0
 weight: 0

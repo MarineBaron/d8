@@ -1,0 +1,14 @@
+{
+  "name": "drupal/malp_views_bootstrap",
+  "type": "drupal-module",
+  "description": "Override some bootstrap views",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/malp_views_bootstrap",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/malp_views_bootstrap",
+    "source": "http://cgit.drupalcode.org/malp_views_bootstrap"
+  },
+  "require": { }
+}
