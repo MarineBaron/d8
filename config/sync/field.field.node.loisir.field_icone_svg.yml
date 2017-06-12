@@ -1,0 +1,27 @@
+uuid: 3868364f-524c-48ba-a88e-e6f443d64df5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icone_svg
+    - node.type.loisir
+  module:
+    - file
+id: node.loisir.field_icone_svg
+field_name: field_icone_svg
+entity_type: node
+bundle: loisir
+label: 'Icône SVG'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: images/icone_svg
+  file_extensions: svg
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -9833,6 +9833,12 @@ article.experience-professionnelle.full article.societe.bloc img {
   margin: auto;
 }
 /* line 233, ../scss/_component.scss */
+article.experience-professionnelle.full .mission-title {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+/* line 239, ../scss/_component.scss */
 article.experience-professionnelle.full .paragraph,
 article.experience-professionnelle.full .paragraph > .paragraph__column {
   margin-left: 0;
@@ -9840,7 +9846,7 @@ article.experience-professionnelle.full .paragraph > .paragraph__column {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 240, ../scss/_component.scss */
+/* line 246, ../scss/_component.scss */
 article.experience-professionnelle.full .paragraph div.mission-top,
 article.experience-professionnelle.full .paragraph > .paragraph__column div.mission-top {
   margin-top: 30px;
@@ -9851,29 +9857,29 @@ article.experience-professionnelle.full .paragraph > .paragraph__column div.miss
   text-transform: uppercase;
   border-bottom: 1px solid #546e7a;
 }
-/* line 249, ../scss/_component.scss */
+/* line 255, ../scss/_component.scss */
 article.experience-professionnelle.full .paragraph div.mission-top div.field--name-field-titre,
 article.experience-professionnelle.full .paragraph > .paragraph__column div.mission-top div.field--name-field-titre {
   font-size: 24px;
 }
-/* line 253, ../scss/_component.scss */
+/* line 259, ../scss/_component.scss */
 article.experience-professionnelle.full .paragraph div.mission-top div.field--name-field-dates,
 article.experience-professionnelle.full .paragraph > .paragraph__column div.mission-top div.field--name-field-dates {
   font-size: 18px;
   align-self: last baseline;
 }
-/* line 259, ../scss/_component.scss */
+/* line 265, ../scss/_component.scss */
 article.experience-professionnelle.full .paragraph div.mission-corps,
 article.experience-professionnelle.full .paragraph > .paragraph__column div.mission-corps {
   background-color: #f7f7f7;
   padding: 30px 15px;
 }
-/* line 263, ../scss/_component.scss */
+/* line 269, ../scss/_component.scss */
 article.experience-professionnelle.full .paragraph div.mission-corps article.societe.bloc,
 article.experience-professionnelle.full .paragraph > .paragraph__column div.mission-corps article.societe.bloc {
   background-color: transparent;
 }
-/* line 267, ../scss/_component.scss */
+/* line 273, ../scss/_component.scss */
 article.experience-professionnelle.full .paragraph div.mission-corps .field--name-field-competences,
 article.experience-professionnelle.full .paragraph > .paragraph__column div.mission-corps .field--name-field-competences {
   display: flex;
@@ -9882,7 +9888,7 @@ article.experience-professionnelle.full .paragraph > .paragraph__column div.miss
   width: 300px;
   padding: 10px;
 }
-/* line 274, ../scss/_component.scss */
+/* line 280, ../scss/_component.scss */
 article.experience-professionnelle.full .paragraph div.mission-corps .field--name-field-competences .field--item,
 article.experience-professionnelle.full .paragraph > .paragraph__column div.mission-corps .field--name-field-competences .field--item {
   color: #546e7a;
@@ -9890,6 +9896,119 @@ article.experience-professionnelle.full .paragraph > .paragraph__column div.miss
   padding: 3px;
   border: 1px solid #546e7a;
   border-radius: 4px;
+}
+
+/* line 294, ../scss/_component.scss */
+article.formation.full .diplome-title {
+  width: 100%;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  color: #546e7a;
+  text-transform: uppercase;
+  border-bottom: 1px solid #546e7a;
+}
+/* line 302, ../scss/_component.scss */
+article.formation.full .field--name-field-date {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #546e7a;
+  text-transform: uppercase;
+}
+/* line 309, ../scss/_component.scss */
+article.formation.full .field--name-field-titre {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+/* line 314, ../scss/_component.scss */
+article.formation.full .field--name-field-description {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  color: #555555;
+}
+
+/* line 321, ../scss/_component.scss */
+.loisir-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 -15px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* line 330, ../scss/_component.scss */
+.loisir-box svg {
+  fill: #eeeeee;
+}
+/* line 334, ../scss/_component.scss */
+.loisir-box .loisir-box-caption {
+  color: #555555;
+  opacity: 0;
+  display: block;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+/* line 348, ../scss/_component.scss */
+.loisir-box .loisir-box-caption .loisir-box-caption-content {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+}
+/* line 356, ../scss/_component.scss */
+.loisir-box .loisir-box-caption .loisir-box-caption-content .loisir-box-caption-title {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-size: 24px;
+}
+
+/* line 364, ../scss/_component.scss */
+.loisir-box:hover .loisir-box-caption {
+  opacity: 0.8;
+}
+
+/* line 368, ../scss/_component.scss */
+.loisir-box:focus {
+  outline: none;
+}
+
+/* line 374, ../scss/_component.scss */
+#views-bootstrap-loisirs-page-1 > .row:nth-child(1) .col:nth-child(1) {
+  background-color: #9ccc65;
+}
+/* line 378, ../scss/_component.scss */
+#views-bootstrap-loisirs-page-1 > .row:nth-child(1) .col:nth-child(2) {
+  background-color: #26a69a;
+}
+/* line 382, ../scss/_component.scss */
+#views-bootstrap-loisirs-page-1 > .row:nth-child(1) .col:nth-child(3) {
+  background-color: #29b6f6;
+}
+/* line 386, ../scss/_component.scss */
+#views-bootstrap-loisirs-page-1 > .row:nth-child(1) .col:nth-child(4) {
+  background-color: #5c6bc0;
+}
+/* line 392, ../scss/_component.scss */
+#views-bootstrap-loisirs-page-1 > .row:nth-child(2) .col:nth-child(1) {
+  background-color: #5c6bc0;
+}
+/* line 396, ../scss/_component.scss */
+#views-bootstrap-loisirs-page-1 > .row:nth-child(2) .col:nth-child(2) {
+  background-color: #29b6f6;
+}
+/* line 400, ../scss/_component.scss */
+#views-bootstrap-loisirs-page-1 > .row:nth-child(2) .col:nth-child(3) {
+  background-color: #9ccc65;
+}
+/* line 404, ../scss/_component.scss */
+#views-bootstrap-loisirs-page-1 > .row:nth-child(2) .col:nth-child(4) {
+  background-color: #26a69a;
 }
 
 /* line 2, ../scss/_theme.scss */

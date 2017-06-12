@@ -32,21 +32,16 @@
  */
 #}
 
-<div class="panel-heading container-fluid" role="tab" id="heading-{{ row.index }}">
-    <div class="panel-title row">
-        <a role="button" data-toggle="collapse" data-parent="#accordion-{{ view.id }}" href="#collapse-{{ row.index }}" aria-controls="collapse-{{ row.index }}" aria-expanded="true">
-            <div class="panel-title-left col col-xs-4 col-sm-2">
-              {{ fields.field_logo.content }}
-            </div>
-            <div class="panel-title-right col-xs-8 col-sm-10">
-              <div class="panel-title-title">{{ fields.title.content }}</div>
-              <div class="panel-title-dates">{{ fields.field_dates.content }}</div>
-            </div>
-        </a>
+<div class="loisir-box">
+  {{ fields.field_icone_svg.content }}
+  <div class="loisir-box-caption">
+    <div class="loisir-box-caption-content">
+      <div class="loisir-box-caption-title">
+        {{ fields.title.content }}
+      </div>
+      <div class="loisir-box-caption-body">
+        {{ fields.body.content }}
+      </div>
     </div>
-</div>
-<div id="collapse-{{ row.index }}" aria-labelledby="heading-{{ row.index }}" class="panel-collapse collapse {% if row.index==0 %}in{% endif %}" role="tabpanel">
-    <div class="panel-body">
-        {{ fields.rendered_entity.content }}
-    </div>
+  </div>
 </div>

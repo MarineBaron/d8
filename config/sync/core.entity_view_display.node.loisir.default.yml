@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.loisir.body
+    - field.field.node.loisir.field_icone_svg
     - field.field.node.loisir.field_image
     - field.field.node.loisir.field_taxo_loisir
     - image.style.medium
     - node.type.loisir
   module:
+    - file
     - image
     - text
     - user
@@ -23,6 +25,13 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_icone_svg:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
     region: content
   field_image:
     weight: 0

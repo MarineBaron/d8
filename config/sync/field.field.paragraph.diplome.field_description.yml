@@ -1,0 +1,22 @@
+uuid: 70b7d645-be02-4f72-800a-6eeb1b7f836a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.diplome
+  module:
+    - text
+id: paragraph.diplome.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: diplome
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

@@ -4,23 +4,32 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.diplome.field_date
+    - field.field.paragraph.diplome.field_description
     - field.field.paragraph.diplome.field_titre
     - paragraphs.paragraphs_type.diplome
   module:
     - datetime
+    - text
 id: paragraph.diplome.default
 targetEntityType: paragraph
 bundle: diplome
 mode: default
 content:
   field_date:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       timezone_override: ''
       format_type: mois
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
   field_titre:
     weight: 0
