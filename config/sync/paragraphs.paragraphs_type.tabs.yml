@@ -1,9 +1,0 @@
-uuid: 0029fde1-53b5-4c67-8463-259850e01b97
-langcode: fr
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: YhIsm_OrTz_1VPy1RRnZNKCI4Ody_q5OW-ic_kZiBoc
-id: tabs
-label: Tabs
-behavior_plugins: {  }

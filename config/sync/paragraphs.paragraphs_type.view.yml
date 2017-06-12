@@ -1,9 +1,0 @@
-uuid: cbd09098-5ca3-4cd5-8c25-13986884d7a2
-langcode: fr
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: KR3pc_g_oaoI-NGEhh0vH2nH8YQdLb4Ax7pThX9GKx0
-id: view
-label: View
-behavior_plugins: {  }
