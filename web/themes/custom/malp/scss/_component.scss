@@ -33,7 +33,6 @@
   border-radius: 35px;
 }
 
-
 // Top navbar
 #navbar {
   border: 0;
@@ -67,50 +66,12 @@
   }
 }
 
-// Header Image
-#header-image {
-  .fullscreen {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-  }
-
-  .header-image-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-    color: $gray-lighter;
-
-    .field--name-field-intitule,
-    .field--name-field-title {
-      font-size: $font-size-h1;
-      text-transform: uppercase;
-    }
-
-    .field--name-body {
-      padding-top: 30px;
-      font-family: $headings-font-family;
-      font-size: $font-size-h4;
-    }
-  }
-
-  .header-image-next {
-    .btn-default {
-      background-color: transparent;
-      color: $gray-lighter;
-    }
-  }
-
-  .header-image-next {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    z-index: 100;
-    transform: translateX(-50%);
-  }
+// View - more link
+.view .more-link {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: auto;
+  text-align: center;
 }
 
 // View - articles
@@ -134,7 +95,6 @@
       padding-bottom: 10px;
     }
   }
-
   // Pager
   .pager {
     li {
@@ -147,39 +107,6 @@
       > a:focus {
         background-color: $link-hover-color;
       }
-    }
-  }
-}
-
-// view
-.view .more-link {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin: auto;
-  text-align: center;
-}
-
-#views-bootstrap-competences-taxo-page-1 {
-  > div > div {
-    padding-left: 40px;
-    padding-right: 40px;
-
-    .view-competences .view-content > div {
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    h3 {
-      color: $gray-light;
-      font-family: $font-family-base;
-      text-transform: uppercase;
-    }
-
-    h4 {
-      color: $brand-primary;
-      text-transform: uppercase;
-      width: 100%;
-      border-bottom: 1px solid $brand-primary;
     }
   }
 }
@@ -214,225 +141,5 @@
       font-size: $font-size-h2;
       color: $brand-primary;
     }
-  }
-}
-
-// Expérience professionnelle
-article.experience-professionnelle.full {
-  article.societe.bloc {
-    background-color: $brand-primary-lighter;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-
-    img {
-      margin: auto;
-    }
-  }
-
-  .mission-title {
-    font-family: $headings-font-family;
-    text-transform: uppercase;
-    font-size: $font-size-h3;
-  }
-
-  .paragraph,
-  .paragraph > .paragraph__column {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-
-    div.mission-top {
-      margin-top: 30px;
-      display: flex;
-      justify-content: space-between;
-      font-family: $headings-font-family;
-      color: $brand-primary;
-      text-transform: uppercase;
-      border-bottom: 1px solid $brand-primary;
-
-      div.field--name-field-titre {
-        font-size: $font-size-h3;
-      }
-
-      div.field--name-field-dates {
-        font-size: $font-size-h4;
-        align-self: last baseline;
-      }
-    }
-
-    div.mission-corps {
-      background-color: $gray-lighter-plus;
-      padding: 30px 15px;
-
-      article.societe.bloc {
-        background-color: transparent;
-      }
-
-      .field--name-field-competences {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 300px;
-        padding: 10px;
-
-        .field--item {
-          color: $brand-primary;
-          margin: 3px;
-          padding: 3px;
-          border: 1px solid $brand-primary;
-          border-radius: $border-radius-base;
-        }
-      }
-    }
-  }
-}
-
-// Expérience professionnelle
-article.formation.full {
-  .diplome-title {
-    width: 100%;
-    font-family: $headings-font-family;
-    color: $brand-primary;
-    text-transform: uppercase;
-    border-bottom: 1px solid $brand-primary;
-  }
-
-  .field--name-field-date {
-    font-family: $headings-font-family;
-    font-size: $font-size-h5;
-    color: $brand-primary;
-    text-transform: uppercase;
-  }
-
-  .field--name-field-titre {
-    font-family: $headings-font-family;
-    font-weight: bold;
-  }
-
-  .field--name-field-description {
-    font-family: $headings-font-family;
-    color: $gray;
-  }
-}
-
-// Loisirs
-.loisir-box {
-  position: relative;
-  display: block;
-  max-width: 650px;
-  margin: 0 -15px;
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-
-  svg {
-    fill: $gray-lighter;
-  }
-
-  .loisir-box-caption {
-    color: $gray;
-    opacity: 0;
-    display: block;
-    background: white;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: all 0.35s;
-    -moz-transition: all 0.35s;
-    transition: all 0.35s;
-
-    .loisir-box-caption-content {
-      width: 100%;
-      text-align: center;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      padding: 0;
-
-      .loisir-box-caption-title {
-        font-family: $headings-font-family;
-        font-size: $font-size-h3;
-      }
-    }
-  }
-}
-
-.loisir-box:hover .loisir-box-caption {
-  opacity: 0.8;
-}
-
-.loisir-box:focus {
-  outline: none;
-}
-
-#views-bootstrap-loisirs-page-1 {
-  > .row:nth-child(1) {
-    .col:nth-child(1) {
-      background-color: $color1;
-    }
-
-    .col:nth-child(2) {
-      background-color: $color2;
-    }
-
-    .col:nth-child(3) {
-      background-color: $color3;
-    }
-
-    .col:nth-child(4) {
-      background-color: $color4;
-    }
-  }
-
-  > .row:nth-child(2) {
-    .col:nth-child(1) {
-      background-color: $color4;
-    }
-
-    .col:nth-child(2) {
-      background-color: $color3;
-    }
-
-    .col:nth-child(3) {
-      background-color: $color1;
-    }
-
-    .col:nth-child(4) {
-      background-color: $color2;
-    }
-  }
-}
-
-// Footer
-footer.footer,
-div.subfooter {
-  margin-top: 30px;
-  margin-bottom: 0;
-  background-color: $gray-dark;
-  color: $gray-light;
-  padding: 15px;
-
-  h2 {
-    font-size: $font-size-h4;
-    text-transform: uppercase;
-  }
-
-  section#block-blocmarinedufooter {
-    .field--name-field-image {
-      margin-left: 10px;
-    }
-
-    .field--name-body {
-      color: $gray-lighter;
-      text-align: right;
-    }
-  }
-
-  .view-footer {
-    margin-top: 20px;
   }
 }

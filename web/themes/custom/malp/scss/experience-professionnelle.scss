@@ -1,0 +1,75 @@
+// Only on OnePage
+// Default variables.
+@import "default-variables";
+
+// Expérience professionnelle
+article.experience-professionnelle.full {
+  article.societe.bloc {
+    background-color: $brand-primary-lighter;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+
+    img {
+      margin: auto;
+    }
+  }
+
+  .mission-title {
+    font-family: $headings-font-family;
+    text-transform: uppercase;
+    font-size: $font-size-h3;
+  }
+
+  .paragraph,
+  .paragraph > .paragraph__column {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    div.mission-top {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      font-family: $headings-font-family;
+      color: $brand-primary;
+      text-transform: uppercase;
+      border-bottom: 1px solid $brand-primary;
+
+      div.field--name-field-titre {
+        font-size: $font-size-h3;
+      }
+
+      div.field--name-field-dates {
+        font-size: $font-size-h4;
+        align-self: last baseline;
+      }
+    }
+
+    div.mission-corps {
+      background-color: $gray-lighter-plus;
+      padding: 30px 15px;
+
+      article.societe.bloc {
+        background-color: transparent;
+      }
+
+      .field--name-field-competences {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 300px;
+        padding: 10px;
+
+        .field--item {
+          color: $brand-primary;
+          margin: 3px;
+          padding: 3px;
+          border: 1px solid $brand-primary;
+          border-radius: $border-radius-base;
+        }
+      }
+    }
+  }
+}

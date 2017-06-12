@@ -1,0 +1,40 @@
+// Only on OnePage
+// Default variables.
+@import "default-variables";
+
+// View - articles
+.view-articles {
+  article {
+    margin: 10px auto;
+    padding: 10px;
+    background-color: $gray-lighter-plus;
+    display: flex;
+
+    > div {
+      padding: 0 10px;
+    }
+
+    h2 {
+      margin: 0;
+    }
+
+    .author {
+      font-style: italic;
+      padding-bottom: 10px;
+    }
+  }
+  // Pager
+  .pager {
+    li {
+      > a,
+      > span {
+        background-color: $link-color;
+      }
+
+      > a:hover,
+      > a:focus {
+        background-color: $link-hover-color;
+      }
+    }
+  }
+}

@@ -5,10 +5,10 @@ dependencies: {  }
 _core:
   default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
 id: feedback
-label: 'Retours utilisateurs sur le site web'
+label: 'Contactez-moi !'
 recipients:
   - admin@marinealaplage.fr
-reply: ''
+reply: "Merci de votre message,\r\nJe vous répondrai aussi vite que possible,\r\n\r\nBien cordialement,\r\nMarine Baron"
 weight: 0
 message: 'Votre message a été envoyé.'
 redirect: ''

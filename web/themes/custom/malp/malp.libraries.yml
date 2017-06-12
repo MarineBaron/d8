@@ -1,15 +1,3 @@
-jquery.easing:
-  js:
-    /libraries/jquery.easing/jquery.easing.js: {}
-  dependencies:
-    - core/jquery
-
-jquery.matchHeight:
-  js:
-    /libraries/jquery.matchHeight/jquery.matchHeight.js: {}
-  dependencies:
-    - core/jquery
-
 global-styling:
   css:
     theme:
@@ -17,24 +5,6 @@ global-styling:
   js:
     js/scripts.js: {}
 
-  dependencies:
-    - core/jquery
-    - core/jquery.once
-    - core/drupalSettings
-    - malp/jquery.easing
-    - malp/jquery.matchHeight
-
-affix:
-  css:
-    theme:
-      css/affix.css: {}
-
-onepage:
-  css:
-    theme:
-      css/onepage.css: {}
-  js:
-    js/onepage.js: {}
   dependencies:
     - core/jquery
     - core/jquery.once
@@ -56,3 +26,63 @@ bootstrap-scripts:
     bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
     bootstrap/assets/javascripts/bootstrap/tab.js: {}
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
+
+jquery.easing:
+  js:
+    /libraries/jquery.easing/jquery.easing.js: {}
+  dependencies:
+    - core/jquery
+
+jquery.matchHeight:
+  js:
+    /libraries/jquery.matchHeight/jquery.matchHeight.js: {}
+  dependencies:
+    - core/jquery
+
+affix:
+  css:
+    theme:
+      css/affix.css: {}
+
+onepage:
+  css:
+    theme:
+      css/onepage.css: {}
+  js:
+    js/onepage.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+    - malp/jquery.easing
+    - malp/jquery.matchHeight
+
+competences:
+  css:
+    theme:
+      css/competences.css: {}
+
+experience-professionnelle:
+  css:
+    theme:
+      css/experience-professionnelle.css: {}
+
+formation:
+  css:
+    theme:
+      css/formation.css: {}
+
+loisirs:
+  css:
+    theme:
+      css/loisirs.css: {}
+
+articles:
+  css:
+    theme:
+      css/articles.css: {}
+
+article:
+  css:
+    theme:
+      css/article.css: {}

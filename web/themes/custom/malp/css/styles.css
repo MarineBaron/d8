@@ -9612,6 +9612,75 @@ p:last-child,
   height: 100%;
 }
 
+/* line 12, ../scss/_layout.scss */
+#header-image .fullscreen {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+/* line 19, ../scss/_layout.scss */
+#header-image .header-image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  color: #eeeeee;
+}
+/* line 27, ../scss/_layout.scss */
+#header-image .header-image-text .field--name-field-intitule,
+#header-image .header-image-text .field--name-field-title {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+/* line 33, ../scss/_layout.scss */
+#header-image .header-image-text .field--name-body {
+  padding-top: 30px;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+/* line 41, ../scss/_layout.scss */
+#header-image .header-image-next .btn-default {
+  background-color: transparent;
+  color: #eeeeee;
+}
+/* line 47, ../scss/_layout.scss */
+#header-image .header-image-next {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  z-index: 100;
+  transform: translateX(-50%);
+}
+
+/* line 57, ../scss/_layout.scss */
+footer.footer,
+div.subfooter {
+  margin-top: 40px;
+  margin-bottom: 0;
+  background-color: #333333;
+  color: #777777;
+  padding: 15px;
+}
+/* line 65, ../scss/_layout.scss */
+footer.footer h2,
+div.subfooter h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+/* line 71, ../scss/_layout.scss */
+footer.footer section#block-blocmarinedufooter .field--name-field-image,
+div.subfooter section#block-blocmarinedufooter .field--name-field-image {
+  margin-left: 10px;
+}
+/* line 75, ../scss/_layout.scss */
+footer.footer section#block-blocmarinedufooter .field--name-body,
+div.subfooter section#block-blocmarinedufooter .field--name-body {
+  color: #eeeeee;
+  text-align: right;
+}
+
 /* line 2, ../scss/_component.scss */
 .btn {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
@@ -9650,113 +9719,40 @@ p:last-child,
   border-radius: 35px;
 }
 
-/* line 38, ../scss/_component.scss */
+/* line 37, ../scss/_component.scss */
 #navbar {
   border: 0;
   border-radius: 0;
 }
-/* line 42, ../scss/_component.scss */
+/* line 41, ../scss/_component.scss */
 #navbar .region-navigation-collapsible {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 47, ../scss/_component.scss */
+/* line 46, ../scss/_component.scss */
 #navbar .region-navigation-collapsible li > a,
 #navbar .region-navigation-collapsible li > a:focus {
   color: #777777;
 }
-/* line 52, ../scss/_component.scss */
+/* line 51, ../scss/_component.scss */
 #navbar .region-navigation-collapsible li > a:hover,
 #navbar .region-navigation-collapsible li > a:focus:hover {
   color: #7895a2;
 }
-/* line 57, ../scss/_component.scss */
+/* line 56, ../scss/_component.scss */
 #navbar .region-navigation-collapsible li.active > a,
 #navbar .region-navigation-collapsible li.active > a:focus {
   color: #7895a2 !important;
   background-color: transparent;
 }
-/* line 63, ../scss/_component.scss */
+/* line 62, ../scss/_component.scss */
 #navbar .region-navigation-collapsible li.active > a:hover,
 #navbar .region-navigation-collapsible li.active > a:focus:hover {
   background-color: transparent;
 }
 
-/* line 72, ../scss/_component.scss */
-#header-image .fullscreen {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-}
-/* line 79, ../scss/_component.scss */
-#header-image .header-image-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
-  color: #eeeeee;
-}
-/* line 87, ../scss/_component.scss */
-#header-image .header-image-text .field--name-field-intitule,
-#header-image .header-image-text .field--name-field-title {
-  font-size: 36px;
-  text-transform: uppercase;
-}
-/* line 93, ../scss/_component.scss */
-#header-image .header-image-text .field--name-body {
-  padding-top: 30px;
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  font-size: 18px;
-}
-/* line 101, ../scss/_component.scss */
-#header-image .header-image-next .btn-default {
-  background-color: transparent;
-  color: #eeeeee;
-}
-/* line 107, ../scss/_component.scss */
-#header-image .header-image-next {
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  z-index: 100;
-  transform: translateX(-50%);
-}
-
-/* line 118, ../scss/_component.scss */
-.view-articles article {
-  margin: 10px auto;
-  padding: 10px;
-  background-color: #f7f7f7;
-  display: flex;
-}
-/* line 124, ../scss/_component.scss */
-.view-articles article > div {
-  padding: 0 10px;
-}
-/* line 128, ../scss/_component.scss */
-.view-articles article h2 {
-  margin: 0;
-}
-/* line 132, ../scss/_component.scss */
-.view-articles article .author {
-  font-style: italic;
-  padding-bottom: 10px;
-}
-/* line 141, ../scss/_component.scss */
-.view-articles .pager li > a,
-.view-articles .pager li > span {
-  background-color: #546e7a;
-}
-/* line 146, ../scss/_component.scss */
-.view-articles .pager li > a:hover,
-.view-articles .pager li > a:focus {
-  background-color: #7895a2;
-}
-
-/* line 155, ../scss/_component.scss */
+/* line 70, ../scss/_component.scss */
 .view .more-link {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -9764,36 +9760,43 @@ p:last-child,
   text-align: center;
 }
 
-/* line 163, ../scss/_component.scss */
-#views-bootstrap-competences-taxo-page-1 > div > div {
-  padding-left: 40px;
-  padding-right: 40px;
+/* line 79, ../scss/_component.scss */
+.view-articles article {
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #f7f7f7;
+  display: flex;
 }
-/* line 167, ../scss/_component.scss */
-#views-bootstrap-competences-taxo-page-1 > div > div .view-competences .view-content > div {
-  margin-left: 0;
-  margin-right: 0;
+/* line 85, ../scss/_component.scss */
+.view-articles article > div {
+  padding: 0 10px;
 }
-/* line 172, ../scss/_component.scss */
-#views-bootstrap-competences-taxo-page-1 > div > div h3 {
-  color: #777777;
-  font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif;
-  text-transform: uppercase;
+/* line 89, ../scss/_component.scss */
+.view-articles article h2 {
+  margin: 0;
 }
-/* line 178, ../scss/_component.scss */
-#views-bootstrap-competences-taxo-page-1 > div > div h4 {
-  color: #546e7a;
-  text-transform: uppercase;
-  width: 100%;
-  border-bottom: 1px solid #546e7a;
+/* line 93, ../scss/_component.scss */
+.view-articles article .author {
+  font-style: italic;
+  padding-bottom: 10px;
+}
+/* line 101, ../scss/_component.scss */
+.view-articles .pager li > a,
+.view-articles .pager li > span {
+  background-color: #546e7a;
+}
+/* line 106, ../scss/_component.scss */
+.view-articles .pager li > a:hover,
+.view-articles .pager li > a:focus {
+  background-color: #7895a2;
 }
 
-/* line 188, ../scss/_component.scss */
+/* line 115, ../scss/_component.scss */
 .panel-heading .panel-title {
   margin: 0;
   padding: 0;
 }
-/* line 192, ../scss/_component.scss */
+/* line 119, ../scss/_component.scss */
 .panel-heading .panel-title .panel-title-left {
   width: 100px;
   height: 100px;
@@ -9805,242 +9808,20 @@ p:last-child,
   justify-content: center;
   align-items: center;
 }
-/* line 203, ../scss/_component.scss */
+/* line 130, ../scss/_component.scss */
 .panel-heading .panel-title .panel-title-left img {
   margin: auto;
 }
-/* line 208, ../scss/_component.scss */
+/* line 135, ../scss/_component.scss */
 .panel-heading .panel-title .panel-title-right {
   text-align: right;
   text-transform: uppercase;
   font-family: Montserrat, Helvetica, Arial, sans-serif;
 }
-/* line 213, ../scss/_component.scss */
+/* line 140, ../scss/_component.scss */
 .panel-heading .panel-title .panel-title-right .panel-title-title {
   font-size: 30px;
   color: #546e7a;
-}
-
-/* line 222, ../scss/_component.scss */
-article.experience-professionnelle.full article.societe.bloc {
-  background-color: #e2e8eb;
-  padding: 20px;
-  width: 300px;
-  text-align: center;
-}
-/* line 228, ../scss/_component.scss */
-article.experience-professionnelle.full article.societe.bloc img {
-  margin: auto;
-}
-/* line 233, ../scss/_component.scss */
-article.experience-professionnelle.full .mission-title {
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 24px;
-}
-/* line 239, ../scss/_component.scss */
-article.experience-professionnelle.full .paragraph,
-article.experience-professionnelle.full .paragraph > .paragraph__column {
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-/* line 246, ../scss/_component.scss */
-article.experience-professionnelle.full .paragraph div.mission-top,
-article.experience-professionnelle.full .paragraph > .paragraph__column div.mission-top {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  color: #546e7a;
-  text-transform: uppercase;
-  border-bottom: 1px solid #546e7a;
-}
-/* line 255, ../scss/_component.scss */
-article.experience-professionnelle.full .paragraph div.mission-top div.field--name-field-titre,
-article.experience-professionnelle.full .paragraph > .paragraph__column div.mission-top div.field--name-field-titre {
-  font-size: 24px;
-}
-/* line 259, ../scss/_component.scss */
-article.experience-professionnelle.full .paragraph div.mission-top div.field--name-field-dates,
-article.experience-professionnelle.full .paragraph > .paragraph__column div.mission-top div.field--name-field-dates {
-  font-size: 18px;
-  align-self: last baseline;
-}
-/* line 265, ../scss/_component.scss */
-article.experience-professionnelle.full .paragraph div.mission-corps,
-article.experience-professionnelle.full .paragraph > .paragraph__column div.mission-corps {
-  background-color: #f7f7f7;
-  padding: 30px 15px;
-}
-/* line 269, ../scss/_component.scss */
-article.experience-professionnelle.full .paragraph div.mission-corps article.societe.bloc,
-article.experience-professionnelle.full .paragraph > .paragraph__column div.mission-corps article.societe.bloc {
-  background-color: transparent;
-}
-/* line 273, ../scss/_component.scss */
-article.experience-professionnelle.full .paragraph div.mission-corps .field--name-field-competences,
-article.experience-professionnelle.full .paragraph > .paragraph__column div.mission-corps .field--name-field-competences {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 300px;
-  padding: 10px;
-}
-/* line 280, ../scss/_component.scss */
-article.experience-professionnelle.full .paragraph div.mission-corps .field--name-field-competences .field--item,
-article.experience-professionnelle.full .paragraph > .paragraph__column div.mission-corps .field--name-field-competences .field--item {
-  color: #546e7a;
-  margin: 3px;
-  padding: 3px;
-  border: 1px solid #546e7a;
-  border-radius: 4px;
-}
-
-/* line 294, ../scss/_component.scss */
-article.formation.full .diplome-title {
-  width: 100%;
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  color: #546e7a;
-  text-transform: uppercase;
-  border-bottom: 1px solid #546e7a;
-}
-/* line 302, ../scss/_component.scss */
-article.formation.full .field--name-field-date {
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #546e7a;
-  text-transform: uppercase;
-}
-/* line 309, ../scss/_component.scss */
-article.formation.full .field--name-field-titre {
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-/* line 314, ../scss/_component.scss */
-article.formation.full .field--name-field-description {
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  color: #555555;
-}
-
-/* line 321, ../scss/_component.scss */
-.loisir-box {
-  position: relative;
-  display: block;
-  max-width: 650px;
-  margin: 0 -15px;
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-/* line 330, ../scss/_component.scss */
-.loisir-box svg {
-  fill: #eeeeee;
-}
-/* line 334, ../scss/_component.scss */
-.loisir-box .loisir-box-caption {
-  color: #555555;
-  opacity: 0;
-  display: block;
-  background: white;
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
-}
-/* line 348, ../scss/_component.scss */
-.loisir-box .loisir-box-caption .loisir-box-caption-content {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 0;
-}
-/* line 356, ../scss/_component.scss */
-.loisir-box .loisir-box-caption .loisir-box-caption-content .loisir-box-caption-title {
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  font-size: 24px;
-}
-
-/* line 364, ../scss/_component.scss */
-.loisir-box:hover .loisir-box-caption {
-  opacity: 0.8;
-}
-
-/* line 368, ../scss/_component.scss */
-.loisir-box:focus {
-  outline: none;
-}
-
-/* line 374, ../scss/_component.scss */
-#views-bootstrap-loisirs-page-1 > .row:nth-child(1) .col:nth-child(1) {
-  background-color: #9ccc65;
-}
-/* line 378, ../scss/_component.scss */
-#views-bootstrap-loisirs-page-1 > .row:nth-child(1) .col:nth-child(2) {
-  background-color: #26a69a;
-}
-/* line 382, ../scss/_component.scss */
-#views-bootstrap-loisirs-page-1 > .row:nth-child(1) .col:nth-child(3) {
-  background-color: #29b6f6;
-}
-/* line 386, ../scss/_component.scss */
-#views-bootstrap-loisirs-page-1 > .row:nth-child(1) .col:nth-child(4) {
-  background-color: #5c6bc0;
-}
-/* line 392, ../scss/_component.scss */
-#views-bootstrap-loisirs-page-1 > .row:nth-child(2) .col:nth-child(1) {
-  background-color: #5c6bc0;
-}
-/* line 396, ../scss/_component.scss */
-#views-bootstrap-loisirs-page-1 > .row:nth-child(2) .col:nth-child(2) {
-  background-color: #29b6f6;
-}
-/* line 400, ../scss/_component.scss */
-#views-bootstrap-loisirs-page-1 > .row:nth-child(2) .col:nth-child(3) {
-  background-color: #9ccc65;
-}
-/* line 404, ../scss/_component.scss */
-#views-bootstrap-loisirs-page-1 > .row:nth-child(2) .col:nth-child(4) {
-  background-color: #26a69a;
-}
-
-/* line 411, ../scss/_component.scss */
-footer.footer,
-div.subfooter {
-  margin-top: 30px;
-  margin-bottom: 0;
-  background-color: #333333;
-  color: #777777;
-  padding: 15px;
-}
-/* line 419, ../scss/_component.scss */
-footer.footer h2,
-div.subfooter h2 {
-  font-size: 18px;
-  text-transform: uppercase;
-}
-/* line 425, ../scss/_component.scss */
-footer.footer section#block-blocmarinedufooter .field--name-field-image,
-div.subfooter section#block-blocmarinedufooter .field--name-field-image {
-  margin-left: 10px;
-}
-/* line 429, ../scss/_component.scss */
-footer.footer section#block-blocmarinedufooter .field--name-body,
-div.subfooter section#block-blocmarinedufooter .field--name-body {
-  color: #eeeeee;
-  text-align: right;
-}
-/* line 435, ../scss/_component.scss */
-footer.footer .view-footer,
-div.subfooter .view-footer {
-  margin-top: 20px;
 }
 
 /* line 2, ../scss/_theme.scss */

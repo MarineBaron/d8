@@ -1,0 +1,35 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+@import url(http://fonts.googleapis.com/css?family=amily=Montserrat:100,400,700|Roboto+Slab:100,300,400,700:100,400,700);
+/* line 6, ../scss/competences.scss */
+#views-bootstrap-competences-taxo-page-1 > div > div {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+/* line 10, ../scss/competences.scss */
+#views-bootstrap-competences-taxo-page-1 > div > div .view-competences .view-content > div {
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 15, ../scss/competences.scss */
+#views-bootstrap-competences-taxo-page-1 > div > div h3 {
+  color: #777777;
+  font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif;
+  text-transform: uppercase;
+}
+/* line 21, ../scss/competences.scss */
+#views-bootstrap-competences-taxo-page-1 > div > div h4 {
+  color: #546e7a;
+  text-transform: uppercase;
+  width: 100%;
+  border-bottom: 1px solid #546e7a;
+}

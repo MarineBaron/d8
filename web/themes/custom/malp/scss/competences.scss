@@ -1,0 +1,28 @@
+// Only on OnePage
+// Default variables.
+@import "default-variables";
+
+#views-bootstrap-competences-taxo-page-1 {
+  > div > div {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    .view-competences .view-content > div {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    h3 {
+      color: $gray-light;
+      font-family: $font-family-base;
+      text-transform: uppercase;
+    }
+
+    h4 {
+      color: $brand-primary;
+      text-transform: uppercase;
+      width: 100%;
+      border-bottom: 1px solid $brand-primary;
+    }
+  }
+}

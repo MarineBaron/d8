@@ -1,0 +1,42 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+@import url(http://fonts.googleapis.com/css?family=amily=Montserrat:100,400,700|Roboto+Slab:100,300,400,700:100,400,700);
+/* line 7, ../scss/articles.scss */
+.view-articles article {
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #f7f7f7;
+  display: flex;
+}
+/* line 13, ../scss/articles.scss */
+.view-articles article > div {
+  padding: 0 10px;
+}
+/* line 17, ../scss/articles.scss */
+.view-articles article h2 {
+  margin: 0;
+}
+/* line 21, ../scss/articles.scss */
+.view-articles article .author {
+  font-style: italic;
+  padding-bottom: 10px;
+}
+/* line 29, ../scss/articles.scss */
+.view-articles .pager li > a,
+.view-articles .pager li > span {
+  background-color: #546e7a;
+}
+/* line 34, ../scss/articles.scss */
+.view-articles .pager li > a:hover,
+.view-articles .pager li > a:focus {
+  background-color: #7895a2;
+}

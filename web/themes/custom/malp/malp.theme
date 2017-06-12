@@ -1,8 +1,5 @@
 <?php
 
-use Drupal\views_bootstrap\ViewsBootstrap;
-use Drupal\Core\Template\Attribute;
-
 /**
  * @file
  * MALP Bootstrap sub-theme.
@@ -10,9 +7,9 @@ use Drupal\Core\Template\Attribute;
  * Place your custom PHP code in this file.
  */
 
- /**
-  * Implements hook_theme_suggestions_page_alter().
-  */
+/**
+ * Implements hook_theme_suggestions_page_alter().
+ */
 function malp_theme_suggestions_page_alter(&$suggestions, array $variables) {
 
   $current_uri = \Drupal::request()->getRequestUri();
@@ -40,12 +37,30 @@ function malp_page_attachments_alter(&$page) {
       'onepage' => TRUE,
       'navbar' => $current_uri == '/' ? '#block-onepagehome' : '#block-onepagecv',
     ];
+    if (in_array($current_uri, ['/'])) {
+      $page['#attached']['library'][] = 'malp/articles';
+    }
+  }
+  elseif (in_array($current_uri, ['/cv/competences'])) {
+    $page['#attached']['library'][] = 'malp/competences';
   }
   elseif (in_array($current_uri, ['/cv/experience-professionnelle'])) {
     $page['#attached']['library'][] = 'core/jquery.accordion';
+    $page['#attached']['library'][] = 'malp/experience-professionnelle';
+  }
+  elseif (in_array($current_uri, ['/cv/formation'])) {
+    $page['#attached']['library'][] = 'core/jquery.accordion';
+    $page['#attached']['library'][] = 'malp/formation';
+  }
+  elseif (in_array($current_uri, ['/cv/loisirs'])) {
+    $page['#attached']['library'][] = 'malp/loisirs';
+  }
+  elseif (in_array($current_uri, ['/articles'])) {
+    $page['#attached']['library'][] = 'malp/articles';
   }
   elseif ($node = \Drupal::request()->attributes->get('node')) {
     $page['#attached']['library'][] = 'malp/affix';
+    $page['#attached']['library'][] = 'malp/article';
   }
 }
 
