@@ -44,8 +44,13 @@ module:
   page_cache: 0
   paragraphs: 0
   path: 0
+  pathauto: 0
   quickedit: 0
+  rabbit_hole: 0
   rdf: 0
+  redirect: 0
+  rh_node: 0
+  rh_taxonomy: 0
   search: 0
   security_review: 0
   shortcut: 0
@@ -53,6 +58,7 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
   update: 0

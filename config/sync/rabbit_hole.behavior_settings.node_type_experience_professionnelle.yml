@@ -1,0 +1,9 @@
+uuid: 06570f99-2b53-4384-96ac-eefd857ce60a
+langcode: fr
+status: true
+dependencies: {  }
+id: node_type_experience_professionnelle
+action: access_denied
+allow_override: 1
+redirect: ''
+redirect_code: 301

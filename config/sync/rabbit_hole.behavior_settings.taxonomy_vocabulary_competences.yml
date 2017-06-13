@@ -1,0 +1,9 @@
+uuid: ae91e7ea-7a9c-4a3f-b2ea-4c37f32a1de3
+langcode: fr
+status: true
+dependencies: {  }
+id: taxonomy_vocabulary_competences
+action: access_denied
+allow_override: 1
+redirect: ''
+redirect_code: 301

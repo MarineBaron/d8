@@ -1,0 +1,9 @@
+uuid: 7e5a5864-5a27-43b4-8bc3-963ae5161266
+langcode: fr
+status: true
+dependencies: {  }
+id: taxonomy_vocabulary_loisirs
+action: access_denied
+allow_override: 1
+redirect: ''
+redirect_code: 301

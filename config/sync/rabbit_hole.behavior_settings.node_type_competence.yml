@@ -1,0 +1,9 @@
+uuid: 918326c1-2364-46a8-af49-3ecc98d704c3
+langcode: fr
+status: true
+dependencies: {  }
+id: node_type_competence
+action: access_denied
+allow_override: 1
+redirect: ''
+redirect_code: 301

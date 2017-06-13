@@ -1,0 +1,9 @@
+uuid: cfe49ce8-9b0f-4217-b463-76297e1b3f8c
+langcode: fr
+status: true
+dependencies: {  }
+id: node_type_societe
+action: access_denied
+allow_override: 1
+redirect: ''
+redirect_code: 301

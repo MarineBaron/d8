@@ -1,0 +1,9 @@
+uuid: 7789146d-449a-4fa4-99e4-89b151f7ac9b
+langcode: fr
+status: true
+dependencies: {  }
+id: node_type_loisir
+action: access_denied
+allow_override: 1
+redirect: ''
+redirect_code: 301
