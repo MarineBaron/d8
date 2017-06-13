@@ -53,15 +53,50 @@ settings:
           items:
             - ShowBlocks
             - Source
+            - CodeSnippet
   plugins:
     stylescombo:
       styles: ''
     language:
       language_list: un
+    codesnippet:
+      highlight_style: tomorrow-night-eighties
+      highlight_languages:
+        bash: bash
+        css: css
+        dockerfile: dockerfile
+        ini: ini
+        json: json
+        javascript: javascript
+        php: php
+        scss: scss
+        sql: sql
+        twig: twig
+        yaml: yaml
+        apache: 0
+        coffeescript: 0
+        dart: 0
+        dust: 0
+        gherkin: 0
+        go: 0
+        haml: 0
+        handlebars: 0
+        java: 0
+        less: 0
+        makefile: 0
+        markdown: 0
+        nginx: 0
+        perl: 0
+        powershell: 0
+        puppet: 0
+        python: 0
+        ruby: 0
+        typescript: 0
+        xml: 0
 image_upload:
   status: true
   scheme: public
-  directory: inline-images
+  directory: images/inline-images
   max_size: ''
   max_dimensions:
     width: null

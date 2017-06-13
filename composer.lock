@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bd173fb433eb8cabaf42b8631f1472c3",
+    "content-hash": "88d516a3af8e7ceb4df1d410a3b7a09f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1296,6 +1296,54 @@
             }
         },
         {
+            "name": "drupal/codesnippet",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/codesnippet",
+                "reference": "8.x-1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/codesnippet-8.x-1.6.zip",
+                "reference": null,
+                "shasum": "cda07e671361defed098a8e82da0cd42c44d3970"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.6",
+                    "datestamp": "1473688439"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Adds the CodeSnippet plugin to CKEditor.",
+            "homepage": "http://drupal.org/project/codesnippet",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/codesnippet",
+                "issues": "http://drupal.org/project/issues/codesnippet"
+            }
+        },
+        {
             "name": "drupal/console",
             "version": "1.0.0-rc20",
             "source": {
@@ -2425,7 +2473,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0.zip",
-                "reference": null,
+                "reference": "8.x-1.0",
                 "shasum": "4c82a5689a18421c8c73fcc8be7b333bb21ae02a"
             },
             "require": {
@@ -2482,7 +2530,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/rabbit_hole-8.x-1.0-beta3.zip",
-                "reference": null,
+                "reference": "8.x-1.0-beta3",
                 "shasum": "cb9138d370a7015a1b060b5504f6a1c6fc7f26eb"
             },
             "require": {
@@ -2546,7 +2594,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/redirect-8.x-1.0-alpha5.zip",
-                "reference": null,
+                "reference": "8.x-1.0-alpha5",
                 "shasum": "927aa4c8d8b40b0cd2442bee86f2f386d25e53ca"
             },
             "require": {
@@ -3651,6 +3699,23 @@
                 "php"
             ],
             "time": "2017-03-05T18:23:57+00:00"
+        },
+        {
+            "name": "npralhad/codesnippet",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/npralhad/codesnippet.git",
+                "reference": "codesnippet"
+            },
+            "dist": {
+                "type": "drupal-library",
+                "url": "https://github.com/npralhad/codesnippet.git",
+                "reference": "codesnippet",
+                "shasum": null
+            },
+            "type": "drupal-library",
+            "time": "2016-11-20 09:13:02"
         },
         {
             "name": "paragonie/random_compat",
@@ -7425,6 +7490,7 @@
         "drupal/views_bootstrap": 20,
         "drupal/views_field_view": 10,
         "drupal/viewsreference": 15,
+        "npralhad/codesnippet": 20,
         "jquery/jquery.matchheight": 20
     },
     "prefer-stable": true,
