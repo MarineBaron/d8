@@ -1,0 +1,29 @@
+uuid: 25504bb0-d572-4398-9a68-99185880b3c3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_articles
+    - node.type.article
+    - node.type.page
+id: node.article.field_articles
+field_name: field_articles
+entity_type: node
+bundle: article
+label: 'Articles Liés'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+      page: page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: article
+field_type: entity_reference

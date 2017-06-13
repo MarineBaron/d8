@@ -1,0 +1,23 @@
+uuid: 920fcac3-2be2-4ac9-8dc6-3d5c3af4dec7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_liens
+    - node.type.article
+  module:
+    - link
+id: node.article.field_liens
+field_name: field_liens
+entity_type: node
+bundle: article
+label: Liens
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link
