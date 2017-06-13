@@ -213,7 +213,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: false
-          content: '<a href="/cv/experience-professionnelle" class="btn btn-primary">Voir mon expérience professionnelle <span class="gkyphicon glyphicon-menu-right"></span></a>'
+          content: '<a href="/cv/experience-professionnelle" class="btn btn-primary">Mon expérience professionnelle <span class="glyphicon glyphicon-menu-right"></span></a>'
           plugin_id: text_custom
       sorts:
         field_dates_value:
@@ -550,6 +550,7 @@ display:
         - 'config:core.entity_view_display.node.page.default'
         - 'config:core.entity_view_display.node.page.teaser'
         - 'config:core.entity_view_display.node.societe.accordion'
+        - 'config:core.entity_view_display.node.societe.bloc'
         - 'config:core.entity_view_display.node.societe.default'
         - 'config:core.entity_view_display.node.societe.teaser'
         - 'config:field.storage.node.field_dates'

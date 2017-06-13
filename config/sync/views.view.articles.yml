@@ -199,7 +199,7 @@ display:
         use_more_text: false
       use_more: true
       use_more_always: true
-      use_more_text: 'Plus d''articles'
+      use_more_text: 'Tous les articles'
     cache_metadata:
       max-age: -1
       contexts:
@@ -231,9 +231,9 @@ display:
         row: false
         footer: false
         fields: false
-      use_more: false
+      use_more: true
       use_more_always: true
-      use_more_text: 'Plus d''articles'
+      use_more_text: 'Tous les articles'
       display_description: ''
       title: 'Derniers articles'
       style:
@@ -246,18 +246,7 @@ display:
           inline: {  }
           separator: ''
           hide_empty: false
-      footer:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content: '<a class="btn btn-primary" href="/articles">Tous les articles <span class="glyphicon glyphicon-menu-right></span></a>'
-          plugin_id: text_custom
+      footer: {  }
       block_category: 'Listes (Views) - Footer'
       fields:
         title:
@@ -369,7 +358,7 @@ display:
             offset: false
             offset_label: Décalage
           views_infinite_scroll:
-            button_text: 'Voir plus d''articles'
+            button_text: 'Plus d''articles'
             automatically_load_content: false
       defaults:
         pager: false

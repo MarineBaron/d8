@@ -76,5 +76,17 @@ div.subfooter {
       color: $gray-lighter;
       text-align: right;
     }
+
+    .view .more-link {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin: 0;
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .view-footer {
+      margin-top: 30px;
+    }
   }
 }

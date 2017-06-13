@@ -20,13 +20,6 @@
         });
 
         // Egal height
-        $('.subfooter > .row > div').matchHeight({
-          byRow: true,
-          property: 'height',
-          target: null,
-          remove: false
-        });
-
         $('.subfooter .view-content').matchHeight({
           byRow: true,
           property: 'height',

@@ -40,3 +40,10 @@
 .view-articles .pager li > a:focus {
   background-color: #7895a2;
 }
+/* line 42, ../scss/articles.scss */
+.view-articles .view .more-link {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: auto;
+  text-align: center;
+}

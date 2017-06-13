@@ -9680,6 +9680,20 @@ div.subfooter section#block-blocmarinedufooter .field--name-body {
   color: #eeeeee;
   text-align: right;
 }
+/* line 80, ../scss/_layout.scss */
+footer.footer section#block-blocmarinedufooter .view .more-link,
+div.subfooter section#block-blocmarinedufooter .view .more-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+/* line 88, ../scss/_layout.scss */
+footer.footer section#block-blocmarinedufooter .view-footer,
+div.subfooter section#block-blocmarinedufooter .view-footer {
+  margin-top: 30px;
+}
 
 /* line 2, ../scss/_component.scss */
 .btn {
@@ -9752,51 +9766,12 @@ div.subfooter section#block-blocmarinedufooter .field--name-body {
   background-color: transparent;
 }
 
-/* line 70, ../scss/_component.scss */
-.view .more-link {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin: auto;
-  text-align: center;
-}
-
-/* line 79, ../scss/_component.scss */
-.view-articles article {
-  margin: 10px auto;
-  padding: 10px;
-  background-color: #f7f7f7;
-  display: flex;
-}
-/* line 85, ../scss/_component.scss */
-.view-articles article > div {
-  padding: 0 10px;
-}
-/* line 89, ../scss/_component.scss */
-.view-articles article h2 {
-  margin: 0;
-}
-/* line 93, ../scss/_component.scss */
-.view-articles article .author {
-  font-style: italic;
-  padding-bottom: 10px;
-}
-/* line 101, ../scss/_component.scss */
-.view-articles .pager li > a,
-.view-articles .pager li > span {
-  background-color: #546e7a;
-}
-/* line 106, ../scss/_component.scss */
-.view-articles .pager li > a:hover,
-.view-articles .pager li > a:focus {
-  background-color: #7895a2;
-}
-
-/* line 115, ../scss/_component.scss */
+/* line 71, ../scss/_component.scss */
 .panel-heading .panel-title {
   margin: 0;
   padding: 0;
 }
-/* line 119, ../scss/_component.scss */
+/* line 75, ../scss/_component.scss */
 .panel-heading .panel-title .panel-title-left {
   width: 100px;
   height: 100px;
@@ -9808,17 +9783,17 @@ div.subfooter section#block-blocmarinedufooter .field--name-body {
   justify-content: center;
   align-items: center;
 }
-/* line 130, ../scss/_component.scss */
+/* line 86, ../scss/_component.scss */
 .panel-heading .panel-title .panel-title-left img {
   margin: auto;
 }
-/* line 135, ../scss/_component.scss */
+/* line 91, ../scss/_component.scss */
 .panel-heading .panel-title .panel-title-right {
   text-align: right;
   text-transform: uppercase;
   font-family: Montserrat, Helvetica, Arial, sans-serif;
 }
-/* line 140, ../scss/_component.scss */
+/* line 96, ../scss/_component.scss */
 .panel-heading .panel-title .panel-title-right .panel-title-title {
   font-size: 30px;
   color: #546e7a;

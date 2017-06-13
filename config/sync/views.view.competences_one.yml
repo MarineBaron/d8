@@ -170,7 +170,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: false
-          content: '<a href="/cv/competences" class="btn btn-primary">Voir toutes les compétences <span class="glyphicon glyphicon-menu-right"></span></a>'
+          content: '<a href="/cv/competences" class="btn btn-primary">Toutes mes compétences <span class="glyphicon glyphicon-menu-right"></span></a>'
           plugin_id: text_custom
       empty: {  }
       relationships: {  }

@@ -235,14 +235,14 @@ display:
         - 'config:core.entity_view_display.node.competence.teaser'
         - 'config:core.entity_view_display.node.experience_professionnelle.default'
         - 'config:core.entity_view_display.node.experience_professionnelle.teaser'
+        - 'config:core.entity_view_display.node.formation.default'
+        - 'config:core.entity_view_display.node.formation.teaser'
         - 'config:core.entity_view_display.node.loisir.default'
         - 'config:core.entity_view_display.node.loisir.teaser'
         - 'config:core.entity_view_display.node.page.default'
         - 'config:core.entity_view_display.node.page.teaser'
         - 'config:core.entity_view_display.node.societe.accordion'
         - 'config:core.entity_view_display.node.societe.bloc'
-        - 'config:core.entity_view_display.node.formation.default'
-        - 'config:core.entity_view_display.node.formation.teaser'
         - 'config:core.entity_view_display.node.societe.default'
         - 'config:core.entity_view_display.node.societe.teaser'
   block_1:
@@ -253,6 +253,20 @@ display:
     display_options:
       display_extenders: {  }
       block_description: Formation
+      footer:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: '<a href="/cv/formation" class="btn btn-primary">Toutes mes formations <span class="glyphicon glyphicon-menu-right"></span></a>'
+          plugin_id: text_custom
+      defaults:
+        footer: false
     cache_metadata:
       max-age: -1
       contexts:
