@@ -21,6 +21,8 @@
   @see http://twig.sensiolabs.org/doc/tags/macro.html
 #}
 
+
+
 <div class="view-content">
     {% if items %}
       {% for item in items %}
@@ -36,12 +38,13 @@
 </div>
 
 {% if menu_name == 'cv' %}
-  {% set url_dest = '/cv' %}
-  {% set text_dest = "Voir mon CV" %}
+  {% set url_dest = cv_fichier_url %}
+  {% set text_dest = "Mon CV en PDF" %}
+  {% set target_dest = '_blank' %}
 {% else %}
   {% set url_dest = '/contact' %}
   {% set text_dest = "Contact" %}
 {% endif %}
 <div class="view-footer">
-  <a class="btn btn-primary" href="{{url_dest}}">{{text_dest}} <span class="glyphicon glyphicon-menu-right"></span></a>
+  <a class="btn btn-primary" href="{{url_dest}}" {% if target_dest %}target="{{ target_dest }}"{% endif %}>{{text_dest}} <span class="glyphicon glyphicon-menu-right"></span></a>
 </div>
