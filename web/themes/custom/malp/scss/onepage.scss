@@ -333,6 +333,12 @@
     padding-left: 3px;
     padding-right: 3px;
     background-color: $gray-lighter;
+
+    h5 {
+      text-transform: uppercase;
+      color: $gray-light;
+      font-weight: bold;
+    }
   }
 }
 

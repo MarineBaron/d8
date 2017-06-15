@@ -314,7 +314,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: false
-          content: '<a href="/cv/loisirs" class="btn btn-primary">Voir tous mes loisirs <span class="glyphicon glyphicon-menu-right"></span></a>'
+          content: '<a href="/cv/loisirs" class="btn btn-primary">Tous mes loisirs <span class="glyphicon glyphicon-menu-right"></span></a>'
           plugin_id: text_custom
       empty: {  }
       relationships: {  }

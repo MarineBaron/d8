@@ -56,6 +56,12 @@
             });
 
             // Egal height
+            $('#block-cv-formation .blockblockone > article h5.block-title').matchHeight({
+              byRow: true,
+              property: 'height',
+              target: null,
+              remove: false
+            });
             $('#block-cv-formation .blockblockone > article').matchHeight({
               byRow: true,
               property: 'height',
