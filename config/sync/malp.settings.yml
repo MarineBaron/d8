@@ -37,3 +37,4 @@ features:
   favicon: true
   node_user_picture: true
 navbar_position: fixed-top
+langcode: fr

@@ -1,0 +1,16 @@
+minified: 1
+headline_text: 'Ce site utilise des cookies pour améliorer votre navigation.'
+accept_button_text: Accepter
+read_more_button_text: ''
+theme: light-floating
+path: /
+domain: ''
+expiry: '365'
+target: _self
+_core:
+  default_config_hash: _tr-X8c0EtWB8CElgT53wtsgTQfB_Th-MMGaw7xA6bo
+langcode: fr
+theme_path: ''
+customise: 1
+cookie_policy: ''
+container: ''

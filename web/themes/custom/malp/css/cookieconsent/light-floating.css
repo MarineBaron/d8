@@ -1,0 +1,53 @@
+.cc_container .cc_btn {
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.6em;
+  transition: font-size 200ms;
+  line-height: 1em;
+}
+
+.cc_container .cc_btn {
+  background-color: #546e7a;
+  border-radius: 0;
+}
+
+.cc_container {
+  background: #fff;
+  color: #999;
+  font-size: 17px;
+  font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+.cc_container ::-moz-selection {
+  background: #546e7a;
+  color: #fff;
+  text-shadow: none;
+}
+
+.cc_container .cc_btn,
+.cc_container .cc_btn:visited {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  color: #ccc;
+  font-size: 17px;
+  background-color: #546e7a;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+.cc_container .cc_btn:hover,
+.cc_container .cc_btn:active {
+  background-color: #7895a2;
+  color: #ccc;
+}
+
+.cc_container a,
+.cc_container a:visited {
+  color: #546e7a;
+}
+
+.cc_container a:hover,
+.cc_container a:active {
+  color: #555;
+}

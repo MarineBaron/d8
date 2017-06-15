@@ -43,6 +43,7 @@
         "drupal/codesnippet": "^1.6",
         "drupal/console": "~1.0",
         "drupal/contact_formatter": "^1.0",
+        "drupal/cookieconsent": "^1.2",
         "drupal/core": "~8.0",
         "drupal/ctools": "^3.0",
         "drupal/devel": "^1.0@RC",
