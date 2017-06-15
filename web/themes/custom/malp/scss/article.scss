@@ -3,3 +3,78 @@
 @import "default-variables";
 
 // Article unique
+.region.region-content {
+  margin: 10px;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $brand-primary;
+  }
+
+  h2 {
+    margin-top: 30px;
+    border-bottom: 1px solid $brand-primary;
+  }
+
+  > article {
+    background-color: $gray-lighter-plus;
+    padding: 30px;
+
+    .field--name-body {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      img.align-left {
+        margin-right: 30px;
+      }
+    }
+
+    .field--name-field-introduction {
+      padding: 30px;
+      font-size: $font-size-h4;
+      border: 1px solid $gray-light;
+    }
+  }
+
+  .block-bottom {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    > div {
+      padding: 10px;
+      background-color: $gray-lighter-plus;
+      border: 1px solid $gray-lighter;
+
+      .field--label {
+        font-family: $headings-font-family;
+        border-bottom: 1px solid $gray-lighter;
+      }
+
+      .field__items {
+        padding-top: 10px;
+      }
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    > article {
+      padding: 50px;
+    }
+
+    h2 {
+      margin-top: 50px;
+    }
+
+    .block-bottom {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+}

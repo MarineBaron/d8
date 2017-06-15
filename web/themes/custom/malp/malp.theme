@@ -58,10 +58,6 @@ function malp_page_attachments_alter(&$page) {
   elseif (in_array($current_uri, ['/articles'])) {
     $page['#attached']['library'][] = 'malp/articles';
   }
-  elseif ($node = \Drupal::request()->attributes->get('node')) {
-    $page['#attached']['library'][] = 'malp/affix';
-    $page['#attached']['library'][] = 'malp/article';
-  }
 }
 
 /**
@@ -84,6 +80,23 @@ function malp_theme_suggestions_block_alter(&$suggestions, array $variables) {
     $bundle = $variables['elements']['content']['#block_content']->bundle();
     if (in_array($bundle, ['carousel_full'])) {
       $suggestions[] = 'block__carousel_full';
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function malp_preprocess_page(&$variables) {
+  if (isset($variables['node'])) {
+    $node = $variables['node'];
+    $bundle = $node->bundle();
+    if ($bundle == 'article') {
+      $variables['#attached']['library'][] = 'malp/affix';
+      $variables['#attached']['library'][] = 'malp/article';
+    }
+    elseif ($bundle == 'page') {
+      $variables['#attached']['library'][] = 'malp/article';
     }
   }
 }

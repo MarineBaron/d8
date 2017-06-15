@@ -48,15 +48,18 @@ settings:
           name: 'Block Formatting'
           items:
             - Format
+            - Language
+            - Styles
         -
           name: Tools
           items:
+            - CodeSnippet
             - ShowBlocks
             - Source
-            - CodeSnippet
+            - Maximize
   plugins:
     stylescombo:
-      styles: ''
+      styles: 'span.malp-arbo-admin|Arborescence Admin'
     language:
       language_list: un
     codesnippet:

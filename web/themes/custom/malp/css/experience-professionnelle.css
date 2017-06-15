@@ -25,7 +25,7 @@ article.experience-professionnelle.full article.societe.bloc img {
 article.experience-professionnelle.full .mission-title {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 28px;
 }
 /* line 24, ../scss/experience-professionnelle.scss */
 article.experience-professionnelle.full .paragraph,
@@ -49,12 +49,12 @@ article.experience-professionnelle.full .paragraph > .paragraph__column div.miss
 /* line 40, ../scss/experience-professionnelle.scss */
 article.experience-professionnelle.full .paragraph div.mission-top div.field--name-field-titre,
 article.experience-professionnelle.full .paragraph > .paragraph__column div.mission-top div.field--name-field-titre {
-  font-size: 24px;
+  font-size: 28px;
 }
 /* line 44, ../scss/experience-professionnelle.scss */
 article.experience-professionnelle.full .paragraph div.mission-top div.field--name-field-dates,
 article.experience-professionnelle.full .paragraph > .paragraph__column div.mission-top div.field--name-field-dates {
-  font-size: 18px;
+  font-size: 20px;
   align-self: last baseline;
 }
 /* line 50, ../scss/experience-professionnelle.scss */

@@ -11,13 +11,6 @@
     attach: function (context, settings) {
 
       $('body').once('malp').each(function () {
-        // Button next.
-        $('.btn-next-main').on('click', function () {
-          var $elt = $('#main-content').eq(0);
-          $('html, body').animate({
-            scrollTop: $elt.offset().top - 100
-          }, 800);
-        });
 
         // Egal height
         $('.subfooter .view-content').matchHeight({

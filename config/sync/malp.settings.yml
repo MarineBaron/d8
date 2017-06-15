@@ -9,11 +9,6 @@ favicon:
 schemas:
   bootstrap: 8000
   malp: 8000
-features:
-  comment_user_picture: true
-  comment_user_verification: true
-  favicon: true
-  node_user_picture: true
 logo:
   path: themes/custom/malp/logo.png
   url: ''
@@ -27,7 +22,7 @@ region_wells:
   help: ''
   content: ''
   sidebar_first: ''
-  sidebar_second: well
+  sidebar_second: ''
   subfooter_1: ''
   subfooter_2: ''
   subfooter_3: ''
@@ -36,4 +31,9 @@ region_wells:
 fluid_container: 1
 table_responsive: '-1'
 table: ''
-langcode: fr
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+navbar_position: fixed-top

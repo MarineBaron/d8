@@ -10,3 +10,77 @@
  * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
  */
 @import url(http://fonts.googleapis.com/css?family=amily=Montserrat:100,400,700|Roboto+Slab:100,300,400,700:100,400,700);
+/* line 6, ../scss/article.scss */
+.region.region-content {
+  margin: 10px;
+}
+/* line 9, ../scss/article.scss */
+.region.region-content h1,
+.region.region-content h2,
+.region.region-content h3,
+.region.region-content h4,
+.region.region-content h5,
+.region.region-content h6 {
+  color: #546e7a;
+}
+/* line 18, ../scss/article.scss */
+.region.region-content h2 {
+  margin-top: 30px;
+  border-bottom: 1px solid #546e7a;
+}
+/* line 23, ../scss/article.scss */
+.region.region-content > article {
+  background-color: #f7f7f7;
+  padding: 30px;
+}
+/* line 28, ../scss/article.scss */
+.region.region-content > article .field--name-body img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 33, ../scss/article.scss */
+.region.region-content > article .field--name-body img.align-left {
+  margin-right: 30px;
+}
+/* line 38, ../scss/article.scss */
+.region.region-content > article .field--name-field-introduction {
+  padding: 30px;
+  font-size: 20px;
+  border: 1px solid #777777;
+}
+/* line 45, ../scss/article.scss */
+.region.region-content .block-bottom {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+/* line 50, ../scss/article.scss */
+.region.region-content .block-bottom > div {
+  padding: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #eeeeee;
+}
+/* line 55, ../scss/article.scss */
+.region.region-content .block-bottom > div .field--label {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid #eeeeee;
+}
+/* line 60, ../scss/article.scss */
+.region.region-content .block-bottom > div .field__items {
+  padding-top: 10px;
+}
+@media (min-width: 768px) {
+  /* line 67, ../scss/article.scss */
+  .region.region-content > article {
+    padding: 50px;
+  }
+  /* line 71, ../scss/article.scss */
+  .region.region-content h2 {
+    margin-top: 50px;
+  }
+  /* line 75, ../scss/article.scss */
+  .region.region-content .block-bottom {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}

@@ -10,13 +10,7 @@
  * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
  */
 @import url(http://fonts.googleapis.com/css?family=amily=Montserrat:100,400,700|Roboto+Slab:100,300,400,700:100,400,700);
-/* line 5, ../scss/onepage.scss */
-body.path-frontpage,
-body.path-cv {
-  margin-top: 0;
-}
-
-/* line 13, ../scss/onepage.scss */
+/* line 8, ../scss/onepage.scss */
 #header-image .carousel-full .header-image-next {
   position: absolute;
   bottom: 50px;
@@ -24,33 +18,33 @@ body.path-cv {
   z-index: 100;
   transform: translateX(-50%);
 }
-/* line 21, ../scss/onepage.scss */
+/* line 16, ../scss/onepage.scss */
 #header-image .carousel-full .carousel-inner {
   padding: 0;
 }
-/* line 24, ../scss/onepage.scss */
+/* line 19, ../scss/onepage.scss */
 #header-image .carousel-full .carousel-inner .item.fullscreen {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 30, ../scss/onepage.scss */
+/* line 25, ../scss/onepage.scss */
 #header-image .carousel-full .carousel-inner .item {
   transition-property: opacity;
 }
-/* line 34, ../scss/onepage.scss */
+/* line 29, ../scss/onepage.scss */
 #header-image .carousel-full .carousel-inner .item,
 #header-image .carousel-full .carousel-inner .item.active.left,
 #header-image .carousel-full .carousel-inner .item.active.right {
   opacity: 0;
 }
-/* line 40, ../scss/onepage.scss */
+/* line 35, ../scss/onepage.scss */
 #header-image .carousel-full .carousel-inner .item.active,
 #header-image .carousel-full .carousel-inner .item.next.left,
 #header-image .carousel-full .carousel-inner .item.prev.right {
   opacity: 1;
 }
-/* line 46, ../scss/onepage.scss */
+/* line 41, ../scss/onepage.scss */
 #header-image .carousel-full .carousel-inner .item.next,
 #header-image .carousel-full .carousel-inner .item.prev,
 #header-image .carousel-full .carousel-inner .item.active.left,
@@ -59,7 +53,7 @@ body.path-cv {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 57, ../scss/onepage.scss */
+/* line 52, ../scss/onepage.scss */
 #block-homecv,
 #block-cv-formation,
 #block-cv-competences {
@@ -69,12 +63,12 @@ body.path-cv {
   padding: 0 45px;
 }
 
-/* line 66, ../scss/onepage.scss */
+/* line 61, ../scss/onepage.scss */
 #block-cv-competences {
   background-color: #f7f7f7;
 }
 
-/* line 70, ../scss/onepage.scss */
+/* line 65, ../scss/onepage.scss */
 #block-homecv,
 #block-homeblog,
 #block-cv-competences,
@@ -83,18 +77,19 @@ body.path-cv {
 #block-cv-loisirs {
   padding-top: 50px;
 }
-/* line 78, ../scss/onepage.scss */
+/* line 73, ../scss/onepage.scss */
 #block-homecv > h2.block-title,
 #block-homeblog > h2.block-title,
 #block-cv-competences > h2.block-title,
 #block-cv-experience-professionnelle > h2.block-title,
 #block-cv-formation > h2.block-title,
 #block-cv-loisirs > h2.block-title {
+  text-transform: uppercase;
   text-align: center;
   margin-bottom: 50px;
   color: #546e7a;
 }
-/* line 84, ../scss/onepage.scss */
+/* line 80, ../scss/onepage.scss */
 #block-homecv div.blockblockone,
 #block-homeblog div.blockblockone,
 #block-cv-competences div.blockblockone,
@@ -103,7 +98,7 @@ body.path-cv {
 #block-cv-loisirs div.blockblockone {
   text-align: center;
 }
-/* line 87, ../scss/onepage.scss */
+/* line 83, ../scss/onepage.scss */
 #block-homecv div.blockblockone > div,
 #block-homeblog div.blockblockone > div,
 #block-cv-competences div.blockblockone > div,
@@ -113,7 +108,7 @@ body.path-cv {
   max-width: 300px;
   margin: auto;
 }
-/* line 92, ../scss/onepage.scss */
+/* line 88, ../scss/onepage.scss */
 #block-homecv div.blockblockone .field--name-field-intitule,
 #block-homecv div.blockblockone h3.block-title,
 #block-homeblog div.blockblockone .field--name-field-intitule,
@@ -128,9 +123,9 @@ body.path-cv {
 #block-cv-loisirs div.blockblockone h3.block-title {
   min-height: 70px;
   font-family: Montserrat, Helvetica, Arial, sans-serif;
-  font-size: 24px;
+  font-size: 28px;
 }
-/* line 99, ../scss/onepage.scss */
+/* line 95, ../scss/onepage.scss */
 #block-homecv div.blockblockone article.societe,
 #block-homeblog div.blockblockone article.societe,
 #block-cv-competences div.blockblockone article.societe,
@@ -139,7 +134,7 @@ body.path-cv {
 #block-cv-loisirs div.blockblockone article.societe {
   min-height: 100px;
 }
-/* line 102, ../scss/onepage.scss */
+/* line 98, ../scss/onepage.scss */
 #block-homecv div.blockblockone article.societe img,
 #block-homeblog div.blockblockone article.societe img,
 #block-cv-competences div.blockblockone article.societe img,
@@ -148,7 +143,7 @@ body.path-cv {
 #block-cv-loisirs div.blockblockone article.societe img {
   margin: auto;
 }
-/* line 108, ../scss/onepage.scss */
+/* line 104, ../scss/onepage.scss */
 #block-homecv .view-footer,
 #block-homeblog .view-footer,
 #block-cv-competences .view-footer,
@@ -160,76 +155,83 @@ body.path-cv {
   text-align: center;
 }
 
-/* line 117, ../scss/onepage.scss */
+/* line 112, ../scss/onepage.scss */
+#block-homeblog div.more-link {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+/* line 121, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(1) .field--name-field-icone-svg svg {
   fill: #9ccc65;
 }
-/* line 121, ../scss/onepage.scss */
+/* line 125, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(1) .field--name-field-intitule {
   color: #9ccc65;
 }
-/* line 127, ../scss/onepage.scss */
+/* line 131, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(2) .field--name-field-icone-svg svg {
   fill: #26a69a;
 }
-/* line 131, ../scss/onepage.scss */
+/* line 135, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(2) .field--name-field-intitule {
   color: #26a69a;
 }
-/* line 137, ../scss/onepage.scss */
+/* line 141, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(3) .field--name-field-icone-svg svg {
   fill: #29b6f6;
 }
-/* line 141, ../scss/onepage.scss */
+/* line 145, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(3) .field--name-field-intitule {
   color: #29b6f6;
 }
-/* line 147, ../scss/onepage.scss */
+/* line 151, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(4) .field--name-field-icone-svg svg {
   fill: #5c6bc0;
 }
-/* line 151, ../scss/onepage.scss */
+/* line 155, ../scss/onepage.scss */
 #block-homecv div.blockblockone:nth-child(4) .field--name-field-intitule {
   color: #5c6bc0;
 }
 
-/* line 159, ../scss/onepage.scss */
+/* line 163, ../scss/onepage.scss */
 #block-cv-competences div.blockblockone:nth-child(1) .field--name-field-icone-svg svg {
   fill: #0077c0;
 }
-/* line 163, ../scss/onepage.scss */
+/* line 167, ../scss/onepage.scss */
 #block-cv-competences div.blockblockone:nth-child(1) .field--name-field-intitule {
   color: #0077c0;
 }
-/* line 169, ../scss/onepage.scss */
+/* line 173, ../scss/onepage.scss */
 #block-cv-competences div.blockblockone:nth-child(2) .field--name-field-icone-svg svg {
   fill: #9ccc65;
 }
-/* line 173, ../scss/onepage.scss */
+/* line 177, ../scss/onepage.scss */
 #block-cv-competences div.blockblockone:nth-child(2) .field--name-field-intitule {
   color: #9ccc65;
 }
-/* line 179, ../scss/onepage.scss */
+/* line 183, ../scss/onepage.scss */
 #block-cv-competences div.blockblockone:nth-child(3) .field--name-field-icone-svg svg {
   fill: #5c6bc0;
 }
-/* line 183, ../scss/onepage.scss */
+/* line 187, ../scss/onepage.scss */
 #block-cv-competences div.blockblockone:nth-child(3) .field--name-field-intitule {
   color: #5c6bc0;
 }
 
-/* line 190, ../scss/onepage.scss */
+/* line 194, ../scss/onepage.scss */
 #block-cv-experience-professionnelle .view-content {
   width: 450px;
   margin: auto;
   position: relative;
 }
-/* line 196, ../scss/onepage.scss */
+/* line 200, ../scss/onepage.scss */
 #block-cv-experience-professionnelle .timelife-line {
   position: relative;
   width: 450px;
 }
-/* line 200, ../scss/onepage.scss */
+/* line 204, ../scss/onepage.scss */
 #block-cv-experience-professionnelle .timelife-line ::before {
   position: absolute;
   z-index: -1;
@@ -240,12 +242,12 @@ body.path-cv {
   left: 50px;
   border: 1px solid #546e7a;
 }
-/* line 212, ../scss/onepage.scss */
+/* line 216, ../scss/onepage.scss */
 #block-cv-experience-professionnelle div.timelife {
   width: 450px;
   margin: auto;
 }
-/* line 216, ../scss/onepage.scss */
+/* line 220, ../scss/onepage.scss */
 #block-cv-experience-professionnelle div.timelife > article {
   width: 450px;
   height: 200px;
@@ -253,7 +255,7 @@ body.path-cv {
   display: flex;
   align-items: center;
 }
-/* line 223, ../scss/onepage.scss */
+/* line 227, ../scss/onepage.scss */
 #block-cv-experience-professionnelle div.timelife > article .timelife-image {
   width: 100px;
   height: 100px;
@@ -265,96 +267,96 @@ body.path-cv {
   justify-content: center;
   align-items: center;
 }
-/* line 234, ../scss/onepage.scss */
+/* line 238, ../scss/onepage.scss */
 #block-cv-experience-professionnelle div.timelife > article .timelife-image img {
   margin: auto;
   max-width: 80px;
   max-height: 80px;
 }
-/* line 241, ../scss/onepage.scss */
+/* line 245, ../scss/onepage.scss */
 #block-cv-experience-professionnelle div.timelife > article .timelife-text {
   width: 300px;
   padding-left: 10px;
   padding-right: 0;
   color: #777777;
 }
-/* line 247, ../scss/onepage.scss */
+/* line 251, ../scss/onepage.scss */
 #block-cv-experience-professionnelle div.timelife > article .timelife-text h4 {
   margin: 0;
   color: #546e7a;
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 254, ../scss/onepage.scss */
+/* line 258, ../scss/onepage.scss */
 #block-cv-experience-professionnelle div.timelife > article .timelife-text .timelife-date {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   color: #546e7a;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
-/* line 264, ../scss/onepage.scss */
+/* line 268, ../scss/onepage.scss */
 #block-cv-experience-professionnelle div.timelife.timelife-right > article {
   margin-left: 0;
   flex-direction: row;
 }
-/* line 268, ../scss/onepage.scss */
+/* line 272, ../scss/onepage.scss */
 #block-cv-experience-professionnelle div.timelife.timelife-right > article .timelife-text {
   padding-left: 10px;
   padding-right: 0;
 }
 @media (min-width: 768px) {
-  /* line 275, ../scss/onepage.scss */
+  /* line 279, ../scss/onepage.scss */
   #block-cv-experience-professionnelle .view-content {
     width: 750px;
     margin: auto;
     position: relative;
   }
-  /* line 281, ../scss/onepage.scss */
+  /* line 285, ../scss/onepage.scss */
   #block-cv-experience-professionnelle .timelife-line {
     margin: auto;
     width: 750px;
     position: relative;
   }
-  /* line 286, ../scss/onepage.scss */
+  /* line 290, ../scss/onepage.scss */
   #block-cv-experience-professionnelle .timelife-line ::before {
     left: 50%;
   }
-  /* line 291, ../scss/onepage.scss */
+  /* line 295, ../scss/onepage.scss */
   #block-cv-experience-professionnelle div.timelife {
     width: 750px;
     margin: auto;
   }
-  /* line 295, ../scss/onepage.scss */
+  /* line 299, ../scss/onepage.scss */
   #block-cv-experience-professionnelle div.timelife > article {
     width: 450px;
     margin-left: 300px;
     display: flex;
     align-items: center;
   }
-  /* line 301, ../scss/onepage.scss */
+  /* line 305, ../scss/onepage.scss */
   #block-cv-experience-professionnelle div.timelife > article .timelife-image {
     width: 150px;
     height: 150px;
   }
-  /* line 305, ../scss/onepage.scss */
+  /* line 309, ../scss/onepage.scss */
   #block-cv-experience-professionnelle div.timelife > article .timelife-image img {
     max-width: 100px;
     max-height: 100px;
   }
-  /* line 313, ../scss/onepage.scss */
+  /* line 317, ../scss/onepage.scss */
   #block-cv-experience-professionnelle div.timelife.timelife-right > article {
     margin-left: 0;
     flex-direction: row-reverse;
     text-align: right;
   }
-  /* line 318, ../scss/onepage.scss */
+  /* line 322, ../scss/onepage.scss */
   #block-cv-experience-professionnelle div.timelife.timelife-right > article .timelife-text {
     padding-left: 0;
     padding-right: 10px;
   }
 }
 
-/* line 327, ../scss/onepage.scss */
+/* line 331, ../scss/onepage.scss */
 #block-cv-formation div.blockblockone > article {
   margin-top: 15px;
   padding-left: 3px;
@@ -362,7 +364,7 @@ body.path-cv {
   background-color: #eeeeee;
 }
 
-/* line 337, ../scss/onepage.scss */
+/* line 341, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone .views-field-rendered-entity {
   width: 180px;
   height: 180px;
@@ -370,62 +372,62 @@ body.path-cv {
   border-radius: 3px;
   padding-top: 10px;
 }
-/* line 344, ../scss/onepage.scss */
+/* line 348, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone .views-field-rendered-entity h3 {
   color: #eeeeee;
 }
-/* line 348, ../scss/onepage.scss */
+/* line 352, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone .views-field-rendered-entity svg {
   fill: #eeeeee;
 }
-/* line 353, ../scss/onepage.scss */
+/* line 357, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone .views-field-view {
   margin-top: 10px;
 }
-/* line 356, ../scss/onepage.scss */
+/* line 360, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone .views-field-view .view-content {
   display: flex;
   justify-content: center;
 }
-/* line 360, ../scss/onepage.scss */
+/* line 364, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone .views-field-view .view-content > div {
   margin: 3px;
   padding: 3px;
   border: 1px solid;
   border-radius: 3px;
 }
-/* line 371, ../scss/onepage.scss */
+/* line 375, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone:nth-child(1) .views-field-rendered-entity {
   background-color: #9ccc65;
 }
-/* line 375, ../scss/onepage.scss */
+/* line 379, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone:nth-child(1) .views-field-view .view-content > div {
   color: #9ccc65;
   border-color: #9ccc65;
 }
-/* line 382, ../scss/onepage.scss */
+/* line 386, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone:nth-child(2) .views-field-rendered-entity {
   background-color: #26a69a;
 }
-/* line 386, ../scss/onepage.scss */
+/* line 390, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone:nth-child(2) .views-field-view .view-content > div {
   color: #26a69a;
   border-color: #26a69a;
 }
-/* line 393, ../scss/onepage.scss */
+/* line 397, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone:nth-child(3) .views-field-rendered-entity {
   background-color: #29b6f6;
 }
-/* line 397, ../scss/onepage.scss */
+/* line 401, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone:nth-child(3) .views-field-view .view-content > div {
   color: #29b6f6;
   border-color: #29b6f6;
 }
-/* line 404, ../scss/onepage.scss */
+/* line 408, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone:nth-child(4) .views-field-rendered-entity {
   background-color: #5c6bc0;
 }
-/* line 408, ../scss/onepage.scss */
+/* line 412, ../scss/onepage.scss */
 #block-cv-loisirs div.blockblockone:nth-child(4) .views-field-view .view-content > div {
   color: #5c6bc0;
   border-color: #5c6bc0;

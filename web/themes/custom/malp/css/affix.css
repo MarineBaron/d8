@@ -13,35 +13,98 @@
 /* line 5, ../scss/affix.scss */
 #navbar.affix,
 #navbar.affix-top {
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
 
-/* line 16, ../scss/affix.scss */
+/* line 12, ../scss/affix.scss */
 #navbar.affix-top {
-  background-color: transparent;
+  background-color: #333333;
+  opacity: 0.6;
   border-bottom: 1px solid #eeeeee;
   color: #eeeeee;
 }
-/* line 21, ../scss/affix.scss */
+/* line 18, ../scss/affix.scss */
 #navbar.affix-top a.navbar-brand {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: normal;
   color: #eeeeee;
 }
-/* line 27, ../scss/affix.scss */
+/* line 24, ../scss/affix.scss */
 #navbar.affix-top .region-navigation-collapsible li > a {
-  font-size: 18px;
-  font-weight: normal;
+  font-size: 20px;
   color: #eeeeee;
 }
-/* line 33, ../scss/affix.scss */
+/* line 29, ../scss/affix.scss */
 #navbar.affix-top .region-navigation-collapsible li > a:hover,
 #navbar.affix-top .region-navigation-collapsible li > a:focus:hover {
   color: #7895a2;
+}
+
+/* line 36, ../scss/affix.scss */
+#header-image {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -15px;
+  height: 100%;
+}
+/* line 42, ../scss/affix.scss */
+#header-image .fullscreen {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+/* line 49, ../scss/affix.scss */
+#header-image .header-image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  color: #eeeeee;
+}
+/* line 57, ../scss/affix.scss */
+#header-image .header-image-text .field--name-field-intitule,
+#header-image .header-image-text .field--name-field-title {
+  font-size: 34px;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+/* line 64, ../scss/affix.scss */
+#header-image .header-image-text .field--name-date {
+  font-size: 16px;
+}
+/* line 68, ../scss/affix.scss */
+#header-image .header-image-text .field--name-body {
+  font-size: 20px;
+}
+/* line 73, ../scss/affix.scss */
+#header-image .header-image-next {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  z-index: 100;
+  transform: translateX(-50%);
+}
+/* line 80, ../scss/affix.scss */
+#header-image .header-image-next .btn-default {
+  background-color: transparent;
+  color: #eeeeee;
+}
+@media (min-width: 768px) {
+  /* line 88, ../scss/affix.scss */
+  #header-image .header-image-text .field--name-field-intitule,
+  #header-image .header-image-text .field--name-field-title {
+    font-size: 41px;
+  }
+  /* line 93, ../scss/affix.scss */
+  #header-image .header-image-text .field--name-date {
+    font-size: 20px;
+  }
+  /* line 97, ../scss/affix.scss */
+  #header-image .header-image-text .field--name-body {
+    font-size: 28px;
+  }
 }

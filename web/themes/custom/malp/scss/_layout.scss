@@ -1,58 +1,3 @@
-#header-image {
-  padding: 0;
-}
-
-#header-image.article-image {
-  margin: 0;
-  height: 100%;
-}
-
-// Header Image
-#header-image {
-  .fullscreen {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-  }
-
-  .header-image-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-    color: $gray-lighter;
-
-    .field--name-field-intitule,
-    .field--name-field-title {
-      font-size: $font-size-h1;
-      text-transform: uppercase;
-    }
-
-    .field--name-body {
-      padding-top: 30px;
-      font-family: $headings-font-family;
-      font-size: $font-size-h4;
-    }
-  }
-
-  .header-image-next {
-    .btn-default {
-      background-color: transparent;
-      color: $gray-lighter;
-    }
-  }
-
-  .header-image-next {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    z-index: 100;
-    transform: translateX(-50%);
-  }
-}
-
 // Footer
 footer.footer,
 div.subfooter {
@@ -67,6 +12,11 @@ div.subfooter {
     text-transform: uppercase;
   }
 
+
+  .view-footer, .more-link {
+    margin-top: 30px;
+  }
+
   section#block-blocmarinedufooter {
     .field--name-field-image {
       margin-left: 10px;
@@ -75,18 +25,6 @@ div.subfooter {
     .field--name-body {
       color: $gray-lighter;
       text-align: right;
-    }
-
-    .view .more-link {
-      padding-top: 0;
-      padding-bottom: 0;
-      margin: 0;
-      margin-top: 20px;
-      text-align: left;
-    }
-
-    .view-footer {
-      margin-top: 30px;
     }
   }
 }

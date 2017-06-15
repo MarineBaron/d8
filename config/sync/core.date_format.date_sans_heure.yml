@@ -1,0 +1,8 @@
+uuid: 90540e6f-4b1c-413e-a2b3-5fee2d050063
+langcode: fr
+status: true
+dependencies: {  }
+id: date_sans_heure
+label: 'Date sans Heure'
+locked: false
+pattern: 'l j F Y'

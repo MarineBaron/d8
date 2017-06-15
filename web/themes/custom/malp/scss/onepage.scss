@@ -2,11 +2,6 @@
 // Default variables.
 @import "default-variables";
 
-body.path-frontpage,
-body.path-cv {
-  margin-top: 0;
-}
-
 #header-image {
   // Carousel
   .carousel-full {
@@ -76,6 +71,7 @@ body.path-cv {
   padding-top: 50px;
 
   > h2.block-title {
+    text-transform: uppercase;
     text-align: center;
     margin-bottom: 50px;
     color: $brand-primary;
@@ -106,6 +102,14 @@ body.path-cv {
   }
 
   .view-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+}
+
+#block-homeblog {
+  div.more-link {
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;

@@ -43,6 +43,11 @@ affix:
   css:
     theme:
       css/affix.css: {}
+  js:
+    js/affix.js: {}
+  dependencies:
+      - core/jquery
+      - core/jquery.once
 
 onepage:
   css:
@@ -86,3 +91,9 @@ article:
   css:
     theme:
       css/article.css: {}
+  js:
+    js/article.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - malp/jquery.matchHeight

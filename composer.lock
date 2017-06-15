@@ -1306,7 +1306,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/codesnippet-8.x-1.6.zip",
-                "reference": null,
+                "reference": "8.x-1.6",
                 "shasum": "cda07e671361defed098a8e82da0cd42c44d3970"
             },
             "require": {

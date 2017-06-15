@@ -71,7 +71,7 @@
       theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
     ]
   %}
-  <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner" data-spy="affix" data-offset-top="300">
+  <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
     {% if not navbar_attributes.hasClass(container) %}
       <div class="{{ container }}">
     {% endif %}
@@ -101,15 +101,18 @@
 {% endblock %}
 
 {% block header_image %}
-{# {% if node.field_image.value is not empty %} #}
+{% if node.field_image.value is not empty %}
   <div id="header-image" class="container-fluid article-image" role="complementary">
     <div class="fullscreen" style="background-image:url({{ file_url(node.field_image.entity.fileuri) }});">
       <div class="header-image-text">
         <div class="field--name-field-intitule">
           {{ node.title.value }}
         </div>
-        <div class="field--name-field-body">
-          {{ node.createdtime|format_date('long') }}
+        <div class="field--name-field-date">
+          {{ node.createdtime|format_date('date_sans_heure') }}
+        </div>
+        <div class="field--name-body">
+          {{ node.field_accroche.value|raw }}
         </div>
       </div>
       <div class="header-image-next">
@@ -118,7 +121,7 @@
     </div>
 
   </div>
-{# {% endif %} #}
+{% endif %}
 {% endblock %}
 
 {% block breadcrumb %}{% endblock %}

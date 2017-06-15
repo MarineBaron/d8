@@ -27,3 +27,6 @@ regions:
 libraries:
   - 'malp/global-styling'
   - 'malp/bootstrap-scripts'
+
+ckeditor_stylesheets:
+  - 'css/styles.css'

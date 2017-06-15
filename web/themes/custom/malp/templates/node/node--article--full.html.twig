@@ -82,7 +82,47 @@
 
 
   <div{{ content_attributes.addClass('content') }}>
+    {{ content.field_introduction }}
     {{ content.body }}
   </div>
 
 </article>
+
+{% set blocks_counter = 0 %}
+{% if node.field_liens.value %}
+  {% set blocks_counter = blocks_counter + 1 %}
+{% endif %}
+{% if node.field_modules.value %}
+  {% set blocks_counter = blocks_counter + 1 %}
+{% endif %}
+{% if node.field_articles.value %}
+  {% set blocks_counter = blocks_counter + 1 %}
+{% endif %}
+
+{% if blocks_counter > 0 %}
+  {%
+    set blocks_classes = [
+      'block-bottom',
+      'col-xs-12',
+      blocks_counter < 3 ? 'col-sm-6' : 'col-sm-4'
+      ]
+  %}
+
+  <div class="row">
+    {% if node.field_liens.value %}
+      <div{{ create_attribute({'class': blocks_classes}) }}>
+        {{ content.field_liens }}
+      </div>
+    {% endif %}
+    {% if node.field_modules.value %}
+      <div{{ create_attribute({'class': blocks_classes}) }}>
+        {{ content.field_modules }}
+      </div>
+    {% endif %}
+    {% if node.field_articles.value %}
+      <div{{ create_attribute({'class': blocks_classes}) }}>
+        {{ content.field_articles }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
