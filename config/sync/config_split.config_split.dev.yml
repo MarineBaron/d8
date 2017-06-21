@@ -1,0 +1,19 @@
+uuid: 5a1ddb13-2738-42c7-a8e2-356c8eed44aa
+langcode: fr
+status: true
+dependencies: {  }
+id: dev
+label: Dev
+folder: ../config/dev
+module:
+  dblog: 0
+  devel: 0
+  field_ui: 0
+  kint: 0
+theme: {  }
+blacklist:
+  - system.menu.devel
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
