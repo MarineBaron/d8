@@ -41,6 +41,7 @@
         "drupal/bootstrap_paragraphs": "^2.0@alpha",
         "drupal/ckeditor_entity_link": "^1.0@alpha",
         "drupal/codesnippet": "^1.6",
+        "drupal/config_split": "^1.0@beta",
         "drupal/console": "~1.0",
         "drupal/contact_formatter": "^1.0",
         "drupal/cookieconsent": "^1.2",
